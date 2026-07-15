@@ -41,5 +41,8 @@
     "*.{js,json,css,scss,md}": [
       "prettier --write"
     ]
+  },
+  "allowScripts": {
+    "@swc/core@1.15.43": true
   }
 }
