@@ -1,0 +1,16 @@
+// ============================================
+// Motion Tokens
+// ============================================
+
+:root {
+  /* Duration */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  /* Easing */
+  --ease-standard: ease;
+  --ease-in: ease-in;
+  --ease-out: ease-out;
+  --ease-in-out: ease-in-out;
+}
