@@ -32,6 +32,24 @@ Examples include:
 
 ---
 
+## Spacing Values
+
+The spacing scale follows a 4px base unit.
+
+| Token | Value |
+| ----- | ----- |
+| XS    | 4px   |
+| SM    | 8px   |
+| MD    | 16px  |
+| LG    | 24px  |
+| XL    | 32px  |
+| 2XL   | 48px  |
+| 3XL   | 64px  |
+| 4XL   | 96px  |
+| 5XL   | 128px |
+
+---
+
 ## Usage
 
 ### Component Spacing
