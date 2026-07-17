@@ -1,7 +1,9 @@
 :root {
-  font: 18px/145% var(--sans);
+  font-family: var(--sans);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  // color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
