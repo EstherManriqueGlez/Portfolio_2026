@@ -1,0 +1,38 @@
+:root {
+  /*
+   * Primitive Colors
+   */
+
+  --palette-rose-50: #fff1f5;
+  --palette-rose-100: #ffe4ec;
+  --palette-rose-300: #fda4af;
+  --palette-rose-500: #f43f5e;
+  --palette-rose-700: #be123c;
+
+  --palette-plum-900: #3b183d;
+
+  --palette-neutral-50: #fafafa;
+  --palette-neutral-100: #f5f5f5;
+  --palette-neutral-500: #737373;
+  --palette-neutral-900: #171717;
+
+  /*
+   * Semantic Colors
+   */
+
+  --color-background: var(--palette-neutral-50);
+
+  --color-surface: #ffffff;
+
+  --color-primary: var(--palette-rose-500);
+
+  --color-primary-hover: var(--palette-rose-700);
+
+  --color-heading: var(--palette-plum-900);
+
+  --color-text: var(--palette-neutral-900);
+
+  --color-text-muted: var(--palette-neutral-500);
+
+  --color-border: var(--palette-neutral-100);
+}
