@@ -3,7 +3,7 @@
    * Font Families
    */
 
-  --font-family-display: 'Playfair Display', serif;
+  --font-family-display: 'Montserrat', sans-serif;
   --font-family-body: 'Inter', sans-serif;
   --font-family-code: 'JetBrains Mono', monospace;
 
@@ -11,6 +11,7 @@
    * Font Weights
    */
 
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -49,7 +50,8 @@
    * Letter Spacing
    */
 
+  --letter-spacing-tight: -0.03em;
   --letter-spacing-normal: 0;
-  --letter-spacing-wide: 0.05em;
-  --letter-spacing-uppercase: 0.08em;
+  --letter-spacing-wide: 0.12em;
+  --letter-spacing-brand: 0.22em;
 }

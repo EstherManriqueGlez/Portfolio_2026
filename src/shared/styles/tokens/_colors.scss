@@ -1,38 +1,55 @@
+/* ==========================================================================
+   BRAND COLORS
+   ========================================================================== */
+
 :root {
-  /*
-   * Primitive Colors
-   */
+  /* Primary Purple */
+  --color-primary-50: #f5edff;
+  --color-primary-100: #e8d8ff;
+  --color-primary-200: #d2b2ff;
+  --color-primary-300: #b98cff;
+  --color-primary-400: #a169ff;
+  --color-primary-500: #8b5cf6;
+  --color-primary-600: #7642e8;
+  --color-primary-700: #6032c2;
+  --color-primary-800: #49259a;
+  --color-primary-900: #331a6d;
 
-  --palette-rose-50: #fff1f5;
-  --palette-rose-100: #ffe4ec;
-  --palette-rose-300: #fda4af;
-  --palette-rose-500: #f43f5e;
-  --palette-rose-700: #be123c;
+  /* Accent Blue */
+  --color-accent-50: #ecfbff;
+  --color-accent-100: #d4f6ff;
+  --color-accent-200: #a8ecff;
+  --color-accent-300: #73ddff;
+  --color-accent-400: #34cbff;
+  --color-accent-500: #06b6d4;
+  --color-accent-600: #0891b2;
+  --color-accent-700: #0e7490;
+  --color-accent-800: #155e75;
+  --color-accent-900: #164e63;
 
-  --palette-plum-900: #3b183d;
+  /* Neutral */
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0b1120;
 
-  --palette-neutral-50: #fafafa;
-  --palette-neutral-100: #f5f5f5;
-  --palette-neutral-500: #737373;
-  --palette-neutral-900: #171717;
-
-  /*
-   * Semantic Colors
-   */
-
-  --color-background: var(--palette-neutral-50);
+  /* Semantic */
+  --color-background: var(--color-neutral-50);
+  --color-background-dark: var(--color-neutral-900);
 
   --color-surface: #ffffff;
 
-  --color-primary: var(--palette-rose-500);
+  --color-text: var(--color-neutral-700);
+  --color-heading: var(--color-neutral-900);
 
-  --color-primary-hover: var(--palette-rose-700);
+  --color-primary: var(--color-primary-500);
+  --color-accent: var(--color-accent-500);
 
-  --color-heading: var(--palette-plum-900);
-
-  --color-text: var(--palette-neutral-900);
-
-  --color-text-muted: var(--palette-neutral-500);
-
-  --color-border: var(--palette-neutral-100);
+  --color-border: var(--color-neutral-200);
 }
