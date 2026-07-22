@@ -1,9 +1,19 @@
+// src/styles/base/_reset.scss
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  font-family: var(--font-sans, sans-serif);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }

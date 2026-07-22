@@ -1,0 +1,95 @@
+@use 'sass:map';
+@use '../../shared/styles/abstracts' as *;
+
+.navbar {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 8px 32px 0 var(--shadow-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-primary-grad);
+  transform-origin: 0%;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  .navLink {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--text-main);
+    }
+  }
+
+  .themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    &.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: var(--bg-secondary);
+      padding: 2rem;
+      gap: 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+  }
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--text-main);
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}

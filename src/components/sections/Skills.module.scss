@@ -1,0 +1,85 @@
+@use 'sass:map';
+// @use '../../shared/styles/abstracts' as *;
+@use '../../shared/styles/abstracts/mixins' as *;
+
+// .skills {
+//   padding: 8rem 3rem;
+//   max-width: 1400px;
+//   margin: 0 auto;
+//   text-align: left;
+
+//   .title {
+//     font-size: 2.5rem;
+//     margin-bottom: 2.5rem;
+//   }
+
+//   .grid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+//     gap: 1.5rem;
+//   }
+
+//   .skillCard {
+//     background: var(--glass-bg);
+//     backdrop-filter: blur(var(--glass-blur));
+//     border: 1px solid var(--glass-border);
+//     border-radius: 12px;
+//     padding: 1.75rem;
+//     text-align: left;
+//     box-shadow: 0 8px 32px 0 var(--shadow-color);
+
+//     .category {
+//       font-size: 0.75rem;
+//       text-transform: uppercase;
+//       letter-spacing: 1px;
+//       color: var(--text-muted);
+//     }
+
+//     .name {
+//       font-size: 1.25rem;
+//       margin: 0.5rem 0;
+//     }
+
+//     .level {
+//       font-size: 0.85rem;
+//       color: var(--text-muted);
+//     }
+//   }
+// }
+
+.skills {
+  padding: 10rem 3rem 6rem 3rem;
+  text-align: center;
+  .title {
+    @include text-gradient;
+    margin-bottom: 3rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .skillCard {
+    @include glass-effect(12px);
+    padding: 1.5rem;
+    cursor: default;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+      border-color: #00f5ff;
+    }
+  }
+  .category {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+  .name {
+    margin: 0.5rem 0;
+  }
+  .level {
+    font-size: 0.8rem;
+    @include text-gradient;
+  }
+}
