@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  padding: 10rem 3rem 0;
+}
+
 ::selection {
   background: var(--color-primary-grad);
   color: white;
