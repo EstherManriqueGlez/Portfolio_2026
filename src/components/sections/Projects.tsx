@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Code2 } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { Card } from '../ui/Card/Card';
 import { projects } from '../../constants/data';
 import styles from './Projects.module.scss';
@@ -35,6 +36,9 @@ export const Projects = () => (
                 <div className={styles.links}>
                   <a href={p.github} target="_blank" rel="noreferrer">
                     <Code2 size={20} />
+                  </a>
+                  <a href={p.github} target="_blank" rel="noreferrer" aria-label="Ver GitHub">
+                    <FaGithub size={20} />
                   </a>
                   <a href={p.link} target="_blank" rel="noreferrer">
                     <ExternalLink size={20} />
