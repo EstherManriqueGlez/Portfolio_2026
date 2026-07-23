@@ -2,12 +2,10 @@
 @use '../../shared/styles/abstracts' as *;
 
 .hero {
-  height: 100vh;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 100vh;
   padding: 10rem 3rem 0 3rem;
-  // max-width: 1400px;
-  // margin: 0 auto;
 
   .content {
     max-width: 900px;
@@ -21,8 +19,8 @@
   }
 
   .subtitle {
-    font-size: 1.5rem;
     color: var(--text-muted);
+    font-size: 1.5rem;
     margin-bottom: 2rem;
   }
 }
