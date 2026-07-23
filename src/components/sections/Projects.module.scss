@@ -1,8 +1,6 @@
 @use '../../shared/styles/abstracts' as *;
 
 .projects {
-  // padding: 10rem 3rem 0;
-
   .title {
     @include text-gradient;
     margin-bottom: 2rem;
