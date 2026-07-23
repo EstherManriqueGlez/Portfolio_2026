@@ -1,8 +1,6 @@
 @use '../../shared/styles/abstracts' as *;
 
 .experience {
-  // padding: 10rem 3rem 0;
-
   h2 {
     @include text-gradient;
     font-size: 2.5rem;
