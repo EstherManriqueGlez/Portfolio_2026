@@ -2,11 +2,7 @@
 @use '../../shared/styles/abstracts' as *;
 
 .navbar {
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 8px 32px 0 var(--shadow-color);
+  @include glass-effect(0);
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,11 +24,9 @@
   transform-origin: 0%;
 }
 
-.logoText {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--text-main);
-  text-decoration: none;
+.logoImg {
+  height: 48px;
+  width: auto;
 }
 
 .menu {
@@ -43,7 +37,7 @@
   .navLink {
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -62,7 +56,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: #{map.get($breakpoints, 'md') - 1px}) {
   .menu {
     display: none;
     &.open {
@@ -76,19 +70,18 @@
       padding: 2rem;
       gap: 1.5rem;
       text-align: center;
-      border-bottom: 1px solid var(--border-color);
     }
   }
+
   .hamburger {
     display: block;
     background: none;
     border: none;
     color: var(--text-main);
-    cursor: pointer;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: map.get($breakpoints, 'md')) {
   .hamburger {
     display: none;
   }

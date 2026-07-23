@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+
 import styles from './Navbar.module.scss';
 import { useTheme } from '../../context/useTheme';
+import logo from '../../assets/images/logo.png';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +27,8 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <motion.div className={styles.progressBar} style={{ scaleX }} />
-      <a href="#" className={styles.logoText}>
-        <span>Portfolio.2026</span>
+      <a href="#">
+        <img src={logo} alt="logo" className={styles.logoImg} />
       </a>
 
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
