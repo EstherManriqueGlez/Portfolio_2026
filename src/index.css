@@ -1,9 +1,9 @@
 /* src/index.css */
 /* Reseteo limpio para dejar el control total a Sass y al ThemeProvider */
-#root {
+/* #root {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-}
+} */
