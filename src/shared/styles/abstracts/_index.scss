@@ -1,0 +1,8 @@
+// src/shared/styles/abstracts/_index.scss
+@use 'mixins';
+@use 'themes';
+@use 'variables';
+
+@forward 'mixins';
+@forward 'themes';
+@forward 'variables';

@@ -1,0 +1,39 @@
+@use 'sass:map';
+@use '../../shared/styles/abstracts' as *;
+
+.skills {
+  padding: 10rem 3rem 6rem 3rem;
+  text-align: center;
+  .title {
+    @include text-gradient;
+    margin-bottom: 3rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .skillCard {
+    @include glass-effect(12px);
+    padding: 1.5rem;
+    cursor: default;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+      border-color: #00f5ff;
+    }
+  }
+  .category {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+  .name {
+    margin: 0.5rem 0;
+  }
+  .level {
+    font-size: 0.8rem;
+    @include text-gradient;
+  }
+}

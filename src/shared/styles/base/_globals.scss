@@ -1,0 +1,10 @@
+// src/styles/base/_global.scss
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-primary-grad);
+  color: white;
+}

@@ -1,0 +1,28 @@
+@use 'sass:map';
+@use '../../shared/styles/abstracts' as *;
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 10rem 3rem 0 3rem;
+  // max-width: 1400px;
+  // margin: 0 auto;
+
+  .content {
+    max-width: 900px;
+    text-align: left;
+  }
+
+  .title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+}

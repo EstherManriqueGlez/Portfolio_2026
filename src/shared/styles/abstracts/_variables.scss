@@ -1,0 +1,29 @@
+// src/shared/styles/abstracts/_variables.scss
+$font-families: (
+  'sans': 'Plus Jakarta Sans',
+  'mono': 'Fira Code',
+);
+
+$spacing: (
+  'xs': 0.25rem,
+  'sm': 0.5rem,
+  'md': 1rem,
+  'lg': 1.5rem,
+  'xl': 2rem,
+  'xxl': 3rem,
+  'xxxl': 4rem,
+);
+
+$breakpoints: (
+  'sm': 480px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1440px,
+  'xxl': 1920px,
+);
+
+$transitions: (
+  'fast': 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+  'normal': 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+  'slow': 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+);
