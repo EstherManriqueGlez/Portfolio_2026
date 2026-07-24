@@ -1,5 +1,5 @@
-import { Card } from '../ui/Card/Card';
-import { experience } from '../../constants/data';
+import { Card } from '@/components/ui/Card/Card';
+import { experience } from '@/constants/data';
 import styles from './Experience.module.scss';
 
 export const Experience = () => (
