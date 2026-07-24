@@ -9,8 +9,12 @@ export const Projects = () => (
   <section id="projects" className={styles.projects}>
     <h2 className={styles.title}>Selected Projects</h2>
     <div className={styles.grid}>
-      {projects.map((p, i) => (
-        <motion.div key={i} whileHover={{ y: -10 }} transition={{ type: 'spring', stiffness: 300 }}>
+      {projects.map((p) => (
+        <motion.div
+          key={p.title}
+          whileHover={{ y: -10 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <Card className={styles.projectCard}>
             <img src={p.image} alt={p.title} className={styles.image} />
             <div className={styles.content}>
@@ -34,13 +38,13 @@ export const Projects = () => (
                   ))}
                 </div>
                 <div className={styles.links}>
-                  <a href={p.github} target="_blank" rel="noreferrer">
+                  <a href={p.github} target="_blank" rel="noreferrer" aria-label="View source code">
                     <Code2 size={20} />
                   </a>
-                  <a href={p.github} target="_blank" rel="noreferrer" aria-label="Ver GitHub">
+                  <a href={p.github} target="_blank" rel="noreferrer" aria-label="View on GitHub">
                     <FaGithub size={20} />
                   </a>
-                  <a href={p.link} target="_blank" rel="noreferrer">
+                  <a href={p.link} target="_blank" rel="noreferrer" aria-label="View live project">
                     <ExternalLink size={20} />
                   </a>
                 </div>

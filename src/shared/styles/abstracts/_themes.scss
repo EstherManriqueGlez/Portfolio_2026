@@ -13,6 +13,8 @@
   --glass-border: rgba(255, 255, 255, 0.07);
   --glass-blur: 16px;
   --glow-intensity: 0.15;
+  --wave-primary: #9d4edd;
+  --wave-secondary: #00f5ff;
 }
 
 [data-theme='light'] {
@@ -28,4 +30,6 @@
   --glass-border: rgba(156, 118, 255, 0.15);
   --glass-blur: 12px;
   --glow-intensity: 0.05;
+  --wave-primary: #9c76ff;
+  --wave-secondary: #3de1f2;
 }
