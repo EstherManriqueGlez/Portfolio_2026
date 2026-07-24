@@ -1,3 +1,15 @@
+export interface Project {
+  title: string;
+  tech: string[];
+  desc: string;
+  challenge: string;
+  solution: string;
+  result: string;
+  image: string;
+  link: string;
+  github: string;
+}
+
 export const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },

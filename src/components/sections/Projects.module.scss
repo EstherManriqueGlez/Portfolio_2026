@@ -10,76 +10,13 @@
   .grid {
     display: grid;
     gap: 1.5rem;
-    // Mobile: 1 columna
     grid-template-columns: 1fr;
-    // Tablet: 2 columnas
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
     }
-    // Desktop: 3 columnas
     @media (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
     align-items: start;
-  }
-
-  .projectCard {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-    padding: 0;
-  }
-
-  .image {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 1.25rem;
-  }
-
-  .desc {
-    font-size: 0.95rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .details {
-    color: var(--text-muted);
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .footer {
-    align-items: center;
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    padding-top: 1rem;
-  }
-
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-
-    span {
-      background: var(--bg-secondary);
-      border-radius: 4px;
-      font-size: 0.7rem;
-      padding: 0.2rem 0.4rem;
-    }
-  }
-
-  .links {
-    color: var(--text-main);
-    display: flex;
-    gap: 0.8rem;
   }
 }

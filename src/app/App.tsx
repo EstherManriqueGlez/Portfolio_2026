@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/context/ThemeProvider';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 import CanvasWave from '@/components/sections/CanvasWave';
 import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
@@ -12,15 +13,29 @@ import { Contact } from '@/components/sections/Contact';
 export const App = () => {
   return (
     <ThemeProvider>
-      <CanvasWave />
+      <ErrorBoundary>
+        <CanvasWave />
+      </ErrorBoundary>
       <Navbar />
       <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
+        <ErrorBoundary>
+          <Hero />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <About />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Experience />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Projects />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Skills />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Contact />
+        </ErrorBoundary>
       </main>
       <Footer />
     </ThemeProvider>
