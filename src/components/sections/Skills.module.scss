@@ -19,7 +19,7 @@
     padding: 1.5rem;
     transition: transform 0.3s ease;
     &:hover {
-      border-color: #00f5ff;
+      border-color: var(--color-accent);
       transform: translateY(-5px);
     }
   }
