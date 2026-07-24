@@ -3,8 +3,9 @@ import { Menu, X } from 'lucide-react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
 import styles from './Navbar.module.scss';
-import { useTheme } from '../../context/useTheme';
-import logo from '../../assets/images/logo.png';
+import { useTheme } from '@/context/useTheme';
+import logo from '@/assets/images/logo.png';
+import { navLinks } from '@/constants/data';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,14 +16,6 @@ export const Navbar = () => {
     damping: 30,
     restDelta: 0.001,
   });
-
-  const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
-  ];
 
   return (
     <nav className={styles.navbar}>

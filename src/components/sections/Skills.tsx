@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { skills } from '../../constants/data';
+import { skills } from '@/constants/data';
 import styles from './Skills.module.scss';
 
 export const Skills = () => {

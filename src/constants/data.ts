@@ -1,4 +1,23 @@
-// src/constants/data.ts
+export interface Project {
+  title: string;
+  tech: string[];
+  desc: string;
+  challenge: string;
+  solution: string;
+  result: string;
+  image: string;
+  link: string;
+  github: string;
+}
+
+export const navLinks = [
+  { name: 'About', href: '#about' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Contact', href: '#contact' },
+];
+
 export const projects = [
   {
     title: 'Fintech Dashboard',
@@ -85,4 +104,11 @@ export const skills = [
   { name: 'Framer Motion', category: 'Animation', level: 'Advanced' },
   { name: 'Vite', category: 'Tools', level: 'Advanced' },
   { name: 'Git', category: 'Tools', level: 'Advanced' },
+];
+
+export const contacts = [
+  { icon: 'Mail' as const, label: 'Email', value: 'esther@example.com' },
+  { icon: 'Phone' as const, label: 'Phone', value: '+34 600 000 000' },
+  { icon: 'LuLinkedin' as const, label: 'LinkedIn', value: 'linkedin.com/in/esther' },
+  { icon: 'LuGithub' as const, label: 'GitHub', value: 'github.com/esther' },
 ];
