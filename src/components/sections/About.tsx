@@ -5,7 +5,11 @@ export const About = () => (
   <section id="about" className={styles.about}>
     <h2 className={styles.title}>About Me</h2>
     <Card>
-      <p>Frontend Engineer apasionada por la elegancia y la funcionalidad.</p>
+      <p className={styles.contentCard}>
+        Frontend Software Engineer apasionada por la elegancia, la arquitectura limpia y la alta
+        performance. Especializada en crear interfaces de usuario robustas, intuitivas y visualmente
+        impactantes utilizando tecnologías modernas de vanguardia.
+      </p>
     </Card>
   </section>
 );

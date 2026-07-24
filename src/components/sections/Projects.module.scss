@@ -3,13 +3,16 @@
 .projects {
   .title {
     @include text-gradient;
-    margin-bottom: 2rem;
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: clamp(2rem, 4vw, 3.5rem);
     text-align: center;
   }
 
   .grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
     grid-template-columns: 1fr;
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
@@ -17,6 +20,6 @@
     @media (min-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
-    align-items: start;
+    align-items: stretch;
   }
 }
