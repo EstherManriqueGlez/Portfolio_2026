@@ -17,9 +17,9 @@ export const Contact = () => {
     <section id="contact" className={styles.contact}>
       <h2 className={styles.title}>Let's Connect</h2>
       <div className={styles.grid}>
-        {contacts.map((c, i) => (
+        {contacts.map((c) => (
           <motion.div
-            key={i}
+            key={c.label}
             whileHover={{ y: -10 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
