@@ -5,34 +5,52 @@
   text-align: center;
   .title {
     @include text-gradient;
-    margin-bottom: 3rem;
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: clamp(2rem, 4vw, 3.5rem);
+    text-align: center;
   }
   .grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
   }
   .skillCard {
     @include glass-effect(12px);
     cursor: default;
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
+    padding: 1.75rem 1.5rem;
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease;
+    border: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     &:hover {
       border-color: var(--color-accent);
-      transform: translateY(-5px);
+      transform: translateY(-6px);
     }
   }
   .category {
     color: var(--text-muted);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    margin-bottom: 0.3rem;
   }
   .name {
-    margin: 0.5rem 0;
+    margin: 0.4rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
   }
   .level {
     @include text-gradient;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
   }
 }
