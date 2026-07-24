@@ -1,4 +1,4 @@
-import { Card } from '../ui/Card/Card';
+import { Card } from '@/components/ui/Card/Card';
 import styles from './About.module.scss';
 
 export const About = () => (

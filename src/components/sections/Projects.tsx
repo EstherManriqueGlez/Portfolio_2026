@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Code2 } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
-import { Card } from '../ui/Card/Card';
-import { projects } from '../../constants/data';
+import { Card } from '@/components/ui/Card/Card';
+import { projects } from '@/constants/data';
 import styles from './Projects.module.scss';
 
 export const Projects = () => (

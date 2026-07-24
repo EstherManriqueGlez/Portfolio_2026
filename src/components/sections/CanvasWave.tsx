@@ -76,7 +76,8 @@ const CanvasWave = () => {
       ctx.lineWidth = LINE_WIDTH;
       for (let i = 0; i < width; i++) {
         const dx = i - mouse.x;
-        const dist = Math.sqrt(dx * dx);
+        const dy = height / 2 - mouse.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
         const repulsion =
           dist < REPULSION_RADIUS ? (REPULSION_RADIUS - dist) * REPULSION_STRENGTH_1 : 0;
         ctx.lineTo(i, height / 2 + Math.sin(i * WAVE_FREQ_1 + time) * (AMPLITUDE_1 + repulsion));
@@ -88,7 +89,8 @@ const CanvasWave = () => {
       ctx.lineWidth = LINE_WIDTH;
       for (let i = 0; i < width; i++) {
         const dx = i - mouse.x;
-        const dist = Math.sqrt(dx * dx);
+        const dy = height / 2 - mouse.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
         const repulsion =
           dist < REPULSION_RADIUS ? (REPULSION_RADIUS - dist) * REPULSION_STRENGTH_2 : 0;
         ctx.lineTo(
