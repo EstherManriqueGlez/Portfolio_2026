@@ -1,21 +1,48 @@
 @use '../../shared/styles/abstracts' as *;
 
 .experience {
-  h2 {
+  .title {
     @include text-gradient;
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: clamp(2rem, 4vw, 3.5rem);
     text-align: center;
   }
 
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   .item {
-    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--color-accent);
+
     h3 {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-main);
       margin-bottom: 0.3rem;
     }
+
+    .period {
+      font-size: 0.85rem;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+
     p {
       color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
   }
 }
