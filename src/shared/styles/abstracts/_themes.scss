@@ -1,6 +1,9 @@
 // src/styles/abstract/_themes.scss
 :root,
 [data-theme='dark'] {
+  --font-display: 'Bellota Text', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
   --color-primary-grad: linear-gradient(135deg, #ff007f 0%, #9d4edd 50%, #00f5ff 100%);
   --color-text-grad: linear-gradient(90deg, #ffffff 0%, #f1f5f9 50%, #00f5ff 100%);
   --bg-primary: #030014;

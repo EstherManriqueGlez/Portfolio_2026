@@ -1,7 +1,8 @@
 @use '../../shared/styles/abstracts' as *;
 
 .about {
-  .title {
+  .title,
+  .subtitle {
     @include text-gradient;
     font-size: clamp(2rem, 3.5vw, 2.75rem);
     font-weight: 700;

@@ -30,6 +30,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
     &:hover {
       border-color: var(--color-accent);
       transform: translateY(-6px);
@@ -37,6 +40,7 @@
   }
   .category {
     color: var(--text-muted);
+    font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -50,6 +54,7 @@
   }
   .level {
     @include text-gradient;
+    font-family: var(--font-mono);
     font-size: 0.85rem;
     font-weight: 500;
   }

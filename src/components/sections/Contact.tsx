@@ -5,8 +5,9 @@ import { LuGithub, LuLinkedin } from 'react-icons/lu';
 import { Card } from '@/components/ui/Card/Card';
 import { contacts } from '@/constants/data';
 import styles from './Contact.module.scss';
+import type React from 'react';
 
-const iconMap = {
+const iconMap: Record<string, React.ReactNode> = {
   Mail: <Mail />,
   Phone: <Phone />,
   LuLinkedin: <LuLinkedin />,
@@ -27,7 +28,13 @@ export const Contact = () => {
             <Card className={styles.card}>
               <div className={styles.icon}>{iconMap[c.icon]}</div>
               <h3>{c.label}</h3>
-              <p>{c.value}</p>
+              {c.href ? (
+                <a href={c.href} target="_blank" rel="noreferrer" className={styles.link}>
+                  {c.value}
+                </a>
+              ) : (
+                <p>{c.value}</p>
+              )}
             </Card>
           </motion.div>
         ))}
