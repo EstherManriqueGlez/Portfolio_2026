@@ -19,17 +19,22 @@
   flex-direction: column;
   flex-grow: 1;
   padding: 1.25rem;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .desc {
   font-size: 0.95rem;
   margin-bottom: 0.75rem;
+  overflow-wrap: break-word;
 }
 
 .details {
   color: var(--text-muted);
   font-size: 0.8rem;
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
 }
 
 .footer {
@@ -39,6 +44,7 @@
   justify-content: space-between;
   margin-top: auto;
   padding-top: 1rem;
+  min-width: 0;
 }
 
 .tags {
@@ -49,6 +55,7 @@
   span {
     background: var(--bg-secondary);
     border-radius: 4px;
+    font-family: var(--font-mono);
     font-size: 0.7rem;
     padding: 0.2rem 0.4rem;
   }
@@ -58,4 +65,12 @@
   color: var(--text-main);
   display: flex;
   gap: 0.8rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
 }

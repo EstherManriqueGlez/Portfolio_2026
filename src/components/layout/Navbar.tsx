@@ -21,7 +21,7 @@ export const Navbar = () => {
     <nav className={styles.navbar}>
       <motion.div className={styles.progressBar} style={{ scaleX }} />
       <a href="#">
-        <img src={logo} alt="logo" className={styles.logoImg} />
+        <img src={logo} alt="Manrique logo" className={styles.logoImg} />
       </a>
 
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
@@ -35,12 +35,20 @@ export const Navbar = () => {
             {link.name}
           </a>
         ))}
-        <button className={styles.themeToggle} onClick={toggleTheme}>
+        <button
+          className={styles.themeToggle}
+          onClick={toggleTheme}
+          aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+        >
           {theme === 'dark' ? '☀️' : '🌙'}
         </button>
       </div>
 
-      <button className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
+      <button
+        className={styles.hamburger}
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+      >
         {isOpen ? <X /> : <Menu />}
       </button>
     </nav>

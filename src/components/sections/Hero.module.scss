@@ -9,10 +9,13 @@
   .content {
     max-width: 900px;
     text-align: left;
+    overflow-wrap: break-word;
   }
 
   .title {
+    font-family: var(--font-display);
     font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1.5rem;
   }
