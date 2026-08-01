@@ -20,7 +20,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <motion.div className={styles.progressBar} style={{ scaleX }} />
-      <a href="#">
+      <a href="#" onClick={() => setIsOpen(false)}>
         <img src={logo} alt="Manrique logo" className={styles.logoImg} />
       </a>
 

@@ -98,12 +98,15 @@ export const experience = [
 ];
 
 export const skills = [
-  { name: 'React', category: 'Frontend', level: 'Expert' },
-  { name: 'TypeScript', category: 'Frontend', level: 'Expert' },
-  { name: 'SASS/SCSS', category: 'Frontend', level: 'Expert' },
-  { name: 'Framer Motion', category: 'Animation', level: 'Advanced' },
-  { name: 'Vite', category: 'Tools', level: 'Advanced' },
-  { name: 'Git', category: 'Tools', level: 'Advanced' },
+  { name: 'React / Next.js', category: 'Core Frontend', level: 'Expert' },
+  { name: 'TypeScript', category: 'Core Frontend', level: 'Expert' },
+  { name: 'SASS / SCSS / Tailwind', category: 'Core Frontend', level: 'Expert' },
+  { name: 'Design Systems', category: 'Architecture', level: 'Advanced' },
+  { name: 'State Management', category: 'Architecture', level: 'Advanced' },
+  { name: 'Performance Opt.', category: 'Architecture', level: 'Advanced' },
+  { name: 'Framer Motion', category: 'UI/UX Tools', level: 'Advanced' },
+  { name: 'Vite & Webpack', category: 'UI/UX Tools', level: 'Advanced' },
+  { name: 'Git & CI/CD', category: 'UI/UX Tools', level: 'Advanced' },
 ];
 
 export interface Contact {
