@@ -30,10 +30,52 @@
   .subtitle {
     color: var(--text-muted);
     font-size: clamp(1.1rem, 2vw, 1.5rem);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  .actionsLink {
-    text-decoration: none;
+  .techBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+
+    .badge {
+      background: var(--surface-subtle, rgba(255, 255, 255, 0.05));
+      border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+      color: var(--text-main);
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      backdrop-filter: blur(8px);
+      transition: all 0.2s ease;
+
+      &:hover {
+        border-color: var(--primary, #6366f1);
+        transform: translateY(-1px);
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .actionsLink {
+      text-decoration: none;
+    }
+
+    .secondaryLink {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--primary, #6366f1);
+      }
+    }
   }
 }
