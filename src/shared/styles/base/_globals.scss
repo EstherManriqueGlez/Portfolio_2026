@@ -8,16 +8,7 @@ html {
 body {
   background-color: var(--bg-primary);
   color: var(--text-main);
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    sans-serif;
+  font-family: var(--font-sans);
   overflow-x: hidden;
 }
 
@@ -25,6 +16,11 @@ section {
   padding: clamp(5rem, 8vw, 10rem) clamp(1.25rem, 5vw, 4rem) 0;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .sectionTitle {

@@ -13,8 +13,8 @@ export const Experience = () => (
             {exp.role} @ {exp.company}
           </h3>
           <p>
-            Liderando el desarrollo frontend y optimización de arquitectura de componentes
-            escalables de alto rendimiento.
+            Leading frontend development and optimizing component architecture for scalable,
+            high-performance web applications.
           </p>
         </Card>
       ))}
