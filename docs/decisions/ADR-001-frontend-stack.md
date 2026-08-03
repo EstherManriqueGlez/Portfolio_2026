@@ -2,71 +2,34 @@
 
 - **Status:** Accepted
 - **Date:** 2026-07-09
-- **Decision Owners:** Portfolio_2026 Engineering Team
-
----
 
 ## Context
 
-Portfolio_2026 requires a modern frontend foundation that supports maintainability, scalability, performance, and a high-quality developer experience.
-
-The technology stack should allow the project to evolve while keeping the architecture simple and aligned with current professional frontend development practices.
-
----
+A single-page portfolio with no backend. Needs a modern, maintainable foundation with a smooth developer experience and strong type safety.
 
 ## Decision
 
-We will use the following frontend technology stack:
-
-- **Framework:** React
-- **Language:** TypeScript
-- **Build Tool:** Vite
-- **Compiler:** SWC
-- **Styling Approach:** SCSS Modules
-- **Routing:** React Router
+- **Framework:** React 19
+- **Language:** TypeScript (strict, `verbatimModuleSyntax`, `erasableSyntaxOnly`)
+- **Build tool:** Vite 8 + SWC (`@vitejs/plugin-react-swc`)
+- **Styling:** SCSS Modules with CSS custom-property design tokens
+- **Routing:** none — the site is a single page with anchor-scroll navigation
+- **Animation:** framer-motion
+- **Icons:** lucide-react, react-icons
 
 Development tooling:
 
-- ESLint
-- Prettier
-- Husky
-- lint-staged
-
----
+- ESLint (typescript-eslint, react-refresh), Prettier, Sass
+- Husky + lint-staged (pre-commit: eslint --fix + prettier)
 
 ## Alternatives Considered
 
-### Next.js
-
-Not selected for the initial version because the project does not currently require server-side rendering, backend capabilities, or a full-stack framework.
-
-### Plain JavaScript
-
-Not selected because TypeScript provides stronger type safety, better maintainability, and improved developer experience.
-
-### CSS-in-JS Solutions
-
-Not selected because SCSS Modules provide local scoping, predictable output, and simplicity for this project.
-
----
+- **Next.js**: not needed — no SSR, backend, or full-stack requirements.
+- **Plain JavaScript**: rejected for type safety and maintainability.
+- **CSS-in-JS**: rejected in favor of SCSS Modules for local scoping and predictable output.
 
 ## Consequences
 
-### Positive
-
-- Strong type safety.
-- Fast development environment.
-- Clear project structure.
-- Good maintainability.
-- Easy future evolution.
-
-### Negative
-
-- Additional tooling configuration is required.
-- Developers need familiarity with TypeScript and the selected ecosystem.
-
----
-
-## Notes
-
-This decision can be revisited if project requirements change significantly.
+- Strong type safety and fast dev environment.
+- Requires familiarity with TS and the Vite/tooling ecosystem.
+- No router is a deliberate non-goal; navigation stays as anchor scrolling.
