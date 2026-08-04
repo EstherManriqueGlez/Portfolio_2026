@@ -21,5 +21,5 @@ A visitor can answer in ~90s: Who is this engineer? What do they do? Why are the
 
 ## Non-Goals
 
-- No router, no backend, no tests, no multi-page, no CMS.
+- No router, no backend, no multi-page, no CMS.
 - No decorative motion; animation must support communication.
