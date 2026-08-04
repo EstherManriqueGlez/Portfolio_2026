@@ -10,7 +10,7 @@ The portfolio itself is the first project being evaluated.
 
 ## 2. Product Vision
 
-Value must land within the first 90 seconds. A recruiter, engineering manager, or fellow frontend engineer should quickly understand who I am, what I specialize in, how I think, and the quality of my work. Content is progressively revealed through a curated narrative, creating curiosity before detail.
+Value must land within the first 90 seconds. A recruiter, engineering manager, or fellow frontend engineer should quickly understand who I am, how I think, what I specialize in, and the quality of my work. Content is progressively revealed through a curated narrative, creating curiosity before detail.
 
 ## 3. Target Audience
 
