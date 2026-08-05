@@ -29,10 +29,10 @@ export const Hero = () => {
         <h1 className={styles.title}>
           Building <GradientText>intelligent interfaces</GradientText> with purpose.
         </h1>
-        <p className={styles.subtitle}>Frontend Software Engineer</p>
 
         <div className={styles.techBadges}>
-          <span className={styles.badge}>React & Next.js</span>
+          <span className={styles.badge}>Angular</span>
+          <span className={styles.badge}>React</span>
           <span className={styles.badge}>TypeScript</span>
           <span className={styles.badge}>Design Systems</span>
           <span className={styles.badge}>Architecture</span>
