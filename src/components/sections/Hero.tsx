@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/Button/Button';
 
 import { GradientText } from '@/components/ui/GradientText/GradientText';
-import logo_pos from '@/assets/images/logo_pos1.png';
-import logo_neg from '@/assets/images/logo_neg1.png';
+import logo_pos from '@/assets/images/logo_pos.png';
+import logo_neg from '@/assets/images/logo_neg.png';
 
 import styles from './Hero.module.scss';
 import { useTheme } from '@/context/useTheme';
