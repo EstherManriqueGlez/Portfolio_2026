@@ -1,5 +1,6 @@
 import { Card } from '@/components/ui/Card/Card';
 import styles from './About.module.scss';
+import { GradientText } from '../ui/GradientText/GradientText';
 
 export const About = () => (
   <section id="about" className={styles.about}>
@@ -18,8 +19,8 @@ export const About = () => (
         technology meets people, and that's what makes it meaningful.
       </p>
 
-      <p className={styles.contentCard}>
-        Think with intention. Design with clarity. Build with purpose.
+      <p className={`${styles.contentCard} ${styles.test}`}>
+        <GradientText>Think with intention. Design with clarity. Build with purpose.</GradientText>
       </p>
     </Card>
   </section>
