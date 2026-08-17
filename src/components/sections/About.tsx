@@ -19,7 +19,7 @@ export const About = () => (
         technology meets people, and that's what makes it meaningful.
       </p>
 
-      <p className={`${styles.contentCard} ${styles.test}`}>
+      <p className={`${styles.contentCard} ${styles.contentCardGradientText}`}>
         <GradientText>Think with intention. Design with clarity. Build with purpose.</GradientText>
       </p>
     </Card>
