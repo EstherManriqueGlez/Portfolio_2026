@@ -3,6 +3,7 @@
 
 .skills {
   text-align: center;
+
   .title {
     @include text-gradient;
     font-size: clamp(2rem, 3.5vw, 2.75rem);
@@ -60,6 +61,7 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+
   .skillCard {
     @include glass-effect(12px);
     cursor: default;
@@ -75,11 +77,13 @@
     min-width: 0;
     overflow-wrap: break-word;
     word-break: break-word;
+
     &:hover {
       border-color: var(--color-accent);
       transform: translateY(-6px);
     }
   }
+
   .category {
     color: var(--text-muted);
     font-family: var(--font-sans);
@@ -89,11 +93,13 @@
     text-transform: uppercase;
     margin-bottom: 0.3rem;
   }
+
   .name {
     margin: 0.4rem 0;
     font-size: 1.25rem;
     font-weight: 600;
   }
+
   .level {
     @include text-gradient;
     font-family: var(--font-mono);
