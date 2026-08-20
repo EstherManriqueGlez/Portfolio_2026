@@ -7,15 +7,22 @@ export const Experience = () => (
     <h2 className={styles.title}>Experience</h2>
     <div className={styles.timeline}>
       {experience.map((exp) => (
-        <Card key={`${exp.role}-${exp.company}`} className={styles.item}>
+        <Card
+          key={`${exp.role}-${exp.company}-${exp.projectName}-${exp.projectDesc}`}
+          className={styles.item}
+        >
           <span className={styles.period}>{exp.period}</span>
           <h3>
-            {exp.role} @ {exp.company}
+            {exp.company} @ {exp.role}
           </h3>
-          <p>
-            Leading frontend development and optimizing component architecture for scalable,
-            high-performance web applications.
-          </p>
+          <h4>Project: {exp.projectName}</h4>
+          <p>{exp.projectDesc}</p>
+          <ul>
+            {exp.description.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <h5>{exp.technologies}</h5>
         </Card>
       ))}
     </div>
