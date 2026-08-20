@@ -93,8 +93,56 @@ export const projects = [
   },
 ];
 
-export const experience = [
-  { role: 'Frontend Engineer', company: 'TechCorp', period: '2023 - Present' },
+export interface ExperienceItem {
+  role: string;
+  company: string;
+  period: string;
+  projectName: string;
+  projectDesc: string;
+  description: string[];
+  technologies: string;
+}
+
+export const experience: ExperienceItem[] = [
+  {
+    role: 'Software Engineer',
+    company: 'EPAM Systems',
+    period: 'May 2024 - Feb 2026',
+    projectName: '',
+    projectDesc: '',
+    description: [
+      'Leading frontend development and optimizing component architecture for scalable, high-performance web applications.',
+      'Collaborating with cross-functional global teams to deliver robust user experiences and pixel-perfect UIs.',
+      'Promoting engineering best practices, code quality standards, and modern TypeScript workflows.',
+    ],
+    technologies: '',
+  },
+  {
+    role: 'Junior Software Engineer',
+    company: 'EPAM Systems',
+    period: 'Dic 2021 - Mar 2022',
+    projectName: '',
+    projectDesc: 'EPM-RDMX Program',
+    description: [
+      'Engineered responsive web applications utilizing React, TypeScript, and modern CSS architectures.',
+      'Improved core web vitals and overall site performance by 30% through code splitting and memoization.',
+    ],
+    technologies: '',
+  },
+  {
+    role: 'Front End Developer Jr.',
+    company: 'Spiralis, S.A. de C.V.',
+    period: 'Nov 2020 - Mar 2021',
+    projectName: 'Bravo - Gaming',
+    projectDesc:
+      'Started my professional career in software development, contributing to the frontend of a web platform for the administration and organization of video game tournaments.',
+    description: [
+      'Developed user interfaces using Vue.js and JavaScript',
+      'Integrated REST APIs to enable dynamic data management and interaction with the application.',
+      'Collaborated within an Agile/Scrum team, actively participating in ceremonies and the software development process.',
+    ],
+    technologies: 'Vue.js · JavaScript · REST APIs · Scrum',
+  },
 ];
 
 export const skills = [
