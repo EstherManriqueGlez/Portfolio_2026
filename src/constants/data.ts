@@ -93,55 +93,152 @@ export const projects = [
   },
 ];
 
-export interface ExperienceItem {
-  role: string;
-  company: string;
+export interface ExperienceStage {
   period: string;
+  role: string;
   projectName: string;
-  projectDesc: string;
-  description: string[];
-  technologies: string;
+  projectDesc?: string;
+  description?: string[];
+  technologies: string[];
+}
+
+export interface ExperienceItem {
+  company: string;
+  totalPeriod: string;
+  currentRole: string;
+  stages: ExperienceStage[];
+  // For single role companies (like Spiralis)
+  role?: string;
+  period?: string;
+  projectName?: string;
+  projectDesc?: string;
+  description?: string[];
+  technologies?: string[];
 }
 
 export const experience: ExperienceItem[] = [
   {
-    role: 'Software Engineer',
-    company: 'EPAM Systems',
-    period: 'May 2024 - Feb 2026',
-    projectName: '',
-    projectDesc: '',
-    description: [
-      'Leading frontend development and optimizing component architecture for scalable, high-performance web applications.',
-      'Collaborating with cross-functional global teams to deliver robust user experiences and pixel-perfect UIs.',
-      'Promoting engineering best practices, code quality standards, and modern TypeScript workflows.',
-    ],
-    technologies: '',
+    company: 'Independent Frontend Development',
+    totalPeriod: 'Apr 2026 — Present',
+    currentRole: '',
+    stages: [],
+    role: 'Independent Frontend Developer',
+    projectName: 'Freelance and personal projects',
+    projectDesc:
+      'Focused on frontend development, continuous learning, and exploring AI-assisted development, AI-enhanced engineering workflows and emerging technologies.',
+    description: [],
+    technologies: ['React', 'Angular', 'TypeScript', 'Javascript', 'Vite', 'SCSS', 'Design System'],
   },
   {
-    role: 'Junior Software Engineer',
     company: 'EPAM Systems',
-    period: 'Dic 2021 - Mar 2022',
-    projectName: '',
-    projectDesc: 'EPM-RDMX Program',
-    description: [
-      'Engineered responsive web applications utilizing React, TypeScript, and modern CSS architectures.',
-      'Improved core web vitals and overall site performance by 30% through code splitting and memoization.',
+    totalPeriod: 'Dec 2021 — Feb 2026',
+    currentRole: 'Software Engineer',
+    stages: [
+      {
+        period: 'Mar 2024 — Dec 2025',
+        role: 'Software Engineer',
+        projectName: 'Client Project - Design System & UI Framework Adoption',
+        projectDesc:
+          "Worked as a Frontend Software Engineer on the adoption of a new enterprise Design System across products built on a proprietary Angular-based UI framework. \n The initiative focused on modernizing existing UI components and creating new ones to align with the Design System's visual language, design tokens, accessibility requirements, and interaction patterns.",
+
+        description: [
+          "Developed and updated Angular UI components to align with the new Design System's visual and functional guidelines.",
+          'Translated Figma designs into reusable, production-ready components, working closely with the product designer to ensure visual and functional consistency.',
+          'Worked with design tokens to maintain consistency across visual properties and component states.',
+          'Applied accessibility as a core requirement throughout development, ensuring components and interfaces complied with applicable WCAG 2.1 standards.',
+          'Performed accessibility validation using automated auditing tools and screen reader testing.',
+          'Paid close attention to visual, functional, and accessibility details to deliver consistent and inclusive user experiences.',
+          'Wrote and maintained unit tests for frontend components.',
+          'Ensured consistency across UI components while maintaining existing functionality and compatibility.',
+          'Participated in code reviews, contributing to code quality and consistency.',
+          'Worked closely with designers and other engineers throughout the development lifecycle.',
+          'Worked with TypeScript, Angular, RxJS, and SCSS in a component-based frontend architecture.',
+          'Collaborated with the team to deliver consistent, accessible, and maintainable UI experiences.',
+        ],
+        technologies: [
+          'Angular',
+          'TypeScript',
+          'RxJS',
+          'SCSS',
+          'Design Tokens',
+          'Figma',
+          'APIs',
+          'Testing',
+          'Azure DevOps',
+          'WCAG 2.1',
+        ],
+      },
+      {
+        period: 'Aug 2022 — Mar 2024',
+        role: 'Junior Software Engineer',
+        projectName: 'Client Project',
+        projectDesc:
+          'Joined a client-facing engineering team working on an enterprise application supporting sustainability programs, including data collection, tracking, and reporting.',
+        description: [
+          'Developed user interfaces and application functionality using Angular, Dart, HTML, and SCSS.',
+          'Built and maintained web pages and frontend features based on assigned requirements and technical guidelines.',
+          'Worked closely with the Lead Frontend Developer to align implementation approaches and maintain consistency across the application.',
+          'Developed and maintained unit tests for frontend components.',
+          'Worked with Reactive Forms to implement interactive and data-driven user interfaces.',
+          'Participated in Agile/Scrum practices, including sprint planning, backlog refinement, and daily stand-ups.',
+          'Collaborated with the team to achieve sprint goals and deliver assigned features within the development cycle.',
+        ],
+        technologies: [
+          'Angular',
+          'Dart',
+          'SCSS',
+          'Reactive Forms',
+          'Google Cloud SQL',
+          'Google BigQuery',
+        ],
+      },
+      {
+        period: 'May 2022 - Jul 2022',
+        role: 'Frontend Developer',
+        projectName: 'GO2-GTH Training Program',
+        projectDesc:
+          'Selected for a second technical training program focused on Angular and TypeScript, developing tools for different Google technology verticals',
+        description: [
+          'Developed the frontend of a web application using Angular and TypeScript.',
+          'Built the application UI using Angular Material components.',
+          'Integrated a simple CRUD Product API for backend data operations.',
+          'Used Node.js and json-server to support the application backend.',
+          'Managed source code using Git and GitHub.',
+        ],
+        technologies: ['Angular', 'TypeScript', 'Angular Material', 'Git', 'GitHub'],
+      },
+      {
+        period: 'Dec 2021 — Mar 2022',
+        role: 'Full Stack Developer',
+        projectName: 'EPM-RDMX Program - PET-Project | MERN Stack Application',
+        projectDesc:
+          'Joined EPAM through an intensive software engineering training program focused on React and JavaScript.',
+        description: [
+          'Developed a full-stack web application as part of the training program.',
+          'Built frontend features using React and JavaScript.',
+          'Worked with backend functionality to understand the fundamentals of full-stack application development.',
+          'Software development and version control best practices were applied throughout the project.',
+          'Engineered responsive web applications utilizing modern component architectures.',
+        ],
+        technologies: ['React', 'JavaScript', 'MERN Stack', 'Git'],
+      },
     ],
-    technologies: '',
   },
   {
-    role: 'Front End Developer Jr.',
     company: 'Spiralis, S.A. de C.V.',
-    period: 'Nov 2020 - Mar 2021',
+    totalPeriod: 'Nov 2020 — Mar 2021',
+    currentRole: 'Front End Developer Jr.',
+    stages: [],
+    role: 'Front End Developer Jr.',
     projectName: 'Bravo - Gaming',
     projectDesc:
       'Started my professional career in software development, contributing to the frontend of a web platform for the administration and organization of video game tournaments.',
     description: [
-      'Developed user interfaces using Vue.js and JavaScript',
+      'Developed user interfaces using Vue.js and JavaScript.',
       'Integrated REST APIs to enable dynamic data management and interaction with the application.',
       'Collaborated within an Agile/Scrum team, actively participating in ceremonies and the software development process.',
     ],
-    technologies: 'Vue.js · JavaScript · REST APIs · Scrum',
+    technologies: ['Vue.js', 'JavaScript', 'REST APIs', 'Scrum'],
   },
 ];
 
