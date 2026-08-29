@@ -20,7 +20,7 @@ export const navLinks = [
 
 export const projects = [
   {
-    title: 'Fintech Dashboard',
+    title: 'Avaluos de Bienes Inmuebles',
     tech: ['React', 'TypeScript', 'SCSS'],
     desc: 'Real-time financial management system.',
     challenge: 'High latency in data updates across the platform.',
@@ -28,7 +28,7 @@ export const projects = [
     result: '40% reduction in page load time.',
     image:
       'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-    link: '#',
+    link: 'https://esthermanriqueglez.github.io/avbinme/',
     github: '#',
   },
   {
