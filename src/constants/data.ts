@@ -20,40 +20,64 @@ export const navLinks = [
 
 export const projects = [
   {
-    title: 'Avaluos de Bienes Inmuebles',
-    tech: ['React', 'TypeScript', 'SCSS'],
-    desc: 'Real-time financial management system.',
-    challenge: 'High latency in data updates across the platform.',
-    solution: 'Implemented WebSockets for real-time data synchronization.',
-    result: '40% reduction in page load time.',
-    image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+    title: 'AVBINME — Corporate Valuation & Appraisal Platform',
+    tech: ['React 19', 'TypeScript', 'Vite', 'Sass/SCSS', 'React Router'],
+    desc: 'Legacy React modernization and frontend rebuild for a premium B2B corporate platform.',
+    challenge:
+      'Modernize a legacy React application while communicating technical rigor, legal validity, and institutional authority to corporate and professional audiences.',
+    solution:
+      'Rebuilt the frontend with React, TypeScript and Vite, introducing a modern component architecture, responsive design system, multi-page routing, lazy loading, and conversion-focused CTAs.',
+    result:
+      'A responsive, accessible, and maintainable platform with a premium institutional identity, deployed to GitHub Pages and optimized to guide visitors toward client contact.',
+    image: 'src/assets/images/avbinme.png',
     link: 'https://esthermanriqueglez.github.io/avbinme/',
-    github: '#',
+    github: 'https://github.com/EstherManriqueGlez/avbinme',
   },
   {
-    title: 'E-commerce AI',
-    tech: ['Next.js', 'Framer Motion', 'Tailwind'],
-    desc: 'E-commerce platform with personalized product recommendations.',
-    challenge: 'Low conversion rate on the checkout flow.',
-    solution: 'Redesigned the checkout experience with micro-animations.',
-    result: '15% increase in conversion rate.',
-    image:
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80',
-    link: '#',
-    github: '#',
+    title: 'Harborshine Cleaning — Landing Page',
+    tech: [
+      'HTML',
+      'Tailwind CSS v4',
+      'Vite',
+      'GSAP',
+      'Alpine.js',
+      'Splide',
+      'PhotoSwipe',
+      'Netlify',
+    ],
+    desc: 'Collaborative Project — High-performance landing page for a San Diego residential cleaning company, built with a modular no-framework architecture and interaction-driven UX.',
+    challenge:
+      'Create a fast, visually polished one-page experience that converts visitors into bookings while presenting multiple services, reviews, galleries, and move-out flows without relying on a frontend framework.',
+    solution:
+      'Built a modular architecture with reusable components, GSAP-powered scroll animations, interactive galleries and sliders, responsive layouts, and structured data for local SEO, while keeping the frontend lightweight and performant.',
+    result:
+      'A production-ready, responsive landing page with reusable components, rich interactions, and a lightweight architecture, successfully deployed to Netlify.',
+    image: 'src/assets/images/harborshine.png',
+    link: 'https://harborshine.netlify.app/',
+    github: 'https://github.com/DianyelaMaldonado/harborshine-landing',
   },
   {
-    title: 'Task Management App',
-    tech: ['React', 'TypeScript', 'Node.js'],
-    desc: 'Collaborative task management platform with real-time updates.',
-    challenge: 'Complex state synchronization across multiple users.',
-    solution: 'Built a robust state machine with optimistic updates.',
-    result: 'Seamless multi-user experience with zero data conflicts.',
-    image:
-      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80',
-    link: '#',
-    github: '#',
+    title: 'Mística Web Studio — Digital Presence',
+    tech: [
+      'React 19',
+      'Vite',
+      'Tailwind CSS v4',
+      'GSAP / ScrollTrigger',
+      'Framer Motion',
+      'Custom i18n (EN/ES)',
+      'hCaptcha',
+      'Web3Forms',
+    ],
+    desc: 'Collaborative project — Bilingual, cinematic landing page for a boutique web studio, combining brand strategy, immersive UX, accessibility, and AI-assisted development.',
+    challenge:
+      'Turn a boutique web studio concept into a high-conversion digital experience while supporting bilingual content, WCAG-aware accessibility, and rich motion without compromising performance.',
+    solution:
+      'Collaborated from ideation through implementation, building a React-based experience with custom design tokens, GSAP and Framer Motion interactions, bilingual content, accessible motion preferences, and a production-ready contact flow with hCaptcha and Web3Forms.',
+    result:
+      'A production-ready bilingual digital experience that combines immersive motion, accessible interactions, SEO foundations, and a complete client contact flow into a cohesive brand experience.',
+    image: 'src/assets/images/mistica.png',
+    link: 'https://mistica-web-studio.netlify.app/',
+    github: 'https://github.com/DianyelaMaldonado/Mistica-Web-Studio',
   },
   {
     title: 'Weather Analytics',
