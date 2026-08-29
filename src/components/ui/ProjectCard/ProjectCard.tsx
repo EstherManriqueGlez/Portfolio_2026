@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Code2 } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { Card } from '@/components/ui/Card/Card';
 import type { Project } from '@/constants/data';
@@ -52,9 +52,9 @@ export const ProjectCard = ({ project: p }: ProjectCardProps) => {
               ))}
             </div>
             <div className={styles.links}>
-              <a href={p.github} target="_blank" rel="noreferrer" aria-label="View source code">
+              {/* <a href={p.github} target="_blank" rel="noreferrer" aria-label="View source code">
                 <Code2 size={20} />
-              </a>
+              </a> */}
               <a href={p.github} target="_blank" rel="noreferrer" aria-label="View on GitHub">
                 <FaGithub size={20} />
               </a>
