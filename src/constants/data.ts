@@ -80,16 +80,27 @@ export const projects = [
     github: 'https://github.com/DianyelaMaldonado/Mistica-Web-Studio',
   },
   {
-    title: 'Weather Analytics',
-    tech: ['React', 'D3.js', 'GraphQL'],
-    desc: 'Interactive weather visualization and analytics dashboard.',
-    challenge: 'Rendering large datasets without performance degradation.',
-    solution: 'Implemented virtualized rendering and data aggregation.',
-    result: 'Smooth 60fps rendering with datasets of 100k+ points.',
-    image:
-      'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80',
-    link: '#',
-    github: '#',
+    title: 'Teslo Shop — Cross-Framework E-commerce with Admin Panel',
+    tech: [
+      'React 19',
+      'Angular 19',
+      'TypeScript',
+      'Vite',
+      'TanStack Query',
+      'Zustand',
+      'RxJS Signals',
+      'Tailwind CSS',
+    ],
+    desc: 'Technical build — E-commerce application implemented in both React and Angular, exploring different approaches to state, data, routing, authentication, and component architecture.',
+    challenge:
+      'Build a complete e-commerce experience with product catalog, authentication, protected administration, CRUD operations, and file uploads while maintaining type safety and a scalable frontend architecture.',
+    solution:
+      'Implemented the same application in React and Angular, using TanStack Query and Zustand for server and client state in React, and RxJS Signals with reactive resources and caching in Angular, alongside protected routes, validated forms, and modular architecture.',
+    result:
+      'Two functional implementations of the same e-commerce domain, demonstrating cross-framework frontend architecture and the ability to apply comparable engineering principles across React and Angular.',
+    image: 'src/assets/images/teslo-shop.png',
+    link: 'https://react-teslo-shop-app.netlify.app',
+    github: 'https://github.com/EstherManriqueGlez/react-teslo-shop-app',
   },
   {
     title: 'Social Platform',
@@ -103,18 +114,18 @@ export const projects = [
     link: '#',
     github: '#',
   },
-  {
-    title: 'Design System Library',
-    tech: ['React', 'Storybook', 'SCSS'],
-    desc: 'Modular component library with design token integration.',
-    challenge: 'Maintaining consistency across multiple applications.',
-    solution: 'Built a token-driven architecture with automated visual regression testing.',
-    result: 'Reduced UI development time by 60% across 3 products.',
-    image:
-      'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80',
-    link: '#',
-    github: '#',
-  },
+  // {
+  //   title: 'Design System Library',
+  //   tech: ['React', 'Storybook', 'SCSS'],
+  //   desc: 'Modular component library with design token integration.',
+  //   challenge: 'Maintaining consistency across multiple applications.',
+  //   solution: 'Built a token-driven architecture with automated visual regression testing.',
+  //   result: 'Reduced UI development time by 60% across 3 products.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80',
+  //   link: '#',
+  //   github: '#',
+  // },
 ];
 
 export interface ExperienceStage {
