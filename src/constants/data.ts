@@ -3,6 +3,8 @@ import harborshineImg from '@/assets/images/harborshine.png';
 import misticaImg from '@/assets/images/mistica.png';
 import reactTesloShopImg from '@/assets/images/react-teslo-shop.png';
 import angularTesloShopImg from '@/assets/images/angular-teslo-shop.png';
+import angularGifsAppImg from '@/assets/images/angular-gifs-app.png';
+import reactGifsAppImg from '@/assets/images/react-gifs-app.png';
 import heroesImg from '@/assets/images/heroes.png';
 
 export interface ProjectVariant {
@@ -158,16 +160,67 @@ export const projects = [
     ],
   },
   {
-    title: 'Social Platform',
-    tech: ['Next.js', 'Prisma', 'PostgreSQL'],
-    desc: 'Full-stack social platform with content sharing and messaging.',
-    challenge: 'Scaling real-time messaging for concurrent users.',
-    solution: 'Designed a pub/sub architecture with message queuing.',
-    result: 'Handles 10k+ concurrent connections with <100ms latency.',
-    image:
-      'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80',
-    link: '#',
-    github: '#',
+    title: 'GifsApp — Cross-Framework GIF Search App',
+    badge: 'Learning project',
+    tech: [
+      'React 19',
+      'Angular 19',
+      'TypeScript',
+      'Vite',
+      'Angular Signals',
+      'RxJS',
+      'Tailwind CSS 4',
+      'Axios',
+    ],
+    desc: 'Technical build — the same GIF search domain implemented in React and Angular, exploring different approaches to async state, caching, persistence, and accessible UI.',
+    challenge:
+      'Build a fast, accessible GIF search experience on the Giphy API while exploring how two frameworks approach reactive state, request handling, persistence, and accessibility.',
+    solution:
+      'Implemented two independent apps over the Giphy API: a React app with confirmed search, in-memory caching, stale-response cancellation, and a fully tested accessible flow; and an Angular app with trending and infinite scroll, persistent search history pages, theming, and Signals-based reactive state.',
+    result:
+      'Two production-oriented implementations of the same domain, each reflecting its framework\u2019s conventions for state, data fetching, persistence, and accessibility.',
+    image: reactGifsAppImg,
+    link: 'https://rct-gifs-app.netlify.app/',
+    github: 'https://github.com/EstherManriqueGlez/react-gifs-app',
+    variants: [
+      {
+        id: 'react',
+        label: 'React',
+        tech: ['React 19', 'TypeScript 5.9', 'Vite 7 (SWC)', 'Axios', 'Vitest + Testing Library'],
+        desc: 'Giphy search implemented in React — a fast, accessible experience with confirmed queries, smart caching, and a polished result flow.',
+        challenge:
+          'Build a fast, reliable GIF search against the Giphy API — balancing result states, pagination, and accessibility without per-keystroke requests.',
+        solution:
+          'React 19, TypeScript and Vite, with a custom useGifs hook handling in-memory caching, request deduplication, and stale-response cancellation; confirmed search on Enter, a localStorage history of past queries (max 8) as clickable chips, complete skeleton/empty/error states with retry, pagination with Load more, and an accessible lightbox with copy-URL, focus trap, and Esc handling — backed by 48 unit tests.',
+        result:
+          'A tested, accessible search app with deterministic offline tests, AA-contrast styling, and prefers-reduced-motion support — the "latest query always wins" guard keeps results consistent during rapid searches.',
+        image: reactGifsAppImg,
+        link: 'https://rct-gifs-app.netlify.app/',
+        github: 'https://github.com/EstherManriqueGlez/react-gifs-app',
+      },
+      {
+        id: 'angular',
+        label: 'Angular',
+        tech: [
+          'Angular 19',
+          'TypeScript',
+          'Angular Signals',
+          'RxJS',
+          'Tailwind CSS 4',
+          'Font Awesome',
+        ],
+        desc: 'Giphy search implemented in Angular — trending with infinite scroll, search, persistent history pages, and light/dark theming on reactive Signals state.',
+        challenge:
+          'Build a GIF discovery experience in Angular covering trending and search while keeping state reactive, history persistent, and HTTP failures friendly across a fully responsive layout.',
+        solution:
+          'Angular 19 standalone components with Signals and RxJS for reactive state and HTTP streams; trending with infinite scroll, search with localStorage-backed history in the sidebar plus a page per query, a dark/light toggle that persists and respects the OS preference, skeleton loaders, an HTTP error interceptor that surfaces toast notifications, and a collapsible responsive sidebar.',
+        result:
+          'A polished, responsive Angular app with persistent theming and history, reactive state management, and graceful error feedback — the same domain solved with Angular conventions.',
+        image: angularGifsAppImg,
+        link: 'https://ang-gifs-app.netlify.app/dashboard/trending',
+        github: 'https://github.com/EstherManriqueGlez/gifs-app',
+      },
+    ],
   },
   {
     title: 'Hero Finder - App',
