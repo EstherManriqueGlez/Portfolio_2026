@@ -1,3 +1,23 @@
+import avbinmeImg from '@/assets/images/avbinme.png';
+import harborshineImg from '@/assets/images/harborshine.png';
+import misticaImg from '@/assets/images/mistica.png';
+import reactTesloShopImg from '@/assets/images/react-teslo-shop.png';
+import angularTesloShopImg from '@/assets/images/angular-teslo-shop.png';
+import heroesImg from '@/assets/images/heroes.png';
+
+export interface ProjectVariant {
+  id: string;
+  label: string;
+  tech: string[];
+  desc: string;
+  challenge: string;
+  solution: string;
+  result: string;
+  image?: string;
+  link: string;
+  github: string;
+}
+
 export interface Project {
   title: string;
   tech: string[];
@@ -8,6 +28,8 @@ export interface Project {
   image: string;
   link: string;
   github: string;
+  badge?: string;
+  variants?: ProjectVariant[];
 }
 
 export const navLinks = [
@@ -29,7 +51,7 @@ export const projects = [
       'Rebuilt the frontend with React, TypeScript and Vite, introducing a modern component architecture, responsive design system, multi-page routing, lazy loading, and conversion-focused CTAs.',
     result:
       'A responsive, accessible, and maintainable platform with a premium institutional identity, deployed to GitHub Pages and optimized to guide visitors toward client contact.',
-    image: 'src/assets/images/avbinme.png',
+    image: avbinmeImg,
     link: 'https://esthermanriqueglez.github.io/avbinme/',
     github: 'https://github.com/EstherManriqueGlez/avbinme',
   },
@@ -52,7 +74,7 @@ export const projects = [
       'Built a modular architecture with reusable components, GSAP-powered scroll animations, interactive galleries and sliders, responsive layouts, and structured data for local SEO, while keeping the frontend lightweight and performant.',
     result:
       'A production-ready, responsive landing page with reusable components, rich interactions, and a lightweight architecture, successfully deployed to Netlify.',
-    image: 'src/assets/images/harborshine.png',
+    image: harborshineImg,
     link: 'https://harborshine.netlify.app/',
     github: 'https://github.com/DianyelaMaldonado/harborshine-landing',
   },
@@ -75,12 +97,13 @@ export const projects = [
       'Collaborated from ideation through implementation, building a React-based experience with custom design tokens, GSAP and Framer Motion interactions, bilingual content, accessible motion preferences, and a production-ready contact flow with hCaptcha and Web3Forms.',
     result:
       'A production-ready bilingual digital experience that combines immersive motion, accessible interactions, SEO foundations, and a complete client contact flow into a cohesive brand experience.',
-    image: 'src/assets/images/mistica.png',
+    image: misticaImg,
     link: 'https://mistica-web-studio.netlify.app/',
     github: 'https://github.com/DianyelaMaldonado/Mistica-Web-Studio',
   },
   {
     title: 'Teslo Shop — Cross-Framework E-commerce with Admin Panel',
+    badge: 'Learning project',
     tech: [
       'React 19',
       'Angular 19',
@@ -98,9 +121,41 @@ export const projects = [
       'Implemented the same application in React and Angular, using TanStack Query and Zustand for server and client state in React, and RxJS Signals with reactive resources and caching in Angular, alongside protected routes, validated forms, and modular architecture.',
     result:
       'Two functional implementations of the same e-commerce domain, demonstrating cross-framework frontend architecture and the ability to apply comparable engineering principles across React and Angular.',
-    image: 'src/assets/images/teslo-shop.png',
+    image: reactTesloShopImg,
     link: 'https://react-teslo-shop-app.netlify.app',
     github: 'https://github.com/EstherManriqueGlez/react-teslo-shop-app',
+    variants: [
+      {
+        id: 'react',
+        label: 'React',
+        tech: ['React 19', 'TypeScript', 'Vite', 'TanStack Query', 'Zustand', 'Tailwind CSS'],
+        desc: 'E-commerce storefront and admin panel implemented in React — a hands-on exploration of data fetching, state management, authentication, and scalable component architecture.',
+        challenge:
+          'Build a complete e-commerce experience — catalog, product detail, auth, role-protected admin, CRUD and file uploads — while maintaining type safety and clean architecture.',
+        solution:
+          'React 19, TypeScript and Vite, with TanStack Query for server state and caching, Zustand for UI state, validated forms, protected routes, and a modular typed structure.',
+        result:
+          'A functional implementation demonstrating disciplined state separation, a cached data layer, and reusable type-safe components.',
+        image: reactTesloShopImg,
+        link: 'https://react-teslo-shop-app.netlify.app',
+        github: 'https://github.com/EstherManriqueGlez/react-teslo-shop-app',
+      },
+      {
+        id: 'angular',
+        label: 'Angular',
+        tech: ['Angular 19', 'TypeScript', 'RxJS Signals', 'Tailwind CSS', 'daisyUI', 'Swiper'],
+        desc: 'The same e-commerce domain implemented in Angular — applying Signals, reactive resources, HTTP interceptors, route guards, and standalone architecture.',
+        challenge:
+          'Build a complete e-commerce experience — catalog, product detail, auth, role-protected admin, CRUD and file uploads — while maintaining type safety and clean architecture.',
+        solution:
+          'Angular 19 and TypeScript, with Signals and rxResource for reactive state and caching, JWT auth via interceptors and guards, validated reactive forms, and a modular lazy-loaded structure (Tailwind + daisyUI, Swiper).',
+        result:
+          'A functional Angular implementation of the same domain, matching comparable engineering standards — reactive, typed, and maintainable — under a different framework.',
+        image: angularTesloShopImg,
+        link: 'https://ang-teslo-shop-app.netlify.app',
+        github: 'https://github.com/EstherManriqueGlez/angular-teslo-shop-app',
+      },
+    ],
   },
   {
     title: 'Social Platform',
@@ -121,7 +176,7 @@ export const projects = [
     challenge: 'Maintaining consistency across multiple applications.',
     solution: 'Built a token-driven architecture with automated visual regression testing.',
     result: 'Reduced UI development time by 60% across 3 products.',
-    image: 'src/assets/images/heroes.png',
+    image: heroesImg,
     link: 'https://esthermanriqueglez.github.io/react-heroes-app',
     github: 'https://github.com/EstherManriqueGlez/react-heroes-app',
   },
