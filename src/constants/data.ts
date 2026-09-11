@@ -114,18 +114,17 @@ export const projects = [
     link: '#',
     github: '#',
   },
-  // {
-  //   title: 'Design System Library',
-  //   tech: ['React', 'Storybook', 'SCSS'],
-  //   desc: 'Modular component library with design token integration.',
-  //   challenge: 'Maintaining consistency across multiple applications.',
-  //   solution: 'Built a token-driven architecture with automated visual regression testing.',
-  //   result: 'Reduced UI development time by 60% across 3 products.',
-  //   image:
-  //     'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80',
-  //   link: '#',
-  //   github: '#',
-  // },
+  {
+    title: 'Hero Finder - App',
+    tech: ['React', 'Storybook', 'SCSS'],
+    desc: 'Modular component library with design token integration.',
+    challenge: 'Maintaining consistency across multiple applications.',
+    solution: 'Built a token-driven architecture with automated visual regression testing.',
+    result: 'Reduced UI development time by 60% across 3 products.',
+    image: 'src/assets/images/heroes.png',
+    link: 'https://esthermanriqueglez.github.io/react-heroes-app',
+    github: 'https://github.com/EstherManriqueGlez/react-heroes-app',
+  },
 ];
 
 export interface ExperienceStage {
