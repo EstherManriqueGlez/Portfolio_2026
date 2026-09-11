@@ -217,7 +217,7 @@ export const projects = [
         result:
           'A polished, responsive Angular app with persistent theming and history, reactive state management, and graceful error feedback — the same domain solved with Angular conventions.',
         image: angularGifsAppImg,
-        link: 'https://ang-gifs-app.netlify.app/dashboard/trending',
+        link: 'https://ang-gifs-app.netlify.app/',
         github: 'https://github.com/EstherManriqueGlez/gifs-app',
       },
     ],
@@ -230,7 +230,7 @@ export const projects = [
     solution: 'Built a token-driven architecture with automated visual regression testing.',
     result: 'Reduced UI development time by 60% across 3 products.',
     image: heroesImg,
-    link: 'https://esthermanriqueglez.github.io/react-heroes-app',
+    link: 'https://rct-heroes-app.netlify.app/',
     github: 'https://github.com/EstherManriqueGlez/react-heroes-app',
   },
 ];
