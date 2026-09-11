@@ -223,14 +223,28 @@ export const projects = [
     ],
   },
   {
-    title: 'Hero Finder - App',
-    tech: ['React', 'Storybook', 'SCSS'],
-    desc: 'Modular component library with design token integration.',
-    challenge: 'Maintaining consistency across multiple applications.',
-    solution: 'Built a token-driven architecture with automated visual regression testing.',
-    result: 'Reduced UI development time by 60% across 3 products.',
+    title: 'Superhero Universe — Hero & Villain Catalog',
+    badge: 'Learning project',
+    tech: [
+      'React 19',
+      'TypeScript',
+      'Vite 7',
+      'TanStack Query v5',
+      'React Router 7',
+      'Tailwind CSS v4',
+      'shadcn/ui',
+      'Axios',
+      'Vitest',
+    ],
+    desc: 'Learning build — a React single-page app to discover and manage a catalog of superheroes and villains, consuming an external API and persisting favorites in the browser.',
+    challenge:
+      'Build a full hero catalog with dashboard stats, favorites, debounced search with combined filters, sorting, and a detail page — keeping data fetching, routing, and persisted state consistent and type-safe against an external API.',
+    solution:
+      'React 19, TypeScript and Vite, with TanStack Query and axios for cached server data, React Router (hash) for navigation, a favorites Context persisted in localStorage, debounced search with advanced filters and grid/list views, and a UI layer built on Tailwind CSS v4 and shadcn/ui (Radix primitives).',
+    result:
+      'A responsive, tested SPA with dashboard, favorites, search and detail flows, skeleton and empty states, and a type-safe data layer — deployed to Netlify against a Render-hosted API.',
     image: heroesImg,
-    link: 'https://rct-heroes-app.netlify.app/',
+    link: 'https://superhero-universe.netlify.app/',
     github: 'https://github.com/EstherManriqueGlez/react-heroes-app',
   },
 ];
