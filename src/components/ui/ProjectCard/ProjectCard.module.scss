@@ -107,17 +107,7 @@
 }
 
 .tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-
-  span {
-    background: var(--bg-secondary);
-    border-radius: 4px;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    padding: 0.2rem 0.4rem;
-  }
+  @include tech-tags;
 }
 
 .links {
