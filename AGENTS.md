@@ -1,6 +1,6 @@
 # AGENTS.md
 
-React 19 + TS + Vite (SWC) single-page portfolio. No backend, router, or tests.
+React 19 + TS + Vite (SWC) single-page portfolio. No backend or router.
 
 ## Purpose
 
@@ -11,7 +11,8 @@ Portfolio of **Esther Manrique González (Frontend Software Engineer)**. It is t
 - `npm run dev` / `preview` — dev/preview server
 - `npm run build` — `tsc -b && vite build`; type errors fail
 - `npm run lint` / `format:check` — ESLint / Prettier
-- Verify: `npm run lint` then `npm run build` (no tests). Pre-commit runs lint-staged automatically.
+- `npm run test` / `test:watch` / `test:coverage` — Vitest + Testing Library (jsdom)
+- Verify: `npm run lint` then `npm run test` then `npm run build`. Pre-commit runs lint-staged automatically.
 
 ## Architecture
 
