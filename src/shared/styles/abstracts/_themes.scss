@@ -20,8 +20,9 @@
   --wave-secondary: #00f5ff;
   --color-accent: #00f5ff;
   --color-tech: #009dff;
-  --color-cat-architecture: #c084fc;
+  --color-cat-architecture: #00c2ff;
   --color-cat-ux: #00f5ff;
+  --color-cat-soft: #c084fc;
   --color-react: #61dafb;
   --color-react-on: #030014;
   --color-angular: #dd0031;
@@ -30,7 +31,7 @@
   --nav-active: var(--color-accent);
   --text-accent: var(--color-accent);
   --link: var(--text-accent);
-  --link-visited: var(--color-cat-architecture);
+  --link-visited: var(--color-cat-soft);
   --btn-grad: linear-gradient(135deg, #d9006e 0%, #9d4edd 50%, #007f8f 100%);
   --btn-text: #ffffff;
 }
@@ -52,8 +53,9 @@
   --wave-secondary: #3de1f2;
   --color-accent: #3de1f2;
   --color-tech: #0055ff;
-  --color-cat-architecture: #7c3aed;
+  --color-cat-architecture: #006c9e;
   --color-cat-ux: #0e7490;
+  --color-cat-soft: #7c3aed;
   --color-react: #61dafb;
   --color-react-on: #030014;
   --color-angular: #dd0031;
@@ -62,7 +64,7 @@
   --nav-active: #0e7490;
   --text-accent: #0e7490;
   --link: var(--text-accent);
-  --link-visited: var(--color-cat-architecture);
+  --link-visited: var(--color-cat-soft);
   --btn-grad: var(--color-primary-grad);
   --btn-text: var(--text-main);
 }

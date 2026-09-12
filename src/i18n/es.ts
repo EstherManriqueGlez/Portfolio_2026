@@ -382,9 +382,8 @@ export const es: Content = {
   },
 
   skills: {
-    title: 'Stack técnico y experiencia',
-    subtitle:
-      'Capacidades y tecnologías refinadas en proyectos reales construidos con estándares de producción.',
+    title: 'Habilidades y experiencia',
+    subtitle: 'El stack con el que construyo y cómo abordo el trabajo.',
     filterAria: 'Filtrar habilidades por área',
     all: 'Todos',
     tech: 'Tecnología',
@@ -392,8 +391,51 @@ export const es: Content = {
       'Core Frontend': 'Core Frontend',
       Architecture: 'Arquitectura',
       'UI/UX Tools': 'Herramientas UI/UX',
+      'How I Work': 'Cómo trabajo',
     },
     cards: [
+      {
+        id: 'user-centered-engineering',
+        kind: 'capability',
+        title: 'Ingeniería centrada en el usuario',
+        category: 'How I Work',
+        desc: 'Las decisiones técnicas se guían por las personas que usan el producto, equilibrando usabilidad y accesibilidad.',
+      },
+      {
+        id: 'engineering-craftsmanship',
+        kind: 'capability',
+        title: 'Excelencia en ingeniería',
+        category: 'How I Work',
+        desc: 'Las pequeñas decisiones técnicas—de la arquitectura de componentes al pulido visual—dan forma a productos que se sienten robustos, mantenibles y escalables.',
+      },
+      {
+        id: 'continuous-growth',
+        kind: 'capability',
+        title: 'Crecimiento continuo',
+        category: 'How I Work',
+        desc: 'Exploro de forma continua nuevas tecnologías mientras refuerzo los fundamentos de ingeniería que siguen siendo valiosos con el tiempo.',
+      },
+      {
+        id: 'thoughtful-problem-solving',
+        kind: 'capability',
+        title: 'Resolución de problemas con criterio',
+        category: 'How I Work',
+        desc: 'Prefiero entender el problema antes de elegir la solución, priorizando la calidad a largo plazo por encima de los parches rápidos.',
+      },
+      {
+        id: 'collaborative-engineering',
+        kind: 'capability',
+        title: 'Ingeniería colaborativa',
+        category: 'How I Work',
+        desc: 'Creo que las mejores soluciones surgen con propiedad compartida, comunicación abierta y una colaboración estrecha entre ingeniería, diseño y producto.',
+      },
+      {
+        id: 'quality-by-design',
+        kind: 'capability',
+        title: 'Calidad desde el diseño',
+        category: 'How I Work',
+        desc: 'La calidad se diseña desde el inicio: accesibilidad, testing y rendimiento forman parte del proceso, no son un apunte final.',
+      },
       { id: 'react', kind: 'tech', title: 'React 19', category: 'Core Frontend' },
       { id: 'angular', kind: 'tech', title: 'Angular 19', category: 'Core Frontend' },
       { id: 'typescript', kind: 'tech', title: 'TypeScript', category: 'Core Frontend' },
