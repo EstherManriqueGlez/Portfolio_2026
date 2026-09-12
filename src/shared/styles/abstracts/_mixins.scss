@@ -22,7 +22,7 @@
 }
 
 @mixin text-gradient {
-  background: var(--color-primary-grad);
+  background: var(--color-text-grad, var(--color-primary-grad));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
