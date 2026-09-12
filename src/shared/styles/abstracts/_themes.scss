@@ -5,7 +5,7 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
   --color-primary-grad: linear-gradient(135deg, #ff007f 0%, #9d4edd 50%, #00f5ff 100%);
-  --color-text-grad: linear-gradient(90deg, #ffffff 0%, #f1f5f9 50%, #00f5ff 100%);
+  --color-text-grad: var(--color-primary-grad);
   --bg-primary: #030014;
   --bg-secondary: #0a081a;
   --text-main: #f8fafc;
@@ -35,7 +35,7 @@
 
 [data-theme='light'] {
   --color-primary-grad: linear-gradient(135deg, #ff7da1 0%, #9c76ff 50%, #3de1f2 100%);
-  --color-text-grad: linear-gradient(90deg, #120f26 0%, #38305c 50%, #9c76ff 100%);
+  --color-text-grad: linear-gradient(90deg, #c2185b 0%, #7c3aed 50%, #0e7490 100%);
   --bg-primary: #faf8fc;
   --bg-secondary: #ffffff;
   --text-main: #120f26;
