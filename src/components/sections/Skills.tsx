@@ -7,18 +7,21 @@ import styles from './Skills.module.scss';
 
 const categories: ('All' | SkillCategory)[] = [
   'All',
+  'How I Work',
   'Core Frontend',
   'Architecture',
   'UI/UX Tools',
 ];
 
 const categoryColor: Record<SkillCategory, string> = {
+  'How I Work': 'var(--color-cat-soft)',
   'Core Frontend': 'var(--color-tech)',
   Architecture: 'var(--color-cat-architecture)',
   'UI/UX Tools': 'var(--color-cat-ux)',
 };
 
 const tabColor: Partial<Record<(typeof categories)[number], string>> = {
+  'How I Work': 'var(--color-cat-soft)',
   'Core Frontend': 'var(--color-tech)',
   Architecture: 'var(--color-cat-architecture)',
   'UI/UX Tools': 'var(--color-cat-ux)',

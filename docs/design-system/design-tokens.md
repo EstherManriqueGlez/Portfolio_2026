@@ -16,8 +16,9 @@ Dark is the default (`:root, [data-theme='dark']`); `[data-theme='light']` overr
 | `--shadow-color`           | `rgba(0,0,0,.6)`                                  | `rgba(18,15,38,.06)`                              |
 | `--color-accent`           | `#00f5ff`                                         | `#3de1f2`                                         |
 | `--color-tech`             | `#009dff`                                         | `#0055ff`                                         |
-| `--color-cat-architecture` | `#c084fc`                                         | `#7c3aed`                                         |
+| `--color-cat-architecture` | `#00c2ff`                                         | `#006c9e`                                         |
 | `--color-cat-ux`           | `#00f5ff`                                         | `#0e7490`                                         |
+| `--color-cat-soft`         | `#c084fc`                                         | `#7c3aed`                                         |
 | `--color-react`            | `#61dafb`                                         | `#61dafb`                                         |
 | `--color-react-on`         | `#030014`                                         | `#030014`                                         |
 | `--color-angular`          | `#dd0031`                                         | `#dd0031`                                         |
@@ -25,7 +26,7 @@ Dark is the default (`:root, [data-theme='dark']`); `[data-theme='light']` overr
 | `--color-primary-grad`     | `linear-gradient(135deg,#ff007f,#9d4edd,#00f5ff)` | `linear-gradient(135deg,#ff7da1,#9c76ff,#3de1f2)` |
 | `--color-text-grad`        | `var(--color-primary-grad)`                       | `linear-gradient(90deg,#c2185b,#7c3aed,#0e7490)`  |
 | `--link`                   | `var(--text-accent)` (`#00f5ff`)                  | `var(--text-accent)` (`#0e7490`)                  |
-| `--link-visited`           | `var(--color-cat-architecture)` (`#c084fc`)       | `var(--color-cat-architecture)` (`#7c3aed`)       |
+| `--link-visited`           | `var(--color-cat-soft)` (`#c084fc`)               | `var(--color-cat-soft)` (`#7c3aed`)               |
 
 Glass / wave:
 

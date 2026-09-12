@@ -53,7 +53,7 @@ export interface ExperienceItem {
   technologies?: string[];
 }
 
-export type SkillCategory = 'Core Frontend' | 'Architecture' | 'UI/UX Tools';
+export type SkillCategory = 'Core Frontend' | 'Architecture' | 'UI/UX Tools' | 'How I Work';
 
 export type SkillKind = 'capability' | 'tech';
 
