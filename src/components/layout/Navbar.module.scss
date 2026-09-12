@@ -48,7 +48,7 @@
     transition: color 0.3s ease;
 
     &::after {
-      background: var(--color-accent);
+      background: var(--nav-active);
       border-radius: 2px;
       bottom: -6px;
       content: '';
@@ -65,7 +65,7 @@
     }
 
     &.active {
-      color: var(--color-accent);
+      color: var(--nav-active);
 
       &::after {
         opacity: 1;
@@ -146,5 +146,16 @@
 @media (min-width: map.get($breakpoints, 'md')) {
   .hamburger {
     display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar {
+    transition: none;
+  }
+
+  .navLink,
+  .navLink::after {
+    transition: none;
   }
 }

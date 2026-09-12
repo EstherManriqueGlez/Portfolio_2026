@@ -27,3 +27,13 @@
     border-radius: 8px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}

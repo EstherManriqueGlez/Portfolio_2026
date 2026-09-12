@@ -54,14 +54,18 @@
   padding: 3px;
 
   .variantBtn {
+    align-items: center;
     background: transparent;
     border: none;
     border-radius: 9999px;
     color: var(--text-muted);
     cursor: pointer;
+    display: inline-flex;
     font-family: var(--font-mono);
     font-size: 0.72rem;
+    justify-content: center;
     line-height: 1.1;
+    min-height: 40px;
     padding: 0.5rem 1rem;
     transition:
       background-color 0.2s ease,
@@ -125,7 +129,7 @@
     min-height: 44px;
 
     &:hover {
-      color: var(--color-accent);
+      color: var(--text-accent);
       opacity: 1;
     }
 
@@ -139,5 +143,12 @@
   .linkLabel {
     font-size: 0.85rem;
     font-weight: 500;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .links a,
+  .variantBtn {
+    transition: none;
   }
 }

@@ -1,4 +1,5 @@
 import { Component, type ErrorInfo, type ReactNode } from 'react';
+import styles from './ErrorBoundary.module.scss';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -27,9 +28,10 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
     if (this.state.hasError) {
       return (
         this.props.fallback ?? (
-          <p style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-muted)' }}>
-            Something went wrong. Try refreshing the page.
-          </p>
+          <div role="alert" className={styles.fallback}>
+            <h2>Something went wrong</h2>
+            <p>This section failed to load. Try refreshing the page.</p>
+          </div>
         )
       );
     }
