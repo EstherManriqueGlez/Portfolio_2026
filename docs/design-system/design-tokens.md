@@ -18,6 +18,10 @@ Dark is the default (`:root, [data-theme='dark']`); `[data-theme='light']` overr
 | `--color-tech`             | `#009dff`                                         | `#0055ff`                                         |
 | `--color-cat-architecture` | `#c084fc`                                         | `#7c3aed`                                         |
 | `--color-cat-ux`           | `#00f5ff`                                         | `#0e7490`                                         |
+| `--color-react`            | `#61dafb`                                         | `#61dafb`                                         |
+| `--color-react-on`         | `#030014`                                         | `#030014`                                         |
+| `--color-angular`          | `#dd0031`                                         | `#dd0031`                                         |
+| `--color-angular-on`       | `#ffffff`                                         | `#ffffff`                                         |
 | `--color-primary-grad`     | `linear-gradient(135deg,#ff007f,#9d4edd,#00f5ff)` | `linear-gradient(135deg,#ff7da1,#9c76ff,#3de1f2)` |
 | `--color-text-grad`        | `linear-gradient(90deg,#fff,#f1f5f9,#00f5ff)`     | `linear-gradient(90deg,#120f26,#38305c,#9c76ff)`  |
 
