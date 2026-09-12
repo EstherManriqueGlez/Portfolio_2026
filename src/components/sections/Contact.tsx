@@ -3,7 +3,7 @@ import { Mail, Phone } from 'lucide-react';
 import { LuGithub, LuLinkedin } from 'react-icons/lu';
 
 import { Card } from '@/components/ui/Card/Card';
-import { contacts } from '@/constants/data';
+import { useLanguage } from '@/context/useLanguage';
 import styles from './Contact.module.scss';
 import type React from 'react';
 
@@ -15,13 +15,16 @@ const iconMap: Record<string, React.ReactNode> = {
 } as const;
 
 export const Contact = () => {
+  const { content } = useLanguage();
+  const { title } = content.contact;
+
   return (
     <section id="contact" className={styles.contact}>
-      <h2 className={styles.title}>Let's Connect</h2>
+      <h2 className={styles.title}>{title}</h2>
       <div className={styles.grid}>
-        {contacts.map((c) => (
+        {content.contacts.map((c) => (
           <motion.div
-            key={c.label}
+            key={c.value}
             whileHover={{ y: -10 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
