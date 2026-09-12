@@ -29,6 +29,8 @@
   --focus-ring: var(--color-accent);
   --nav-active: var(--color-accent);
   --text-accent: var(--color-accent);
+  --link: var(--text-accent);
+  --link-visited: var(--color-cat-architecture);
   --btn-grad: linear-gradient(135deg, #d9006e 0%, #9d4edd 50%, #007f8f 100%);
   --btn-text: #ffffff;
 }
@@ -59,6 +61,8 @@
   --focus-ring: #0e7490;
   --nav-active: #0e7490;
   --text-accent: #0e7490;
+  --link: var(--text-accent);
+  --link-visited: var(--color-cat-architecture);
   --btn-grad: var(--color-primary-grad);
   --btn-text: var(--text-main);
 }

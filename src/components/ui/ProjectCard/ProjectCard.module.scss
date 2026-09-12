@@ -120,21 +120,30 @@
 }
 
 .links {
-  color: var(--text-main);
   display: flex;
   gap: 0.8rem;
 
   a {
     align-items: center;
+    color: var(--link);
     display: flex;
     gap: 0.5rem;
-    opacity: 0.85;
-    transition: opacity 0.3s ease;
     min-height: 44px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:link,
+    &:visited {
+      color: var(--link);
+    }
+
+    &:visited {
+      color: var(--link-visited);
+    }
 
     &:hover {
-      color: var(--text-accent);
-      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     &:focus-visible {
