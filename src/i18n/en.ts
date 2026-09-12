@@ -382,9 +382,8 @@ export const en: Content = {
   },
 
   skills: {
-    title: 'Tech Stack & Expertise',
-    subtitle:
-      'Capabilities and technologies refined through real projects built with production-grade care.',
+    title: 'Skills & Expertise',
+    subtitle: 'The tech stack I ship with and how I approach the work.',
     filterAria: 'Filter skills by area',
     all: 'All',
     tech: 'Tech',
@@ -392,8 +391,51 @@ export const en: Content = {
       'Core Frontend': 'Core Frontend',
       Architecture: 'Architecture',
       'UI/UX Tools': 'UI/UX Tools',
+      'How I Work': 'How I Work',
     },
     cards: [
+      {
+        id: 'user-centered-engineering',
+        kind: 'capability',
+        title: 'User-Centered Engineering',
+        category: 'How I Work',
+        desc: 'Technical decisions are guided by the people using the product, balancing usability and accessibility.',
+      },
+      {
+        id: 'engineering-craftsmanship',
+        kind: 'capability',
+        title: 'Engineering Craftsmanship',
+        category: 'How I Work',
+        desc: 'Small technical decisions—from component architecture to visual polish—shape products that feel reliable, maintainable and scalable.',
+      },
+      {
+        id: 'continuous-growth',
+        kind: 'capability',
+        title: 'Continuous Growth',
+        category: 'How I Work',
+        desc: 'I continuously explore new technologies while strengthening the engineering fundamentals that remain valuable over time.',
+      },
+      {
+        id: 'thoughtful-problem-solving',
+        kind: 'capability',
+        title: 'Thoughtful Problem Solving',
+        category: 'How I Work',
+        desc: 'I prefer understanding the problem before choosing a solution, prioritizing long-term quality over quick fixes.',
+      },
+      {
+        id: 'collaborative-engineering',
+        kind: 'capability',
+        title: 'Collaborative Engineering',
+        category: 'How I Work',
+        desc: 'I believe the best solutions emerge through shared ownership, open communication, and close collaboration across engineering, design and product.',
+      },
+      {
+        id: 'quality-by-design',
+        kind: 'capability',
+        title: 'Quality by Design',
+        category: 'How I Work',
+        desc: 'Quality is designed in from the start—accessibility, testing, and performance are part of the process, not afterthoughts.',
+      },
       { id: 'react', kind: 'tech', title: 'React 19', category: 'Core Frontend' },
       { id: 'angular', kind: 'tech', title: 'Angular 19', category: 'Core Frontend' },
       { id: 'typescript', kind: 'tech', title: 'TypeScript', category: 'Core Frontend' },
