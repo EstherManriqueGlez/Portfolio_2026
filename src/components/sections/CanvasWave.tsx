@@ -149,5 +149,5 @@ export const CanvasWave = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className={styles.canvas} />;
+  return <canvas ref={canvasRef} className={styles.canvas} aria-hidden="true" />;
 };

@@ -11,6 +11,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const navRef = useRef<HTMLElement>(null);
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const firstMenuLinkRef = useRef<HTMLAnchorElement>(null);
   const { theme, toggleTheme } = useTheme();
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -44,8 +46,19 @@ export const Navbar = () => {
 
   useEffect(() => {
     if (!isOpen) return;
+    const frame = requestAnimationFrame(() => {
+      firstMenuLinkRef.current?.focus();
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setIsOpen(false);
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+        hamburgerRef.current?.focus();
+      }
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
@@ -68,9 +81,10 @@ export const Navbar = () => {
       </a>
 
       <div id="primary-menu" className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
-        {navLinks.map((link) => (
+        {navLinks.map((link, linkIndex) => (
           <a
             key={link.name}
+            ref={linkIndex === 0 ? firstMenuLinkRef : undefined}
             href={link.href}
             onClick={() => setIsOpen(false)}
             className={`${styles.navLink}${activeSection === link.href ? ` ${styles.active}` : ''}`}
@@ -84,18 +98,23 @@ export const Navbar = () => {
           onClick={toggleTheme}
           aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
         >
-          {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+          {theme === 'dark' ? (
+            <Sun aria-hidden="true" size={20} />
+          ) : (
+            <Moon aria-hidden="true" size={20} />
+          )}
         </button>
       </div>
 
       <button
+        ref={hamburgerRef}
         className={styles.hamburger}
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
         aria-expanded={isOpen}
         aria-controls="primary-menu"
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+        {isOpen ? <X aria-hidden="true" size={24} /> : <Menu aria-hidden="true" size={24} />}
       </button>
     </nav>
   );

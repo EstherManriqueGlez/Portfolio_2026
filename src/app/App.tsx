@@ -13,11 +13,14 @@ import { Contact } from '@/components/sections/Contact';
 export const App = () => {
   return (
     <ThemeProvider>
+      <a href="#main" className="skip-link">
+        Skip to main content
+      </a>
       <ErrorBoundary>
         <CanvasWave />
       </ErrorBoundary>
       <Navbar />
-      <main>
+      <main id="main" tabIndex={-1}>
         <ErrorBoundary>
           <Hero />
         </ErrorBoundary>

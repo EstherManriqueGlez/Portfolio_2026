@@ -40,3 +40,25 @@ img {
   background: var(--color-accent);
   color: var(--bg-primary);
 }
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+
+  &:focus,
+  &:focus-visible {
+    top: 0;
+    outline: 2px solid var(--focus-ring);
+    outline-offset: -2px;
+  }
+}
