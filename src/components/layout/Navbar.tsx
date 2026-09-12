@@ -4,8 +4,8 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 
 import styles from './Navbar.module.scss';
 import { useTheme } from '@/context/useTheme';
+import { useLanguage } from '@/context/useLanguage';
 import logo from '@/assets/images/logo.png';
-import { navLinks } from '@/constants/data';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +14,8 @@ export const Navbar = () => {
   const hamburgerRef = useRef<HTMLButtonElement>(null);
   const firstMenuLinkRef = useRef<HTMLAnchorElement>(null);
   const { theme, toggleTheme } = useTheme();
+  const { lang, setLang, content } = useLanguage();
+  const { navLinks, ui } = content;
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -42,7 +44,7 @@ export const Navbar = () => {
 
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
-  }, []);
+  }, [navLinks]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -74,10 +76,10 @@ export const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav ref={navRef} aria-label="Main" className={styles.navbar}>
+    <nav ref={navRef} aria-label={ui.navbar.label} className={styles.navbar}>
       <motion.div className={styles.progressBar} style={{ scaleX }} />
       <a href="#" onClick={() => setIsOpen(false)}>
-        <img src={logo} alt="Manrique logo" className={styles.logoImg} />
+        <img src={logo} alt={ui.navbar.logoAlt} className={styles.logoImg} />
       </a>
 
       <div id="primary-menu" className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
@@ -93,10 +95,28 @@ export const Navbar = () => {
             {link.name}
           </a>
         ))}
+        <div className={styles.langToggle} role="group" aria-label={ui.navbar.langGroup}>
+          <button
+            type="button"
+            className={`${styles.langBtn}${lang === 'en' ? ` ${styles.active}` : ''}`}
+            aria-pressed={lang === 'en'}
+            onClick={() => setLang('en')}
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            className={`${styles.langBtn}${lang === 'es' ? ` ${styles.active}` : ''}`}
+            aria-pressed={lang === 'es'}
+            onClick={() => setLang('es')}
+          >
+            ES
+          </button>
+        </div>
         <button
           className={styles.themeToggle}
           onClick={toggleTheme}
-          aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+          aria-label={theme === 'dark' ? ui.navbar.switchToLight : ui.navbar.switchToDark}
         >
           {theme === 'dark' ? (
             <Sun aria-hidden="true" size={20} />
@@ -110,7 +130,7 @@ export const Navbar = () => {
         ref={hamburgerRef}
         className={styles.hamburger}
         onClick={() => setIsOpen(!isOpen)}
-        aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+        aria-label={isOpen ? ui.navbar.closeMenu : ui.navbar.openMenu}
         aria-expanded={isOpen}
         aria-controls="primary-menu"
       >

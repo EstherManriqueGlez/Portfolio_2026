@@ -1,5 +1,7 @@
 import { MotionConfig } from 'framer-motion';
 import { ThemeProvider } from '@/context/ThemeProvider';
+import { LanguageProvider } from '@/context/LanguageProvider';
+import { useLanguage } from '@/context/useLanguage';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
@@ -11,39 +13,49 @@ import { Projects } from '@/components/sections/Projects';
 import { Skills } from '@/components/sections/Skills';
 import { Contact } from '@/components/sections/Contact';
 
+const AppContent = () => {
+  const { content } = useLanguage();
+
+  return (
+    <MotionConfig reducedMotion="user">
+      <a href="#main" className="skip-link">
+        {content.ui.skipLink}
+      </a>
+      <ErrorBoundary>
+        <CanvasWave />
+      </ErrorBoundary>
+      <Navbar />
+      <main id="main" tabIndex={-1}>
+        <ErrorBoundary>
+          <Hero />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <About />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Experience />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Projects />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Skills />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Contact />
+        </ErrorBoundary>
+      </main>
+      <Footer />
+    </MotionConfig>
+  );
+};
+
 export const App = () => {
   return (
     <ThemeProvider>
-      <MotionConfig reducedMotion="user">
-        <a href="#main" className="skip-link">
-          Skip to main content
-        </a>
-        <ErrorBoundary>
-          <CanvasWave />
-        </ErrorBoundary>
-        <Navbar />
-        <main id="main" tabIndex={-1}>
-          <ErrorBoundary>
-            <Hero />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <About />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <Experience />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <Projects />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <Skills />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <Contact />
-          </ErrorBoundary>
-        </main>
-        <Footer />
-      </MotionConfig>
+      <LanguageProvider>
+        <AppContent />
+      </LanguageProvider>
     </ThemeProvider>
   );
 };
