@@ -29,11 +29,17 @@ export const Contact = () => {
               <div className={styles.icon}>{iconMap[c.icon]}</div>
               <h3>{c.label}</h3>
               {c.href ? (
-                <a href={c.href} target="_blank" rel="noreferrer" className={styles.link}>
+                <a
+                  href={c.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.link}
+                  title={c.value}
+                >
                   {c.value}
                 </a>
               ) : (
-                <p>{c.value}</p>
+                <p title={c.value}>{c.value}</p>
               )}
             </Card>
           </motion.div>

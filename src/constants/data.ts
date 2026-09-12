@@ -496,20 +496,20 @@ export const contacts: Contact[] = [
   {
     icon: 'Mail' as const,
     label: 'Email',
-    value: 'esther@example.com',
-    href: 'mailto:esther@example.com',
+    value: 'dev.publicidadweb@gmail.com',
+    href: 'mailto:dev.publicidadweb@gmail.com',
   },
-  { icon: 'Phone' as const, label: 'Phone', value: '+34 600 000 000', href: 'tel:+34600000000' },
+  { icon: 'Phone' as const, label: 'Phone', value: '+52 55 2852 9983', href: 'tel:+5528529983' },
   {
     icon: 'LuLinkedin' as const,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/esther',
-    href: 'https://linkedin.com/in/esther',
+    value: 'linkedin.com/in/esther-manrique',
+    href: 'https://www.linkedin.com/in/esther-manrique/',
   },
   {
     icon: 'LuGithub' as const,
     label: 'GitHub',
-    value: 'github.com/esther',
-    href: 'https://github.com/esther',
+    value: 'github.com/EstherManriqueGlez',
+    href: 'https://github.com/EstherManriqueGlez',
   },
 ];
