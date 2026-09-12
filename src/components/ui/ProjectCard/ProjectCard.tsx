@@ -51,7 +51,7 @@ export const ProjectCard = ({ project: p }: ProjectCardProps) => {
           <motion.img
             key={activeVariant?.id ?? 'default'}
             src={imgError ? FALLBACK_IMAGE : image}
-            alt={p.title}
+            alt={`Screenshot of ${p.title}`}
             className={styles.image}
             loading="lazy"
             onError={handleImgError}
@@ -94,13 +94,16 @@ export const ProjectCard = ({ project: p }: ProjectCardProps) => {
           <p className={styles.desc}>{desc}</p>
           <div className={styles.details}>
             <p>
-              <strong>C:</strong> {challenge}
+              <strong>Challenge: </strong>
+              {challenge}
             </p>
             <p>
-              <strong>S:</strong> {solution}
+              <strong>Solution: </strong>
+              {solution}
             </p>
             <p>
-              <strong>R:</strong> {result}
+              <strong>Result: </strong>
+              {result}
             </p>
           </div>
           <div className={styles.footer}>

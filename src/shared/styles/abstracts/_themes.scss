@@ -27,6 +27,8 @@
   --color-angular: #dd0031;
   --color-angular-on: #ffffff;
   --focus-ring: var(--color-accent);
+  --nav-active: var(--color-accent);
+  --text-accent: var(--color-accent);
   --btn-grad: linear-gradient(135deg, #d9006e 0%, #9d4edd 50%, #007f8f 100%);
   --btn-text: #ffffff;
 }
@@ -55,6 +57,8 @@
   --color-angular: #dd0031;
   --color-angular-on: #ffffff;
   --focus-ring: #0e7490;
+  --nav-active: #0e7490;
+  --text-accent: #0e7490;
   --btn-grad: var(--color-primary-grad);
   --btn-text: var(--text-main);
 }

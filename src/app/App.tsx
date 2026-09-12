@@ -1,3 +1,4 @@
+import { MotionConfig } from 'framer-motion';
 import { ThemeProvider } from '@/context/ThemeProvider';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -13,34 +14,36 @@ import { Contact } from '@/components/sections/Contact';
 export const App = () => {
   return (
     <ThemeProvider>
-      <a href="#main" className="skip-link">
-        Skip to main content
-      </a>
-      <ErrorBoundary>
-        <CanvasWave />
-      </ErrorBoundary>
-      <Navbar />
-      <main id="main" tabIndex={-1}>
+      <MotionConfig reducedMotion="user">
+        <a href="#main" className="skip-link">
+          Skip to main content
+        </a>
         <ErrorBoundary>
-          <Hero />
+          <CanvasWave />
         </ErrorBoundary>
-        <ErrorBoundary>
-          <About />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Experience />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Projects />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Skills />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Contact />
-        </ErrorBoundary>
-      </main>
-      <Footer />
+        <Navbar />
+        <main id="main" tabIndex={-1}>
+          <ErrorBoundary>
+            <Hero />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <About />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Experience />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Projects />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Skills />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Contact />
+          </ErrorBoundary>
+        </main>
+        <Footer />
+      </MotionConfig>
     </ThemeProvider>
   );
 };

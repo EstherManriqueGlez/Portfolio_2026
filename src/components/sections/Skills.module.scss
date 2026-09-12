@@ -61,7 +61,7 @@
 
       &.activeColored {
         background: var(--bg-secondary);
-        background: color-mix(in srgb, var(--tab-color) 15%, transparent);
+        background: color-mix(in srgb, var(--tab-color) 8%, transparent);
         color: var(--tab-color);
         border-color: var(--tab-color);
       }
