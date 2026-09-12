@@ -23,7 +23,7 @@ Dark is the default (`:root, [data-theme='dark']`); `[data-theme='light']` overr
 | `--color-angular`          | `#dd0031`                                         | `#dd0031`                                         |
 | `--color-angular-on`       | `#ffffff`                                         | `#ffffff`                                         |
 | `--color-primary-grad`     | `linear-gradient(135deg,#ff007f,#9d4edd,#00f5ff)` | `linear-gradient(135deg,#ff7da1,#9c76ff,#3de1f2)` |
-| `--color-text-grad`        | `linear-gradient(90deg,#fff,#f1f5f9,#00f5ff)`     | `linear-gradient(90deg,#120f26,#38305c,#9c76ff)`  |
+| `--color-text-grad`        | `var(--color-primary-grad)`                       | `linear-gradient(90deg,#c2185b,#7c3aed,#0e7490)`  |
 
 Glass / wave:
 
