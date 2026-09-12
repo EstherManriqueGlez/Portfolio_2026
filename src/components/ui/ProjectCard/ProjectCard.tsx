@@ -124,9 +124,11 @@ export const ProjectCard = ({ project: p }: ProjectCardProps) => {
               </a> */}
               <a href={github} target="_blank" rel="noreferrer" aria-label={sourceLabel}>
                 <FaGithub size={20} />
+                <span className={styles.linkLabel}>GitHub</span>
               </a>
               <a href={link} target="_blank" rel="noreferrer" aria-label={liveLabel}>
                 <ExternalLink size={20} />
+                <span className={styles.linkLabel}>Live Demo</span>
               </a>
             </div>
           </div>
