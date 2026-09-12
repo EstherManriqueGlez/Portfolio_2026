@@ -44,8 +44,15 @@
       transition: color 0.2s ease;
 
       &:hover {
-        color: var(--primary, #6366f1);
+        color: var(--text-accent);
       }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .logoImg,
+    .secondaryLink {
+      transition: none;
     }
   }
 }

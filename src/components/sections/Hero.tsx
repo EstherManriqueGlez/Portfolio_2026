@@ -22,7 +22,7 @@ export const Hero = () => {
         <div>
           <img
             src={theme === 'dark' ? logo_neg : logo_pos}
-            alt="Manrique logo"
+            alt="Esther Manrique González"
             className={styles.logoImg}
           />
         </div>
