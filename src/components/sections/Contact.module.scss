@@ -71,7 +71,7 @@
 
     .link {
       font-size: 0.95rem;
-      color: var(--text-accent);
+      color: var(--link);
       text-decoration: none;
       margin-top: auto;
       overflow-wrap: break-word;
@@ -80,7 +80,16 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      transition: opacity 0.2s ease;
+      transition: color 0.2s ease;
+
+      &:link,
+      &:visited {
+        color: var(--link);
+      }
+
+      &:visited {
+        color: var(--link-visited);
+      }
 
       &:hover {
         text-decoration: underline;
