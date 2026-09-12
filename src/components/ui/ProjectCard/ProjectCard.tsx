@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import type { CSSProperties } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
@@ -9,6 +10,11 @@ import styles from './ProjectCard.module.scss';
 interface ProjectCardProps {
   project: Project;
 }
+
+const FRAMEWORK_COLOR: Record<string, { bg: string; fg: string }> = {
+  react: { bg: 'var(--color-react)', fg: 'var(--color-react-on)' },
+  angular: { bg: 'var(--color-angular)', fg: 'var(--color-angular-on)' },
+};
 
 const FALLBACK_IMAGE =
   'data:image/svg+xml,' +
@@ -67,6 +73,14 @@ export const ProjectCard = ({ project: p }: ProjectCardProps) => {
                       key={v.id}
                       type="button"
                       className={`${styles.variantBtn} ${activeVariant?.id === v.id ? styles.active : ''}`}
+                      style={
+                        FRAMEWORK_COLOR[v.id]
+                          ? ({
+                              '--var-bg': FRAMEWORK_COLOR[v.id].bg,
+                              '--var-fg': FRAMEWORK_COLOR[v.id].fg,
+                            } as CSSProperties)
+                          : undefined
+                      }
                       aria-pressed={activeVariant?.id === v.id}
                       onClick={() => setActiveId(v.id)}
                     >
