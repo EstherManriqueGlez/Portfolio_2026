@@ -12,7 +12,7 @@ export const Hero = () => {
   const { theme } = useTheme();
 
   return (
-    <section className={styles.hero}>
+    <section id="home" className={styles.hero}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

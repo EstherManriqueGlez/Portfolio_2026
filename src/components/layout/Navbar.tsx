@@ -24,11 +24,14 @@ export const Navbar = () => {
       .map((link) => document.querySelector<HTMLElement>(link.href))
       .filter((section): section is HTMLElement => section !== null);
 
+    const hero = document.getElementById('home');
+    if (hero) sections.push(hero);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
+            setActiveSection(entry.target.id === 'home' ? '' : `#${entry.target.id}`);
           }
         });
       },
