@@ -31,9 +31,9 @@ export const Hero = () => {
         </h1>
 
         <div className={styles.actions}>
-          <a href="#projects" className={styles.actionsLink}>
-            <Button>View my Work</Button>
-          </a>
+          <Button as="a" href="#projects">
+            View my Work
+          </Button>
           <a href="#contact" className={styles.secondaryLink}>
             Let's Talk
           </a>

@@ -8,10 +8,10 @@ import styles from './Contact.module.scss';
 import type React from 'react';
 
 const iconMap: Record<string, React.ReactNode> = {
-  Mail: <Mail />,
-  Phone: <Phone />,
-  LuLinkedin: <LuLinkedin />,
-  LuGithub: <LuGithub />,
+  Mail: <Mail aria-hidden="true" />,
+  Phone: <Phone aria-hidden="true" />,
+  LuLinkedin: <LuLinkedin aria-hidden="true" />,
+  LuGithub: <LuGithub aria-hidden="true" />,
 } as const;
 
 export const Contact = () => {
@@ -32,7 +32,7 @@ export const Contact = () => {
                 <a
                   href={c.href}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className={styles.link}
                   title={c.value}
                 >

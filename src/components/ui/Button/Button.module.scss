@@ -1,11 +1,17 @@
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.75rem 1.75rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 8px;
   border: none;
-  background: var(--color-primary-grad);
-  color: #fff;
+  background: var(--btn-grad, var(--color-primary-grad));
+  color: var(--btn-text, #fff);
   cursor: pointer;
+  text-decoration: none;
   transition:
     transform 0.2s ease,
     opacity 0.2s ease;
@@ -13,5 +19,11 @@
   &:hover {
     opacity: 0.9;
     transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+    border-radius: 8px;
   }
 }
