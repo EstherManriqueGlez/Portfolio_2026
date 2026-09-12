@@ -398,16 +398,91 @@ export const experience: ExperienceItem[] = [
   },
 ];
 
-export const skills = [
-  { name: 'React / Next.js', category: 'Core Frontend', level: 'Expert' },
-  { name: 'TypeScript', category: 'Core Frontend', level: 'Expert' },
-  { name: 'SASS / SCSS / Tailwind', category: 'Core Frontend', level: 'Expert' },
-  { name: 'Design Systems', category: 'Architecture', level: 'Advanced' },
-  { name: 'State Management', category: 'Architecture', level: 'Advanced' },
-  { name: 'Performance Opt.', category: 'Architecture', level: 'Advanced' },
-  { name: 'Framer Motion', category: 'UI/UX Tools', level: 'Advanced' },
-  { name: 'Vite & Webpack', category: 'UI/UX Tools', level: 'Advanced' },
-  { name: 'Git & CI/CD', category: 'UI/UX Tools', level: 'Advanced' },
+export type SkillCategory = 'Core Frontend' | 'Architecture' | 'UI/UX Tools';
+
+export type SkillKind = 'capability' | 'tech';
+
+export interface SkillCard {
+  id: string;
+  kind: SkillKind;
+  title: string;
+  category: SkillCategory;
+  desc?: string;
+}
+
+export const skillCards: SkillCard[] = [
+  { id: 'react', kind: 'tech', title: 'React 19', category: 'Core Frontend' },
+  { id: 'angular', kind: 'tech', title: 'Angular 19', category: 'Core Frontend' },
+  { id: 'typescript', kind: 'tech', title: 'TypeScript', category: 'Core Frontend' },
+  { id: 'javascript', kind: 'tech', title: 'JavaScript', category: 'Core Frontend' },
+  { id: 'html5', kind: 'tech', title: 'HTML5', category: 'Core Frontend' },
+  { id: 'scss', kind: 'tech', title: 'SCSS / CSS Modules', category: 'Core Frontend' },
+  { id: 'tailwind', kind: 'tech', title: 'Tailwind CSS v4', category: 'Core Frontend' },
+  {
+    id: 'frontend-architecture',
+    kind: 'capability',
+    title: 'Frontend Architecture',
+    category: 'Architecture',
+    desc: 'Modular, type-safe foundations behind production builds in React and Angular.',
+  },
+  {
+    id: 'reusable-components',
+    kind: 'capability',
+    title: 'Reusable Components',
+    category: 'Architecture',
+    desc: 'From Figma to production-ready, design-system-aligned components.',
+  },
+  {
+    id: 'state-management',
+    kind: 'capability',
+    title: 'State Management',
+    category: 'Architecture',
+    desc: 'Server and client state separated with TanStack Query, Zustand and Signals.',
+  },
+  {
+    id: 'api-integration',
+    kind: 'capability',
+    title: 'API Integration',
+    category: 'Architecture',
+    desc: 'Typed data layers with caching, interceptors and graceful HTTP error handling.',
+  },
+  {
+    id: 'performance',
+    kind: 'capability',
+    title: 'Performance Optimization',
+    category: 'Architecture',
+    desc: 'Caching, lazy loading and stale-response cancellation for fast, consistent UIs.',
+  },
+  {
+    id: 'accessibility',
+    kind: 'capability',
+    title: 'Accessibility',
+    category: 'Architecture',
+    desc: 'WCAG 2.1 applied to components, focus management and screen-reader validated flows.',
+  },
+  {
+    id: 'responsive-ui',
+    kind: 'capability',
+    title: 'Responsive UI Development',
+    category: 'UI/UX Tools',
+    desc: 'Mobile-first layouts and collapsible navigation across feature-rich app UIs.',
+  },
+  {
+    id: 'ai-assisted',
+    kind: 'capability',
+    title: 'AI-Assisted Development',
+    category: 'UI/UX Tools',
+    desc: 'AI-augmented workflows paired with rigorous review, testing and ownership.',
+  },
+  { id: 'vite', kind: 'tech', title: 'Vite & SWC', category: 'UI/UX Tools' },
+  { id: 'framer-motion', kind: 'tech', title: 'Framer Motion', category: 'UI/UX Tools' },
+  {
+    id: 'testing',
+    kind: 'tech',
+    title: 'Testing — Vitest & Testing Library',
+    category: 'UI/UX Tools',
+  },
+  { id: 'git', kind: 'tech', title: 'Git & CI/CD', category: 'UI/UX Tools' },
 ];
 
 export interface Contact {
