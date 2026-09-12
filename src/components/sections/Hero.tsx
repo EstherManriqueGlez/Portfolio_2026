@@ -30,14 +30,6 @@ export const Hero = () => {
           Building <GradientText>intelligent interfaces</GradientText> with purpose.
         </h1>
 
-        <div className={styles.techBadges}>
-          <span className={styles.badge}>Angular</span>
-          <span className={styles.badge}>React</span>
-          <span className={styles.badge}>TypeScript</span>
-          <span className={styles.badge}>Design Systems</span>
-          <span className={styles.badge}>Architecture</span>
-        </div>
-
         <div className={styles.actions}>
           <a href="#projects" className={styles.actionsLink}>
             <Button>View my Work</Button>
