@@ -75,6 +75,11 @@ export const Navbar = () => {
     return () => document.removeEventListener('pointerdown', onPointerDown);
   }, [isOpen]);
 
+  const closeMenu = () => {
+    setIsOpen(false);
+    hamburgerRef.current?.focus();
+  };
+
   return (
     <nav ref={navRef} aria-label={ui.navbar.label} className={styles.navbar}>
       <motion.div className={styles.progressBar} style={{ scaleX }} />
@@ -100,7 +105,10 @@ export const Navbar = () => {
             type="button"
             className={`${styles.langBtn}${lang === 'en' ? ` ${styles.active}` : ''}`}
             aria-pressed={lang === 'en'}
-            onClick={() => setLang('en')}
+            onClick={() => {
+              setLang('en');
+              closeMenu();
+            }}
           >
             EN
           </button>
@@ -108,14 +116,20 @@ export const Navbar = () => {
             type="button"
             className={`${styles.langBtn}${lang === 'es' ? ` ${styles.active}` : ''}`}
             aria-pressed={lang === 'es'}
-            onClick={() => setLang('es')}
+            onClick={() => {
+              setLang('es');
+              closeMenu();
+            }}
           >
             ES
           </button>
         </div>
         <button
           className={styles.themeToggle}
-          onClick={toggleTheme}
+          onClick={() => {
+            toggleTheme();
+            closeMenu();
+          }}
           aria-label={theme === 'dark' ? ui.navbar.switchToLight : ui.navbar.switchToDark}
         >
           {theme === 'dark' ? (
