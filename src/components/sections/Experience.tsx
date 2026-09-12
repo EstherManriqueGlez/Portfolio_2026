@@ -22,7 +22,7 @@ export const Experience = () => (
                 {exp.stages.map((stage, idx) => (
                   <div key={idx} className={styles.innerStage}>
                     <span className={styles.innerPeriod}>{stage.period}</span>
-                    <div className={styles.innerRole}>{stage.role}</div>
+                    <h4 className={styles.innerRole}>{stage.role}</h4>
                     {stage.projectName && (
                       <div className={styles.innerProject}>{stage.projectName}</div>
                     )}
@@ -46,7 +46,7 @@ export const Experience = () => (
               </div>
             ) : (
               <div className={styles.singleStage}>
-                <div className={styles.innerRole}>{exp.role}</div>
+                <h4 className={styles.innerRole}>{exp.role}</h4>
                 {exp.projectName && <div className={styles.innerProject}>{exp.projectName}</div>}
                 {exp.projectDesc && <p>{exp.projectDesc}</p>}
                 {exp.description && exp.description.length > 0 && (

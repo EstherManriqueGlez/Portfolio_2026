@@ -26,6 +26,9 @@
   --color-react-on: #030014;
   --color-angular: #dd0031;
   --color-angular-on: #ffffff;
+  --focus-ring: var(--color-accent);
+  --btn-grad: linear-gradient(135deg, #d9006e 0%, #9d4edd 50%, #007f8f 100%);
+  --btn-text: #ffffff;
 }
 
 [data-theme='light'] {
@@ -51,4 +54,7 @@
   --color-react-on: #030014;
   --color-angular: #dd0031;
   --color-angular-on: #ffffff;
+  --focus-ring: #0e7490;
+  --btn-grad: var(--color-primary-grad);
+  --btn-text: var(--text-main);
 }
