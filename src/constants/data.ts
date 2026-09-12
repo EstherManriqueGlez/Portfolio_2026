@@ -497,19 +497,19 @@ export const contacts: Contact[] = [
     icon: 'Mail' as const,
     label: 'Email',
     value: 'dev.publicidadweb@gmail.com',
-    href: 'dev.publicidadweb@gmail.com',
+    href: 'mailto:dev.publicidadweb@gmail.com',
   },
   { icon: 'Phone' as const, label: 'Phone', value: '+52 55 2852 9983', href: 'tel:+5528529983' },
   {
     icon: 'LuLinkedin' as const,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/esther',
+    value: 'linkedin.com/in/esther-manrique',
     href: 'https://www.linkedin.com/in/esther-manrique/',
   },
   {
     icon: 'LuGithub' as const,
     label: 'GitHub',
-    value: 'https://github.com/EstherManriqueGlez',
+    value: 'github.com/EstherManriqueGlez',
     href: 'https://github.com/EstherManriqueGlez',
   },
 ];
