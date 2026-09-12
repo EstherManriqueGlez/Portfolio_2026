@@ -1,18 +1,20 @@
 import { ProjectCard } from '@/components/ui/ProjectCard/ProjectCard';
-import { projects } from '@/constants/data';
+import { useLanguage } from '@/context/useLanguage';
 import styles from './Projects.module.scss';
 
-export const Projects = () => (
-  <section id="projects" className={styles.projects}>
-    <h2 className={styles.title}>Selected Projects</h2>
-    <p className={styles.subtitle}>
-      Production-ready applications demonstrating technical complexity, architecture, and measurable
-      impact.
-    </p>
-    <div className={styles.grid}>
-      {projects.map((p) => (
-        <ProjectCard key={p.title} project={p} />
-      ))}
-    </div>
-  </section>
-);
+export const Projects = () => {
+  const { content } = useLanguage();
+  const { title, subtitle, items } = content.projects;
+
+  return (
+    <section id="projects" className={styles.projects}>
+      <h2 className={styles.title}>{title}</h2>
+      <p className={styles.subtitle}>{subtitle}</p>
+      <div className={styles.grid}>
+        {items.map((p) => (
+          <ProjectCard key={p.github} project={p} />
+        ))}
+      </div>
+    </section>
+  );
+};

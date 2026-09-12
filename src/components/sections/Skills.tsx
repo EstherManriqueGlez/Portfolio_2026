@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import type { CSSProperties } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { skillCards } from '@/constants/data';
 import type { SkillCategory } from '@/constants/data';
+import { useLanguage } from '@/context/useLanguage';
 import styles from './Skills.module.scss';
 
 const categories: ('All' | SkillCategory)[] = [
@@ -27,22 +27,19 @@ const tabColor: Partial<Record<(typeof categories)[number], string>> = {
 const viewportOnce = { once: true, amount: 0.15 };
 
 export const Skills = () => {
+  const { content } = useLanguage();
+  const { title, subtitle, filterAria, all, tech, categoryLabels, cards } = content.skills;
   const [activeCategory, setActiveCategory] = useState<(typeof categories)[number]>('All');
 
   const filteredCards =
-    activeCategory === 'All'
-      ? skillCards
-      : skillCards.filter((card) => card.category === activeCategory);
+    activeCategory === 'All' ? cards : cards.filter((card) => card.category === activeCategory);
 
   return (
     <section id="skills" className={styles.skills}>
-      <h2 className={styles.title}>Tech Stack & Expertise</h2>
-      <p className={styles.subtitle}>
-        Capabilities and technologies refined through real projects built with production-grade
-        care.
-      </p>
+      <h2 className={styles.title}>{title}</h2>
+      <p className={styles.subtitle}>{subtitle}</p>
 
-      <div className={styles.filterTabs} role="group" aria-label="Filter skills by area">
+      <div className={styles.filterTabs} role="group" aria-label={filterAria}>
         {categories.map((category) => (
           <button
             key={category}
@@ -55,7 +52,7 @@ export const Skills = () => {
             aria-pressed={activeCategory === category}
             onClick={() => setActiveCategory(category)}
           >
-            {category}
+            {category === 'All' ? all : categoryLabels[category]}
           </button>
         ))}
       </div>
@@ -75,7 +72,7 @@ export const Skills = () => {
                 className={styles.skillCard}
               >
                 <span className={styles.category} style={{ color: categoryColor[card.category] }}>
-                  {card.category}
+                  {categoryLabels[card.category]}
                 </span>
                 {card.kind === 'capability' ? (
                   <>
@@ -85,7 +82,7 @@ export const Skills = () => {
                 ) : (
                   <>
                     <h3 className={styles.name}>{card.title}</h3>
-                    <span className={styles.kind}>Tech</span>
+                    <span className={styles.kind}>{tech}</span>
                   </>
                 )}
               </motion.div>
