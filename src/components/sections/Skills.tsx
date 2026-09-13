@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { CSSProperties } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { SkillCategory } from '@/constants/data';
+import { Card } from '@/components/ui/Card/Card';
 import { useLanguage } from '@/context/useLanguage';
 import styles from './Skills.module.scss';
 
@@ -60,7 +61,14 @@ export const Skills = () => {
         ))}
       </div>
 
-      <motion.div layout className={styles.grid}>
+      <motion.div
+        layout
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={viewportOnce}
+        transition={{ duration: 0.4 }}
+        className={styles.grid}
+      >
         <AnimatePresence mode="popLayout">
           {filteredCards.map((card) => {
             return (
@@ -68,26 +76,26 @@ export const Skills = () => {
                 key={card.id}
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={viewportOnce}
+                animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className={styles.skillCard}
               >
-                <span className={styles.category} style={{ color: categoryColor[card.category] }}>
-                  {categoryLabels[card.category]}
-                </span>
-                {card.kind === 'capability' ? (
-                  <>
-                    <h3 className={styles.name}>{card.title}</h3>
-                    <span className={styles.desc}>{card.desc}</span>
-                  </>
-                ) : (
-                  <>
-                    <h3 className={styles.name}>{card.title}</h3>
-                    <span className={styles.kind}>{tech}</span>
-                  </>
-                )}
+                <Card className={styles.card}>
+                  <span className={styles.category} style={{ color: categoryColor[card.category] }}>
+                    {categoryLabels[card.category]}
+                  </span>
+                  {card.kind === 'capability' ? (
+                    <>
+                      <h3 className={styles.name}>{card.title}</h3>
+                      <span className={styles.desc}>{card.desc}</span>
+                    </>
+                  ) : (
+                    <>
+                      <h3 className={styles.name}>{card.title}</h3>
+                      <span className={styles.kind}>{tech}</span>
+                    </>
+                  )}
+                </Card>
               </motion.div>
             );
           })}
