@@ -3,7 +3,7 @@
 
 .navbar {
   @include glass-effect(0);
-  background: color-mix(in srgb, var(--bg-primary) 96%, transparent);
+  background: color-mix(in srgb, var(--bg-primary) 98%, transparent);
   align-items: center;
   box-sizing: border-box;
   display: flex;
