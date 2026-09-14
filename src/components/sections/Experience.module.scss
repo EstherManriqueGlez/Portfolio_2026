@@ -61,11 +61,6 @@
     h4 {
       margin-bottom: 0.5rem;
     }
-
-    h5 {
-      padding-left: 1.5rem;
-      color: var(--color-tech);
-    }
   }
 
   .headerRow {
@@ -89,7 +84,7 @@
   .innerStage {
     position: relative;
     padding-left: 1.25rem;
-    border-left: 2px dashed var(--color-accent-muted, rgba(100, 116, 139, 0.4));
+    border-left: 2px dashed var(--color-accent-muted);
 
     .innerPeriod {
       font-size: 0.8rem;

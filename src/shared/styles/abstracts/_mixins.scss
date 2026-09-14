@@ -1,15 +1,4 @@
 // src/shared/styles/abstracts/_mixins.scss
-@use 'sass:map';
-@use 'variables' as *;
-
-@mixin respond-to($breakpoint) {
-  @if map.has-key($breakpoints, $breakpoint) {
-    @media (min-width: map.get($breakpoints, $breakpoint)) {
-      @content;
-    }
-  }
-}
-
 @mixin glass-effect($border-radius: 16px) {
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
