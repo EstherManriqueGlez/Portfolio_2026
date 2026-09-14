@@ -1,5 +1,6 @@
 import { ProjectCard } from '@/components/ui/ProjectCard/ProjectCard';
 import { useLanguage } from '@/context/useLanguage';
+
 import styles from './Projects.module.scss';
 
 export const Projects = () => {

@@ -1,11 +1,12 @@
-import { useEffect, useRef, useState } from 'react';
-import { Menu, Moon, Sun, X } from 'lucide-react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import { Menu, Moon, Sun, X } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+
+import logo from '@/assets/images/logo.png';
+import { useLanguage } from '@/context/useLanguage';
+import { useTheme } from '@/context/useTheme';
 
 import styles from './Navbar.module.scss';
-import { useTheme } from '@/context/useTheme';
-import { useLanguage } from '@/context/useLanguage';
-import logo from '@/assets/images/logo.png';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

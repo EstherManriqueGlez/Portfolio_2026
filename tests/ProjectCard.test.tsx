@@ -101,7 +101,7 @@ describe('ProjectCard', () => {
     const links = getLinks();
     expect(within(links[0]).getByText('GitHub')).toBeInTheDocument();
     expect(within(links[1]).getByText('Live Demo')).toBeInTheDocument();
-    expect(links[0]).toHaveAccessibleName('View React source on GitHub');
+    expect(links[0]).toHaveAccessibleName('View React source code on GitHub');
     expect(links[1]).toHaveAccessibleName('View React live project');
   });
 });

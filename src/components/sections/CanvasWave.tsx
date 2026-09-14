@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+
 import styles from './CanvasWave.module.scss';
 
 const WAVE_SPEED = 0.01;

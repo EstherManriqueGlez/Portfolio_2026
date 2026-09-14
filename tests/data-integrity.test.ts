@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
-import type { Project, ProjectVariant } from '@/types/content';
 import { en } from '@/i18n/en';
+import type { Project, ProjectVariant } from '@/types/content';
 
 const VALID_HTTP = /^https?:\/\//i;
 const VALID_TARGET = /^(https?:\/\/|mailto:|tel:)/i;

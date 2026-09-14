@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone } from 'lucide-react';
+import type React from 'react';
 import { LuGithub, LuLinkedin } from 'react-icons/lu';
 
 import { Card } from '@/components/ui/Card/Card';
 import { useLanguage } from '@/context/useLanguage';
+
 import styles from './Contact.module.scss';
-import type React from 'react';
 
 const iconMap: Record<string, React.ReactNode> = {
   Mail: <Mail aria-hidden="true" />,

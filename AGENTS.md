@@ -33,6 +33,7 @@ Portfolio of **Esther Manrique González (Frontend Software Engineer)**. It is t
 - `verbatimModuleSyntax` + `erasableSyntaxOnly` → `import type {...}`; no enums, namespaces, or parameter properties.
 - `noUnusedLocals`/`noUnusedParameters` — unused vars fail build.
 - Prettier: single quotes, trailing commas, semicolons, 100 col.
+- Import order enforced by `eslint-plugin-simple-import-sort` (autofix in pre-commit): side-effects → builtins/external → `@/` → relative; alphabetical within each group, blank line between groups.
 - Named `export const X = () => ...`; component files export components only (`react-refresh/only-export-components`).
 
 ## Docs

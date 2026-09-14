@@ -1,7 +1,8 @@
 import { Card } from '@/components/ui/Card/Card';
-import styles from './About.module.scss';
-import { GradientText } from '../ui/GradientText/GradientText';
 import { useLanguage } from '@/context/useLanguage';
+
+import { GradientText } from '../ui/GradientText/GradientText';
+import styles from './About.module.scss';
 
 export const About = () => {
   const { content } = useLanguage();

@@ -1,6 +1,8 @@
+import './shared/styles/globals.scss';
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import './shared/styles/globals.scss';
+
 import { App } from '@/app/App';
 
 createRoot(document.getElementById('root')!).render(

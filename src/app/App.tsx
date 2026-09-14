@@ -1,17 +1,18 @@
 import { MotionConfig } from 'framer-motion';
-import { ThemeProvider } from '@/context/ThemeProvider';
-import { LanguageProvider } from '@/context/LanguageProvider';
-import { useLanguage } from '@/context/useLanguage';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
+
 import { ErrorBoundary } from '@/components/ErrorBoundary';
-import { CanvasWave } from '@/components/sections/CanvasWave';
-import { Hero } from '@/components/sections/Hero';
+import { Footer } from '@/components/layout/Footer';
+import { Navbar } from '@/components/layout/Navbar';
 import { About } from '@/components/sections/About';
+import { CanvasWave } from '@/components/sections/CanvasWave';
+import { Contact } from '@/components/sections/Contact';
 import { Experience } from '@/components/sections/Experience';
+import { Hero } from '@/components/sections/Hero';
 import { Projects } from '@/components/sections/Projects';
 import { Skills } from '@/components/sections/Skills';
-import { Contact } from '@/components/sections/Contact';
+import { LanguageProvider } from '@/context/LanguageProvider';
+import { ThemeProvider } from '@/context/ThemeProvider';
+import { useLanguage } from '@/context/useLanguage';
 
 const AppContent = () => {
   const { content } = useLanguage();

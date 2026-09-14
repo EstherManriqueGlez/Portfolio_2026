@@ -1,5 +1,6 @@
 import { Card } from '@/components/ui/Card/Card';
 import { useLanguage } from '@/context/useLanguage';
+
 import styles from './Experience.module.scss';
 
 export const Experience = () => {
