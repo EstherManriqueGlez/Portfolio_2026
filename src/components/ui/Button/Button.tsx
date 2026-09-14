@@ -1,4 +1,5 @@
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, PropsWithChildren } from 'react';
+
 import styles from './Button.module.scss';
 
 type ButtonProps = PropsWithChildren<

@@ -1,5 +1,6 @@
 // src/context/ThemeProvider.tsx
 import { type PropsWithChildren, useEffect, useState } from 'react';
+
 import { ThemeContext } from './ThemeContext';
 
 type Theme = 'dark' | 'light';

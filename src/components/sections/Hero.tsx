@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/Button/Button';
 
-import { GradientText } from '@/components/ui/GradientText/GradientText';
-import logo_pos from '@/assets/images/logo_pos.png';
 import logo_neg from '@/assets/images/logo_neg.png';
+import logo_pos from '@/assets/images/logo_pos.png';
+import { Button } from '@/components/ui/Button/Button';
+import { GradientText } from '@/components/ui/GradientText/GradientText';
+import { useLanguage } from '@/context/useLanguage';
+import { useTheme } from '@/context/useTheme';
 
 import styles from './Hero.module.scss';
-import { useTheme } from '@/context/useTheme';
-import { useLanguage } from '@/context/useLanguage';
 
 export const Hero = () => {
   const { theme } = useTheme();

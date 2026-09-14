@@ -1,9 +1,11 @@
 // src/context/LanguageProvider.tsx
 import { type PropsWithChildren, useEffect, useState } from 'react';
-import { LanguageContext } from './LanguageContext';
+
 import { en } from '@/i18n/en';
 import { es } from '@/i18n/es';
 import type { Lang } from '@/i18n/types';
+
+import { LanguageContext } from './LanguageContext';
 
 const CONTENT_BY_LANG = { en, es } as const;
 

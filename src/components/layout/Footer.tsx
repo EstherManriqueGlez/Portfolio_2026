@@ -1,5 +1,6 @@
-import styles from './Footer.module.scss';
 import { useLanguage } from '@/context/useLanguage';
+
+import styles from './Footer.module.scss';
 
 export const Footer = () => {
   const { content } = useLanguage();

@@ -253,4 +253,4 @@ I enjoy solving complex problems through clean architecture, user-centered think
 
 ---
 
-> **Think intentionally. Design with clarity. Build with purpose.**
+> **Think with intention. Design with clarity. Build with purpose.**

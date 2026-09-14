@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import type { CSSProperties } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import type { SkillCategory } from '@/types/content';
+import { useState } from 'react';
+
 import { Card } from '@/components/ui/Card/Card';
 import { useLanguage } from '@/context/useLanguage';
+import type { SkillCategory } from '@/types/content';
+
 import styles from './Skills.module.scss';
 
 const categories: ('All' | SkillCategory)[] = [

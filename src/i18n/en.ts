@@ -1,5 +1,5 @@
-import type { Content } from './types';
 import { projectImages } from './media';
+import type { Content } from './types';
 
 export const en: Content = {
   navLinks: [
@@ -15,15 +15,15 @@ export const en: Content = {
     highlight: 'intelligent interfaces',
     outro: ' with purpose.',
     logoAlt: 'Esther Manrique González',
-    viewWork: 'View my Work',
+    viewWork: 'View My Work',
     letsTalk: "Let's Talk",
   },
 
   about: {
     title: 'About Me',
-    subtitle: 'Developing Products with Intention and Purpose.',
+    subtitle: 'Developing products with intention and purpose.',
     paragraph:
-      'I develop digital products where engineering, design, and user experience come together to create useful, intuitive, and purposeful solutions. As a Frontend Software Engineer, I enjoy transforming complex problems into intuitive interfaces through thoughtful architecture, clean code, and attention to detail. Throughout my professional experience, I have learned that good software should not only be functional, but also accessible, scalable, maintainable, and enjoyable to use. I believe every decision matters, from the structure of a component to the spacing between two elements. Those small details are what build trust, improve usability, and ultimately help create better products. For me, frontend development is where technology meets people, and that is what makes this work meaningful.',
+      'I develop digital products where engineering, design, and user experience come together to create useful, intuitive, and purposeful solutions. As a Frontend Software Engineer, I enjoy turning complex problems into clear, intuitive interfaces through thoughtful architecture, clean code, and attention to detail. Throughout my professional experience, I have learned that good software should not only work well, but also be accessible, scalable, maintainable, and enjoyable to use. I believe every decision matters, from the structure of a component to the spacing between two elements. Those details build trust, improve usability, and contribute to better products. For me, frontend development is where technology meets people, and that is what makes this work meaningful.',
     manifesto: 'Think with intention. Design with clarity. Build with purpose.',
   },
 
@@ -37,13 +37,13 @@ export const en: Content = {
         role: 'Independent Frontend Developer',
         projectName: 'Freelance and personal projects',
         projectDesc:
-          'Focused on frontend development, continuous learning, and exploring AI-assisted development, AI-enhanced engineering workflows and emerging technologies.',
+          'Independent frontend work focused on building and modernizing web applications, alongside continuous learning and the integration of AI-assisted engineering workflows into my development process.',
         description: [],
         technologies: [
           'React',
           'Angular',
           'TypeScript',
-          'Javascript',
+          'JavaScript',
           'Vite',
           'SCSS',
           'Design System',
@@ -56,22 +56,18 @@ export const en: Content = {
           {
             period: 'Mar 2024 — Dec 2025',
             role: 'Software Engineer',
-            projectName: 'Client Project - Design System & UI Framework Adoption',
+            projectName: 'Client Project — Design System & UI Framework Adoption',
             projectDesc:
-              "Worked as a Frontend Software Engineer on the adoption of a new enterprise Design System across products built on a proprietary Angular-based UI framework. \n The initiative focused on modernizing existing UI components and creating new ones to align with the Design System's visual language, design tokens, accessibility requirements, and interaction patterns.",
+              "Enterprise Design System adoption initiative across products built on a proprietary Angular-based UI framework. The work focused on modernizing existing UI components and creating new ones aligned with the Design System's visual language, design tokens, accessibility requirements, and interaction patterns.",
             description: [
               "Developed and updated Angular UI components to align with the new Design System's visual and functional guidelines.",
-              'Translated Figma designs into reusable, production-ready components, working closely with the product designer to ensure visual and functional consistency.',
-              'Worked with design tokens to maintain consistency across visual properties and component states.',
-              'Applied accessibility as a core requirement throughout development, ensuring components and interfaces complied with applicable WCAG 2.1 standards.',
-              'Performed accessibility validation using automated auditing tools and screen reader testing.',
-              'Paid close attention to visual, functional, and accessibility details to deliver consistent and inclusive user experiences.',
-              'Wrote and maintained unit tests for frontend components.',
-              'Ensured consistency across UI components while maintaining existing functionality and compatibility.',
-              'Participated in code reviews, contributing to code quality and consistency.',
-              'Worked closely with designers and other engineers throughout the development lifecycle.',
+              'Translated Figma designs into reusable, production-ready components while collaborating closely with product design to maintain visual and functional consistency.',
+              'Worked with design tokens to maintain consistency across visual properties, component states, and interaction patterns.',
+              'Applied accessibility throughout development, aligning components and interfaces with applicable WCAG 2.1 requirements.',
+              'Validated accessibility using automated auditing tools and screen reader testing.',
+              'Wrote and maintained unit tests for frontend components and helped preserve existing functionality and compatibility during UI modernization.',
+              'Participated in code reviews and collaborated with designers and engineers throughout the development lifecycle.',
               'Worked with TypeScript, Angular, RxJS, and SCSS in a component-based frontend architecture.',
-              'Collaborated with the team to deliver consistent, accessible, and maintainable UI experiences.',
             ],
             technologies: [
               'Angular',
@@ -91,13 +87,13 @@ export const en: Content = {
             role: 'Junior Software Engineer',
             projectName: 'Client Project',
             projectDesc:
-              'Joined a client-facing engineering team working on an enterprise application supporting sustainability programs, including data collection, tracking, and reporting.',
+              'Enterprise application supporting sustainability programs through data collection, tracking, and reporting workflows.',
             description: [
               'Developed user interfaces and application functionality using Angular, Dart, HTML, and SCSS.',
               'Built and maintained web pages and frontend features based on assigned requirements and technical guidelines.',
               'Worked closely with the Lead Frontend Developer to align implementation approaches and maintain consistency across the application.',
               'Developed and maintained unit tests for frontend components.',
-              'Worked with Reactive Forms to implement interactive and data-driven user interfaces.',
+              'Worked with Reactive Forms to implement interactive, data-driven user interfaces.',
               'Participated in Agile/Scrum practices, including sprint planning, backlog refinement, and daily stand-ups.',
               'Collaborated with the team to achieve sprint goals and deliver assigned features within the development cycle.',
             ],
@@ -111,16 +107,16 @@ export const en: Content = {
             ],
           },
           {
-            period: 'May 2022 - Jul 2022',
+            period: 'May 2022 — Jul 2022',
             role: 'Frontend Developer',
             projectName: 'GO2-GTH Training Program',
             projectDesc:
-              'Selected for a second technical training program focused on Angular and TypeScript, developing tools for different Google technology verticals',
+              'Technical training program focused on Angular and TypeScript, centered on building frontend tools for different Google technology verticals through a practical web application project.',
             description: [
               'Developed the frontend of a web application using Angular and TypeScript.',
-              'Built the application UI using Angular Material components.',
-              'Integrated a simple CRUD Product API for backend data operations.',
-              'Used Node.js and json-server to support the application backend.',
+              'Built the application UI with Angular Material components.',
+              'Integrated a simple CRUD product API for backend data operations.',
+              'Used Node.js and json-server to support backend functionality during development.',
               'Managed source code using Git and GitHub.',
             ],
             technologies: ['Angular', 'TypeScript', 'Angular Material', 'Git', 'GitHub'],
@@ -128,15 +124,15 @@ export const en: Content = {
           {
             period: 'Dec 2021 — Mar 2022',
             role: 'Full Stack Developer',
-            projectName: 'EPM-RDMX Program - PET-Project | MERN Stack Application',
+            projectName: 'EPM-RDMX Program — PET Project | MERN Stack Application',
             projectDesc:
-              'Joined EPAM through an intensive software engineering training program focused on React and JavaScript.',
+              'Intensive software engineering training project centered on building a full-stack MERN application while developing practical experience with React, JavaScript, backend fundamentals, and modern development workflows.',
             description: [
               'Developed a full-stack web application as part of the training program.',
               'Built frontend features using React and JavaScript.',
-              'Worked with backend functionality to understand the fundamentals of full-stack application development.',
-              'Software development and version control best practices were applied throughout the project.',
-              'Engineered responsive web applications utilizing modern component architectures.',
+              'Worked with backend functionality to strengthen my understanding of full-stack application development.',
+              'Applied software development and version control best practices throughout the project.',
+              'Built responsive interfaces using modern component-based patterns.',
             ],
             technologies: ['React', 'JavaScript', 'MERN Stack', 'Git'],
           },
@@ -147,12 +143,12 @@ export const en: Content = {
         totalPeriod: 'Nov 2020 — Mar 2021',
         stages: [],
         role: 'Front End Developer Jr.',
-        projectName: 'Bravo - Gaming',
+        projectName: 'Bravo — Gaming',
         projectDesc:
-          'Started my professional career in software development, contributing to the frontend of a web platform for the administration and organization of video game tournaments.',
+          'Web platform for the administration and organization of video game tournaments, where I began my professional software development career contributing to frontend development.',
         description: [
           'Developed user interfaces using Vue.js and JavaScript.',
-          'Integrated REST APIs to enable dynamic data management and interaction with the application.',
+          'Integrated REST APIs to support dynamic data management and application interactions.',
           'Collaborated within an Agile/Scrum team, actively participating in ceremonies and the software development process.',
         ],
         technologies: ['Vue.js', 'JavaScript', 'REST APIs', 'Scrum'],
@@ -163,18 +159,18 @@ export const en: Content = {
   projects: {
     title: 'Selected Projects',
     subtitle:
-      'Production-ready applications demonstrating technical complexity, architecture, and measurable impact.',
+      'Applications and technical builds that demonstrate frontend architecture, product thinking, accessibility, and engineering depth.',
     items: [
       {
         title: 'AVBINME — Corporate Valuation & Appraisal Platform',
         tech: ['React 19', 'TypeScript', 'Vite', 'Sass/SCSS', 'React Router'],
-        desc: 'Legacy React modernization and frontend rebuild for a premium B2B corporate platform.',
+        desc: 'Legacy React modernization and frontend rebuild for a B2B corporate valuation and appraisal platform.',
         challenge:
-          'Modernize a legacy React application while communicating technical rigor, legal validity, and institutional authority to corporate and professional audiences.',
+          'Modernize a legacy React application while presenting technical rigor, legal validity, and institutional credibility to corporate and professional audiences.',
         solution:
-          'Rebuilt the frontend with React, TypeScript and Vite, introducing a modern component architecture, responsive design system, multi-page routing, lazy loading, and conversion-focused CTAs.',
+          'Rebuilt the frontend with React, TypeScript, and Vite, introducing a modern component architecture, responsive design system, multi-page routing, lazy loading, and clearer conversion-focused calls to action.',
         result:
-          'A responsive, accessible, and maintainable platform with a premium institutional identity, deployed to GitHub Pages and optimized to guide visitors toward client contact.',
+          'A responsive, accessible, and maintainable platform with a stronger institutional identity, deployed to GitHub Pages and structured to guide visitors toward client contact.',
         image: projectImages.avbinme,
         link: 'https://esthermanriqueglez.github.io/avbinme/',
         github: 'https://github.com/EstherManriqueGlez/avbinme',
@@ -191,13 +187,13 @@ export const en: Content = {
           'PhotoSwipe',
           'Netlify',
         ],
-        desc: 'Collaborative Project — High-performance landing page for a San Diego residential cleaning company, built with a modular no-framework architecture and interaction-driven UX.',
+        desc: 'Collaborative project — responsive landing page for a San Diego residential cleaning company, built with a modular no-framework architecture and interaction-driven UX.',
         challenge:
-          'Create a fast, visually polished one-page experience that converts visitors into bookings while presenting multiple services, reviews, galleries, and move-out flows without relying on a frontend framework.',
+          'Create a fast, visually polished one-page experience designed to support booking conversion while presenting multiple services, reviews, galleries, and move-out flows without relying on a frontend framework.',
         solution:
-          'Built a modular architecture with reusable components, GSAP-powered scroll animations, interactive galleries and sliders, responsive layouts, and structured data for local SEO, while keeping the frontend lightweight and performant.',
+          'Built a modular architecture with reusable components, GSAP-powered scroll animations, interactive galleries and sliders, responsive layouts, and structured data for local SEO while keeping the frontend lightweight.',
         result:
-          'A production-ready, responsive landing page with reusable components, rich interactions, and a lightweight architecture, successfully deployed to Netlify.',
+          'A production-ready responsive landing page with reusable components, rich interactions, and a lightweight architecture, deployed to Netlify.',
         image: projectImages.harborshine,
         link: 'https://harborshine.netlify.app/',
         github: 'https://github.com/DianyelaMaldonado/harborshine-landing',
@@ -214,13 +210,13 @@ export const en: Content = {
           'hCaptcha',
           'Web3Forms',
         ],
-        desc: 'Collaborative project — Bilingual, cinematic landing page for a boutique web studio, combining brand strategy, immersive UX, accessibility, and AI-assisted development.',
+        desc: 'Collaborative project — bilingual, cinematic landing page for a boutique web studio, combining brand strategy, immersive UX, accessibility, and AI-assisted development.',
         challenge:
-          'Turn a boutique web studio concept into a high-conversion digital experience while supporting bilingual content, WCAG-aware accessibility, and rich motion without compromising performance.',
+          'Turn a boutique web studio concept into a conversion-focused digital experience while supporting bilingual content, accessibility-aware interactions, and rich motion without compromising performance.',
         solution:
-          'Collaborated from ideation through implementation, building a React-based experience with custom design tokens, GSAP and Framer Motion interactions, bilingual content, accessible motion preferences, and a production-ready contact flow with hCaptcha and Web3Forms.',
+          'Collaborated from ideation through implementation, building a React-based experience with custom design tokens, GSAP and Framer Motion interactions, bilingual content, reduced-motion support, and a production-ready contact flow with hCaptcha and Web3Forms.',
         result:
-          'A production-ready bilingual digital experience that combines immersive motion, accessible interactions, SEO foundations, and a complete client contact flow into a cohesive brand experience.',
+          'A production-ready bilingual digital experience combining immersive motion, accessible interactions, SEO foundations, and a complete client contact flow within a cohesive brand experience.',
         image: projectImages.mistica,
         link: 'https://mistica-web-studio.netlify.app/',
         github: 'https://github.com/DianyelaMaldonado/Mistica-Web-Studio',
@@ -238,11 +234,11 @@ export const en: Content = {
           'RxJS Signals',
           'Tailwind CSS',
         ],
-        desc: 'Technical build — E-commerce application implemented in both React and Angular, exploring different approaches to state, data, routing, authentication, and component architecture.',
+        desc: 'Technical build — the same e-commerce domain implemented in React and Angular to compare approaches to state, data fetching, routing, authentication, and component architecture.',
         challenge:
-          'Build a complete e-commerce experience with product catalog, authentication, protected administration, CRUD operations, and file uploads while maintaining type safety and a scalable frontend architecture.',
+          'Build a complete e-commerce experience with product catalog, authentication, role-protected administration, CRUD operations, and file uploads while maintaining type safety and a scalable frontend architecture.',
         solution:
-          'Implemented the same application in React and Angular, using TanStack Query and Zustand for server and client state in React, and RxJS Signals with reactive resources and caching in Angular, alongside protected routes, validated forms, and modular architecture.',
+          'Implemented the application in both React and Angular, using TanStack Query and Zustand for server and client state in React, and Signals with reactive resources and caching in Angular, alongside protected routes, validated forms, and modular architecture.',
         result:
           'Two functional implementations of the same e-commerce domain, demonstrating cross-framework frontend architecture and the ability to apply comparable engineering principles across React and Angular.',
         image: projectImages.reactTesloShop,
@@ -255,11 +251,11 @@ export const en: Content = {
             tech: ['React 19', 'TypeScript', 'Vite', 'TanStack Query', 'Zustand', 'Tailwind CSS'],
             desc: 'E-commerce storefront and admin panel implemented in React — a hands-on exploration of data fetching, state management, authentication, and scalable component architecture.',
             challenge:
-              'Build a complete e-commerce experience — catalog, product detail, auth, role-protected admin, CRUD and file uploads — while maintaining type safety and clean architecture.',
+              'Build a complete e-commerce experience — catalog, product detail, authentication, role-protected admin, CRUD, and file uploads — while maintaining type safety and clean architecture.',
             solution:
-              'React 19, TypeScript and Vite, with TanStack Query for server state and caching, Zustand for UI state, validated forms, protected routes, and a modular typed structure.',
+              'Built with React 19, TypeScript, and Vite, using TanStack Query for server state and caching, Zustand for UI state, validated forms, protected routes, and a modular typed structure.',
             result:
-              'A functional implementation demonstrating disciplined state separation, a cached data layer, and reusable type-safe components.',
+              'A functional implementation demonstrating clear state separation, a cached data layer, and reusable type-safe components.',
             image: projectImages.reactTesloShop,
             link: 'https://react-teslo-shop-app.netlify.app',
             github: 'https://github.com/EstherManriqueGlez/react-teslo-shop-app',
@@ -270,11 +266,11 @@ export const en: Content = {
             tech: ['Angular 19', 'TypeScript', 'RxJS Signals', 'Tailwind CSS', 'daisyUI', 'Swiper'],
             desc: 'The same e-commerce domain implemented in Angular — applying Signals, reactive resources, HTTP interceptors, route guards, and standalone architecture.',
             challenge:
-              'Build a complete e-commerce experience — catalog, product detail, auth, role-protected admin, CRUD and file uploads — while maintaining type safety and clean architecture.',
+              'Build a complete e-commerce experience — catalog, product detail, authentication, role-protected admin, CRUD, and file uploads — while maintaining type safety and clean architecture.',
             solution:
-              'Angular 19 and TypeScript, with Signals and rxResource for reactive state and caching, JWT auth via interceptors and guards, validated reactive forms, and a modular lazy-loaded structure (Tailwind + daisyUI, Swiper).',
+              'Built with Angular 19 and TypeScript, using Signals and rxResource for reactive state and caching, JWT authentication through interceptors and guards, validated reactive forms, and a modular lazy-loaded structure with Tailwind, daisyUI, and Swiper.',
             result:
-              'A functional Angular implementation of the same domain, matching comparable engineering standards — reactive, typed, and maintainable — under a different framework.',
+              'A functional Angular implementation of the same domain, applying comparable engineering standards through a reactive, typed, and maintainable architecture.',
             image: projectImages.angularTesloShop,
             link: 'https://ang-teslo-shop-app.netlify.app',
             github: 'https://github.com/EstherManriqueGlez/angular-teslo-shop-app',
@@ -294,13 +290,13 @@ export const en: Content = {
           'Tailwind CSS 4',
           'Axios',
         ],
-        desc: 'Technical build — the same GIF search domain implemented in React and Angular, exploring different approaches to async state, caching, persistence, and accessible UI.',
+        desc: 'Technical build — the same GIF search domain implemented in React and Angular to compare approaches to async state, caching, persistence, and accessible UI.',
         challenge:
           'Build a fast, accessible GIF search experience on the Giphy API while exploring how two frameworks approach reactive state, request handling, persistence, and accessibility.',
         solution:
-          'Implemented two independent apps over the Giphy API: a React app with confirmed search, in-memory caching, stale-response cancellation, and a fully tested accessible flow; and an Angular app with trending and infinite scroll, persistent search history pages, theming, and Signals-based reactive state.',
+          'Implemented two independent apps on the Giphy API: a React app with confirmed search, in-memory caching, stale-response cancellation, and a tested accessible flow; and an Angular app with trending content, infinite scroll, persistent search history, theming, and Signals-based reactive state.',
         result:
-          'Two production-oriented implementations of the same domain, each reflecting its framework’s conventions for state, data fetching, persistence, and accessibility.',
+          'Two production-minded implementations of the same domain, each reflecting its framework’s conventions for state, data fetching, persistence, and accessibility.',
         image: projectImages.reactGifsApp,
         link: 'https://rct-gifs-app.netlify.app/',
         github: 'https://github.com/EstherManriqueGlez/react-gifs-app',
@@ -317,11 +313,11 @@ export const en: Content = {
             ],
             desc: 'Giphy search implemented in React — a fast, accessible experience with confirmed queries, smart caching, and a polished result flow.',
             challenge:
-              'Build a fast, reliable GIF search against the Giphy API — balancing result states, pagination, and accessibility without per-keystroke requests.',
+              'Build a fast, reliable GIF search against the Giphy API while balancing result states, pagination, and accessibility without sending a request on every keystroke.',
             solution:
-              'React 19, TypeScript and Vite, with a custom useGifs hook handling in-memory caching, request deduplication, and stale-response cancellation; confirmed search on Enter, a localStorage history of past queries (max 8) as clickable chips, complete skeleton/empty/error states with retry, pagination with Load more, and an accessible lightbox with copy-URL, focus trap, and Esc handling — backed by 48 unit tests.',
+              'Built with React 19, TypeScript, and Vite, using a custom useGifs hook for in-memory caching, request deduplication, and stale-response cancellation; confirmed search on Enter; localStorage history for up to eight previous queries; complete loading, empty, and error states with retry; pagination with Load more; and an accessible lightbox with copy-URL, focus trap, and Escape-key handling — backed by 48 unit tests.',
             result:
-              'A tested, accessible search app with deterministic offline tests, AA-contrast styling, and prefers-reduced-motion support — the "latest query always wins" guard keeps results consistent during rapid searches.',
+              'A tested, accessible search app with deterministic offline tests, AA-contrast styling, and prefers-reduced-motion support, with a latest-query-wins guard that keeps results consistent during rapid searches.',
             image: projectImages.reactGifsApp,
             link: 'https://rct-gifs-app.netlify.app/',
             github: 'https://github.com/EstherManriqueGlez/react-gifs-app',
@@ -337,13 +333,13 @@ export const en: Content = {
               'Tailwind CSS 4',
               'Font Awesome',
             ],
-            desc: 'Giphy search implemented in Angular — trending with infinite scroll, search, persistent history pages, and light/dark theming on reactive Signals state.',
+            desc: 'Giphy search implemented in Angular — trending content with infinite scroll, search, persistent history pages, and light/dark theming powered by reactive Signals state.',
             challenge:
-              'Build a GIF discovery experience in Angular covering trending and search while keeping state reactive, history persistent, and HTTP failures friendly across a fully responsive layout.',
+              'Build a GIF discovery experience in Angular covering trending content and search while keeping state reactive, history persistent, and HTTP failures understandable across a fully responsive layout.',
             solution:
-              'Angular 19 standalone components with Signals and RxJS for reactive state and HTTP streams; trending with infinite scroll, search with localStorage-backed history in the sidebar plus a page per query, a dark/light toggle that persists and respects the OS preference, skeleton loaders, an HTTP error interceptor that surfaces toast notifications, and a collapsible responsive sidebar.',
+              'Built with Angular 19 standalone components, Signals, and RxJS for reactive state and HTTP streams; trending content with infinite scroll; search history persisted in localStorage and exposed through the sidebar and query pages; a light/dark theme that persists and respects OS preference; skeleton loaders; HTTP error interception with toast feedback; and a collapsible responsive sidebar.',
             result:
-              'A polished, responsive Angular app with persistent theming and history, reactive state management, and graceful error feedback — the same domain solved with Angular conventions.',
+              'A polished, responsive Angular app with persistent theming and history, reactive state management, and graceful error feedback — the same domain solved using Angular conventions.',
             image: projectImages.angularGifsApp,
             link: 'https://ang-gifs-app.netlify.app/',
             github: 'https://github.com/EstherManriqueGlez/gifs-app',
@@ -364,13 +360,13 @@ export const en: Content = {
           'Axios',
           'Vitest',
         ],
-        desc: 'Learning build — a React single-page app to discover and manage a catalog of superheroes and villains, consuming an external API and persisting favorites in the browser.',
+        desc: 'Learning build — a React single-page application for exploring and managing a catalog of superheroes and villains, consuming an external API and persisting favorites in the browser.',
         challenge:
-          'Build a full hero catalog with dashboard stats, favorites, debounced search with combined filters, sorting, and a detail page — keeping data fetching, routing, and persisted state consistent and type-safe against an external API.',
+          'Build a complete hero catalog with dashboard statistics, favorites, debounced search with combined filters, sorting, and a detail page while keeping data fetching, routing, and persisted state consistent and type-safe against an external API.',
         solution:
-          'React 19, TypeScript and Vite, with TanStack Query and axios for cached server data, React Router (hash) for navigation, a favorites Context persisted in localStorage, debounced search with advanced filters and grid/list views, and a UI layer built on Tailwind CSS v4 and shadcn/ui (Radix primitives).',
+          'Built with React 19, TypeScript, and Vite, using TanStack Query and Axios for cached server data, React Router with hash-based navigation, a favorites Context persisted in localStorage, debounced search with advanced filters and grid/list views, and a UI layer built with Tailwind CSS v4 and shadcn/ui using Radix primitives.',
         result:
-          'A responsive, tested SPA with dashboard, favorites, search and detail flows, skeleton and empty states, and a type-safe data layer — deployed to Netlify against a Render-hosted API.',
+          'A responsive, tested SPA with dashboard, favorites, search, and detail flows; loading and empty states; and a type-safe data layer, deployed to Netlify against a Render-hosted API.',
         image: projectImages.heroes,
         link: 'https://superhero-universe.netlify.app/',
         github: 'https://github.com/EstherManriqueGlez/react-heroes-app',
@@ -380,7 +376,7 @@ export const en: Content = {
 
   skills: {
     title: 'Skills & Expertise',
-    subtitle: 'The tech stack I ship with and how I approach the work.',
+    subtitle: 'The tools I work with and the engineering principles behind my approach.',
     filterAria: 'Filter skills by area',
     all: 'All',
     tech: 'Tech',
@@ -396,14 +392,14 @@ export const en: Content = {
         kind: 'capability',
         title: 'User-Centered Engineering',
         category: 'How I Work',
-        desc: 'Technical decisions are guided by the people using the product, balancing usability and accessibility.',
+        desc: 'Technical decisions are guided by the people using the product, balancing usability, accessibility, and product needs.',
       },
       {
         id: 'engineering-craftsmanship',
         kind: 'capability',
         title: 'Engineering Craftsmanship',
         category: 'How I Work',
-        desc: 'Small technical decisions—from component architecture to visual polish—shape products that feel reliable, maintainable and scalable.',
+        desc: 'Small technical decisions, from component architecture to visual polish, shape products that are reliable, maintainable, and scalable.',
       },
       {
         id: 'continuous-growth',
@@ -424,14 +420,21 @@ export const en: Content = {
         kind: 'capability',
         title: 'Collaborative Engineering',
         category: 'How I Work',
-        desc: 'I believe the best solutions emerge through shared ownership, open communication, and close collaboration across engineering, design and product.',
+        desc: 'I believe strong solutions emerge through shared ownership, open communication, and close collaboration across engineering, design, and product.',
       },
       {
         id: 'quality-by-design',
         kind: 'capability',
         title: 'Quality by Design',
         category: 'How I Work',
-        desc: 'Quality is designed in from the start—accessibility, testing, and performance are part of the process, not afterthoughts.',
+        desc: 'Accessibility, testing, and performance are considered throughout the process rather than treated as afterthoughts.',
+      },
+      {
+        id: 'ai-assisted',
+        kind: 'capability',
+        title: 'AI-Assisted Development',
+        category: 'How I Work',
+        desc: 'I use AI-assisted workflows alongside deliberate review, testing, and engineering ownership.',
       },
       { id: 'react', kind: 'tech', title: 'React 19', category: 'Core Frontend' },
       { id: 'angular', kind: 'tech', title: 'Angular 19', category: 'Core Frontend' },
@@ -445,56 +448,49 @@ export const en: Content = {
         kind: 'capability',
         title: 'Frontend Architecture',
         category: 'Architecture',
-        desc: 'Modular, type-safe foundations behind production builds in React and Angular.',
+        desc: 'Modular, type-safe foundations for production-oriented React and Angular applications.',
       },
       {
         id: 'reusable-components',
         kind: 'capability',
         title: 'Reusable Components',
         category: 'Architecture',
-        desc: 'From Figma to production-ready, design-system-aligned components.',
+        desc: 'From Figma to reusable, production-ready components aligned with design-system principles.',
       },
       {
         id: 'state-management',
         kind: 'capability',
         title: 'State Management',
         category: 'Architecture',
-        desc: 'Server and client state separated with TanStack Query, Zustand and Signals.',
+        desc: 'Clear separation of server and client state using tools such as TanStack Query, Zustand, and Signals.',
       },
       {
         id: 'api-integration',
         kind: 'capability',
         title: 'API Integration',
         category: 'Architecture',
-        desc: 'Typed data layers with caching, interceptors and graceful HTTP error handling.',
+        desc: 'Typed data layers with caching, interceptors, and graceful HTTP error handling.',
       },
       {
         id: 'performance',
         kind: 'capability',
         title: 'Performance Optimization',
         category: 'Architecture',
-        desc: 'Caching, lazy loading and stale-response cancellation for fast, consistent UIs.',
+        desc: 'Caching, lazy loading, and stale-response cancellation for fast, consistent interfaces.',
       },
       {
         id: 'accessibility',
         kind: 'capability',
         title: 'Accessibility',
         category: 'Architecture',
-        desc: 'WCAG 2.1 applied to components, focus management and screen-reader validated flows.',
+        desc: 'WCAG 2.1 practices applied to components, focus management, and flows validated with screen readers.',
       },
       {
         id: 'responsive-ui',
         kind: 'capability',
         title: 'Responsive UI Development',
         category: 'UI/UX Tools',
-        desc: 'Mobile-first layouts and collapsible navigation across feature-rich app UIs.',
-      },
-      {
-        id: 'ai-assisted',
-        kind: 'capability',
-        title: 'AI-Assisted Development',
-        category: 'UI/UX Tools',
-        desc: 'AI-augmented workflows paired with rigorous review, testing and ownership.',
+        desc: 'Mobile-first layouts and responsive navigation patterns across feature-rich application interfaces.',
       },
       { id: 'vite', kind: 'tech', title: 'Vite & SWC', category: 'UI/UX Tools' },
       { id: 'framer-motion', kind: 'tech', title: 'Framer Motion', category: 'UI/UX Tools' },
@@ -541,10 +537,10 @@ export const en: Content = {
   meta: {
     title: 'Esther Manrique González — Frontend Software Engineer',
     description:
-      'Frontend Software Engineer specializing in Angular, React, TypeScript, and modern web development.',
-    ogTitle: 'Esther Manrique González — Frontend Engineer',
+      'Frontend Software Engineer specializing in Angular, React, TypeScript, accessibility, and modern web development.',
+    ogTitle: 'Esther Manrique González — Frontend Software Engineer',
     ogDescription:
-      'Frontend Software Engineer specializing in Angular, React, TypeScript, and modern web development.',
+      'Frontend Software Engineer specializing in Angular, React, TypeScript, accessibility, and modern web development.',
     ogLocale: 'en_US',
   },
 
@@ -555,7 +551,7 @@ export const en: Content = {
       message: 'This section failed to load. Try refreshing the page.',
     },
     navbar: {
-      label: 'Main',
+      label: 'Main navigation',
       logoAlt: 'Manrique logo',
       switchToLight: 'Switch to light theme',
       switchToDark: 'Switch to dark theme',
@@ -572,9 +568,9 @@ export const en: Content = {
       imageFallback: 'Image not available',
       variantGroup: 'Framework version',
       imgAlt: (title) => `Screenshot of ${title}`,
-      sourceAria: (label) => `View ${label} source on GitHub`,
+      sourceAria: (label) => `View ${label} source code on GitHub`,
       liveAria: (label) => `View ${label} live project`,
-      sourceAriaDefault: 'View on GitHub',
+      sourceAriaDefault: 'View source code on GitHub',
       liveAriaDefault: 'View live project',
     },
   },

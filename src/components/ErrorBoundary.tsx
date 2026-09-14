@@ -1,5 +1,7 @@
 import { Component, type ErrorInfo, type ReactNode } from 'react';
+
 import { LanguageContext, type LanguageContextValue } from '@/context/LanguageContext';
+
 import styles from './ErrorBoundary.module.scss';
 
 interface ErrorBoundaryProps {

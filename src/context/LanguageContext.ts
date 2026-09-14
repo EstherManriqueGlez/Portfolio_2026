@@ -1,5 +1,6 @@
 // src/context/LanguageContext.ts
 import { createContext } from 'react';
+
 import type { Content, Lang } from '@/i18n/types';
 
 export interface LanguageContextValue {

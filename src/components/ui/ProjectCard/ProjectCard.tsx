@@ -1,11 +1,13 @@
-import { useCallback, useState } from 'react';
-import type { CSSProperties } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import type { CSSProperties } from 'react';
+import { useCallback, useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
+
 import { Card } from '@/components/ui/Card/Card';
-import type { Project } from '@/types/content';
 import { useLanguage } from '@/context/useLanguage';
+import type { Project } from '@/types/content';
+
 import styles from './ProjectCard.module.scss';
 
 interface ProjectCardProps {
