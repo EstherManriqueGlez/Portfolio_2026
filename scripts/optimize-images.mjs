@@ -5,7 +5,7 @@ import sharp from 'sharp';
 const SRC_DIR = path.resolve('src', 'assets', 'images');
 const QUALITY = 82;
 const MAX_WIDTH = 1200;
-const KEEP_PNG = new Set(['logo', 'logo_neg', 'logo_pos', 'preview']);
+const KEEP_PNG = new Set(['logo', 'logo_neg', 'logo_pos']);
 
 for (const entry of await readdir(SRC_DIR)) {
   if (!entry.endsWith('.png')) continue;

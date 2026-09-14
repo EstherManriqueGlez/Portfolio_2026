@@ -13,7 +13,7 @@ Single-page React app with anchor-scroll navigation:
 - Hero, About, Experience, Projects, Skills, Contact
 - Dark/light theme (default dark), `data-theme` on `<html>`
 
-All content lives in `src/constants/data.ts` — edit data there, never in components.
+All content lives in `src/i18n/en.ts` + `es.ts` — edit data there, never in components. Content contracts live in `src/types/content.ts`.
 
 ## Success Criteria
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { CSSProperties } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import type { SkillCategory } from '@/constants/data';
+import type { SkillCategory } from '@/types/content';
 import { Card } from '@/components/ui/Card/Card';
 import { useLanguage } from '@/context/useLanguage';
 import styles from './Skills.module.scss';

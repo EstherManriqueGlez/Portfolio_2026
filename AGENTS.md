@@ -18,7 +18,7 @@ Portfolio of **Esther Manrique González (Frontend Software Engineer)**. It is t
 
 - Entry `src/main.tsx` → `src/app/App.tsx`; sections composed there, each in `<ErrorBoundary>`.
 - Alias `@/*` → `src/*` (vite.config.ts + tsconfig.app.json). Always import via `@/`, never relative.
-- Anchor-scroll nav (`#about`, `#experience`, …) + content live in `src/constants/data.ts`. React Router NOT installed (see `docs/decisions/ADR-001-frontend-stack.md`). Edit data there, not in components.
+- Anchor-scroll nav (`#about`, `#experience`, …) + content live in `src/i18n/en.ts` + `es.ts` (domain contracts in `src/types/content.ts`). React Router NOT installed (see `docs/decisions/ADR-001-frontend-stack.md`). Edit data there, not in components.
 
 ## Styling (SCSS Modules)
 

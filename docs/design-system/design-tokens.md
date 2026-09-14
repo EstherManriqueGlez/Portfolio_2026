@@ -16,6 +16,7 @@ Dark is the default (`:root, [data-theme='dark']`); `[data-theme='light']` overr
 | `--shadow-color`           | `rgba(0,0,0,.6)`                                  | `rgba(18,15,38,.06)`                              |
 | `--color-accent`           | `#00f5ff`                                         | `#3de1f2`                                         |
 | `--color-tech`             | `#009dff`                                         | `#0055ff`                                         |
+| `--color-accent-muted`     | `rgba(148,163,184,.4)`                            | `rgba(120,113,142,.35)`                           |
 | `--color-cat-architecture` | `#00c2ff`                                         | `#006c9e`                                         |
 | `--color-cat-ux`           | `#00f5ff`                                         | `#0e7490`                                         |
 | `--color-cat-soft`         | `#c084fc`                                         | `#7c3aed`                                         |
@@ -37,7 +38,6 @@ Glass / wave:
 | `--glass-blur`     | `16px`                  | `12px`                  |
 | `--wave-primary`   | `#9d4edd`               | `#9c76ff`               |
 | `--wave-secondary` | `#00f5ff`               | `#3de1f2`               |
-| `--glow-intensity` | `0.15`                  | `0.05`                  |
 
 ## Typography tokens
 
@@ -57,7 +57,7 @@ Glass / wave:
 
 ## Breakpoints
 
-`sm` 480 · `md` 768 · `lg` 1024 · `xl` 1440 · `xxl` 1920 (px). Mixed with `@include respond-to()` come from `_mixins.scss` (`glass-effect`, `text-gradient`).
+`md` 768 (px) — el único definido; se usa vía `map.get($breakpoints, 'md')` en `Navbar.module.scss`.
 
 ## Principles
 

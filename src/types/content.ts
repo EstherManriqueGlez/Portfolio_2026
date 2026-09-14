@@ -42,11 +42,9 @@ export interface ExperienceStage {
 export interface ExperienceItem {
   company: string;
   totalPeriod: string;
-  currentRole: string;
   stages: ExperienceStage[];
   // For single role companies (like Spiralis)
   role?: string;
-  period?: string;
   projectName?: string;
   projectDesc?: string;
   description?: string[];

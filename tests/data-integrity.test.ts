@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import type { Project, ProjectVariant } from '@/constants/data';
+import type { Project, ProjectVariant } from '@/types/content';
 import { en } from '@/i18n/en';
 
 const VALID_HTTP = /^https?:\/\//i;

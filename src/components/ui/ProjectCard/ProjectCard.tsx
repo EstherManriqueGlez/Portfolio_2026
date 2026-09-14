@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { Card } from '@/components/ui/Card/Card';
-import type { Project } from '@/constants/data';
+import type { Project } from '@/types/content';
 import { useLanguage } from '@/context/useLanguage';
 import styles from './ProjectCard.module.scss';
 

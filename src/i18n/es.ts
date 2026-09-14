@@ -33,7 +33,6 @@ export const es: Content = {
       {
         company: 'Desarrollo frontend independiente',
         totalPeriod: 'Abr 2026 — Presente',
-        currentRole: '',
         stages: [],
         role: 'Desarrolladora frontend independiente',
         projectName: 'Proyectos freelance y personales',
@@ -53,7 +52,6 @@ export const es: Content = {
       {
         company: 'EPAM Systems',
         totalPeriod: 'Dic 2021 — Feb 2026',
-        currentRole: 'Ingeniera de Software',
         stages: [
           {
             period: 'Mar 2024 — Dic 2025',
@@ -147,7 +145,6 @@ export const es: Content = {
       {
         company: 'Spiralis, S.A. de C.V.',
         totalPeriod: 'Nov 2020 — Mar 2021',
-        currentRole: 'Desarrolladora frontend Jr.',
         stages: [],
         role: 'Desarrolladora frontend Jr.',
         projectName: 'Bravo - Gaming',

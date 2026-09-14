@@ -130,7 +130,7 @@ Testing, linting and delivery are enforced automatically with GitHub Actions on 
 │   │   ├── layout/
 │   │   ├── sections/
 │   │   └── ui/
-│   ├── constants/    # Public types & data contracts
+│   ├── types/        # Domain model (content contracts)
 │   ├── context/      # Theme & language providers
 │   ├── i18n/         # English / Spanish content
 │   └── shared/styles # Global SCSS + design-token abstracts
