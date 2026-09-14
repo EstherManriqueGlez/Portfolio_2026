@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 
 import { ProjectCard } from '@/components/ui/ProjectCard/ProjectCard';
 import { LanguageProvider } from '@/context/LanguageProvider';
-import type { Project } from '@/constants/data';
+import type { Project } from '@/types/content';
 
 const project: Project = {
   title: 'Teslo Shop',

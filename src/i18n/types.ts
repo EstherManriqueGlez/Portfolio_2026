@@ -5,7 +5,7 @@ import type {
   Project,
   SkillCard,
   SkillCategory,
-} from '@/constants/data';
+} from '@/types/content';
 
 export type Lang = 'en' | 'es';
 
