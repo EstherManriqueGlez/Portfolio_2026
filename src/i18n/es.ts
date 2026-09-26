@@ -23,7 +23,7 @@ export const es: Content = {
     title: 'Sobre mí',
     subtitle: 'Desarrollo productos digitales con intención y propósito.',
     paragraph:
-      'Me gusta desarrollar productos digitales donde la ingeniería, el diseño y la experiencia de usuario trabajan juntos para resolver problemas reales de forma clara e intuitiva. Como Frontend Software Engineer, disfruto transformar necesidades complejas en interfaces bien estructuradas, fáciles de usar y pensadas hasta el detalle. Con la experiencia he aprendido que un buen producto no solo debe funcionar: también debe ser accesible, escalable, mantenible y ofrecer una excelente experiencia de usuario. Para mí, cada decisión cuenta, desde cómo se estructura un componente hasta un pequeño ajuste visual. Son esos detalles los que hacen que una interfaz se sienta sólida, confiable y bien desarrollada. Eso es lo que más me gusta del frontend: transformar tecnología en experiencias que realmente conecten con las personas.',
+      'Me gusta desarrollar productos digitales donde la ingeniería, el diseño y la experiencia de usuario se unen para resolver problemas reales de forma clara e intuitiva. Como Frontend Software Engineer, disfruto transformar necesidades complejas en interfaces bien estructuradas, fáciles de usar y pensadas hasta el mínimo detalle. Con la experiencia he aprendido que un buen producto no solo debe funcionar bien: debe ser accesible, escalable, mantenible y ofrecer una excelente experiencia de usuario. Para mí, cada decisión importa, desde cómo se estructura un componente y el espacio entre dos elementos, hasta un pequeño ajuste visual. Son esos detalles los que hacen que una interfaz se sienta sólida, confiable y bien desarrollada. Lo que más me gusta del frontend es cómo, a través de la tecnología, podemos crear experiencias que realmente conectan con las personas.',
     manifesto: 'Piensa con intención. Diseña con claridad. Desarrolla con propósito.',
   },
 
@@ -392,8 +392,8 @@ export const es: Content = {
     tech: 'Tecnología',
     categoryLabels: {
       'Core Frontend': 'Tecnologías frontend',
-      Architecture: 'Capacidades frontend',
-      'UI/UX Tools': 'Herramientas y prácticas de ingeniería',
+      Architecture: 'Habilidades frontend',
+      'UI/UX Tools': 'Herramientas & Prácticas',
       'How I Work': 'Cómo trabajo',
     },
     cards: [

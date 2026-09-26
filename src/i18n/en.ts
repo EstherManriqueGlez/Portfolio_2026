@@ -23,7 +23,7 @@ export const en: Content = {
     title: 'About Me',
     subtitle: 'Developing digital products with intention and purpose.',
     paragraph:
-      'I develop digital products where engineering, design, and user experience come together to create useful, intuitive, and purposeful solutions. As a Frontend Software Engineer, I enjoy turning complex problems into clear, intuitive interfaces through thoughtful architecture, clean code, and attention to detail. Throughout my professional experience, I have learned that good software should not only work well, but also be accessible, scalable, maintainable, and easy to use. I believe every decision matters, from the structure of a component to the spacing between two elements. Those details build trust, improve usability, and contribute to better products. For me, frontend development is where technology meets people, and that is what makes this work meaningful.',
+      'I enjoy building digital products where engineering, design, and user experience come together to solve real problems in clear and intuitive ways. As a Frontend Software Engineer, I enjoy turning complex needs into well-structured, easy-to-use interfaces designed with attention to the smallest details. Over time, I’ve learned that a great product shouldn’t just work well: it should be accessible, scalable, maintainable, and provide an excellent user experience. To me, every decision matters, from how a component is structured and the space between two elements to a small visual adjustment. These are the details that make an interface feel solid, reliable, and thoughtfully built. What I enjoy most about frontend development is how technology allows us to create experiences that genuinely connect with people.',
     manifesto: 'Think with intention. Design with clarity. Build with purpose.',
   },
 
@@ -386,14 +386,14 @@ export const en: Content = {
 
   skills: {
     title: 'Skills & Expertise',
-    subtitle: 'The technologies, capabilities, and engineering practices behind my work.',
+    subtitle: 'The technologies, capabilities and engineering practices behind my work.',
     filterAria: 'Filter skills by area',
     all: 'All',
     tech: 'Tech',
     categoryLabels: {
       'Core Frontend': 'Frontend Technologies',
       Architecture: 'Frontend Capabilities',
-      'UI/UX Tools': 'Engineering Tools & Practices',
+      'UI/UX Tools': 'Tools & Practices',
       'How I Work': 'How I Work',
     },
     cards: [
