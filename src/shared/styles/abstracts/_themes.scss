@@ -5,7 +5,7 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
   --color-primary-grad: linear-gradient(135deg, #ff007f 0%, #9d4edd 50%, #00f5ff 100%);
-  --color-text-grad: var(--color-primary-grad);
+  --color-text-grad: linear-gradient(135deg, #ff007f 0%, #c084fc 50%, #00f5ff 100%);
   --bg-primary: #030014;
   --bg-secondary: #0a081a;
   --text-main: #f8fafc;
