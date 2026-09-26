@@ -238,11 +238,11 @@ export const en: Content = {
         ],
         desc: 'Technical build — the same e-commerce domain implemented in React and Angular to compare approaches to state, data fetching, routing, authentication, and component architecture.',
         challenge:
-          'Build a complete e-commerce experience with product catalog, authentication, role-protected administration, CRUD operations, and file uploads while maintaining type safety and a scalable frontend architecture.',
+          'Build comparable e-commerce frontends with product catalogs, authentication, role-protected product administration, CRUD operations, and file uploads while maintaining type safety and modular architecture.',
         solution:
           'Implemented the application in both React and Angular, using TanStack Query and Zustand for server and client state in React, and Signals with reactive resources and caching in Angular, alongside protected routes, validated forms, and modular architecture.',
         result:
-          'Two functional implementations of the same e-commerce domain, demonstrating cross-framework frontend architecture and the ability to apply comparable engineering principles across React and Angular.',
+          'Two functional implementations of the same learning project, demonstrating cross-framework frontend architecture and comparable engineering principles across React and Angular.',
         image: projectImages.reactTesloShop,
         link: 'https://react-teslo-shop-app.netlify.app',
         github: 'https://github.com/EstherManriqueGlez/react-teslo-shop-app',
@@ -253,7 +253,7 @@ export const en: Content = {
             tech: ['React 19', 'TypeScript', 'Vite', 'TanStack Query', 'Zustand', 'Tailwind CSS'],
             desc: 'E-commerce storefront and admin panel implemented in React — a hands-on exploration of data fetching, state management, authentication, and scalable component architecture.',
             challenge:
-              'Build a complete e-commerce experience — catalog, product detail, authentication, role-protected admin, CRUD, and file uploads — while maintaining type safety and clean architecture.',
+              'Build an e-commerce frontend with a searchable and filterable catalog, authentication, role-protected product administration, product creation and editing, and image uploads while maintaining type safety and clean architecture.',
             solution:
               'Built with React 19, TypeScript, and Vite, using TanStack Query for server state and caching, Zustand for UI state, validated forms, protected routes, and a modular typed structure.',
             result:
@@ -276,7 +276,7 @@ export const en: Content = {
             ],
             desc: 'E-commerce storefront and admin panel implemented in Angular — applying Signals, reactive resources, HTTP interceptors, route guards, and standalone architecture.',
             challenge:
-              'Build a complete e-commerce experience — catalog, product detail, authentication, role-protected admin, CRUD, and file uploads — while maintaining type safety and clean architecture.',
+              'Build an e-commerce frontend with a product catalog, product detail, authentication, role-protected product administration, CRUD operations, and file uploads while maintaining type safety and clean architecture.',
             solution:
               'Built with Angular 19 and TypeScript, using Signals and rxResource for reactive state and caching, JWT authentication through interceptors and guards, validated reactive forms, and a modular lazy-loaded structure with Tailwind, daisyUI, and Swiper.',
             result:
