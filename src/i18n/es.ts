@@ -162,9 +162,9 @@ export const es: Content = {
       'Aplicaciones y proyectos que reflejan mi forma de trabajar con arquitectura frontend, visión de producto, accesibilidad e ingeniería de calidad.',
     items: [
       {
-        title: 'AVBINME — Sitio web corporativo de Valuación de Bienes Inmubles',
+        title: 'AVBINME — Sitio web corporativo de Valuación de Bienes Inmuebles',
         tech: ['React 19', 'TypeScript', 'Vite', 'Sass/SCSS', 'React Router'],
-        desc: 'Modernización de un sitio web legacy desarrollado en React y renovación del frontend para una empresa B2B de Valuación de Bienes Inmubles.',
+        desc: 'Modernización de un sitio web legacy desarrollado en React y renovación del frontend para una empresa B2B de Valuación de Bienes Inmuebles.',
         challenge:
           'Modernizar un sitio web legacy en React manteniendo la imagen profesional y la credibilidad institucional que requiere un servicio dirigido a clientes corporativos y profesionales de la valuación.',
         solution:
@@ -193,7 +193,7 @@ export const es: Content = {
         solution:
           'Desarrollamos una arquitectura modular con componentes reutilizables, animaciones de scroll con GSAP, galerías y sliders interactivos, layouts responsive y datos estructurados para SEO local, manteniendo un frontend ligero.',
         result:
-          'Una landing page responsive y lista para producción, con componentes reutilizables, interacciones dinámicas y una arquitectura ligera',
+          'Una landing page responsive y lista para producción, con componentes reutilizables, interacciones dinámicas y una arquitectura ligera.',
         image: projectImages.harborshine,
         link: 'https://harborshine-cleaning.com/',
         github: 'https://github.com/DianyelaMaldonado/harborshine-landing',
@@ -231,7 +231,8 @@ export const es: Content = {
           'Vite',
           'TanStack Query',
           'Zustand',
-          'RxJS Signals',
+          'Angular Signals',
+          'RxJS',
           'Tailwind CSS',
         ],
         desc: 'Proyecto técnico — el mismo dominio de e-commerce implementado en React y Angular para comparar distintos enfoques de estado, data fetching, routing, autenticación y arquitectura de componentes.',
@@ -249,7 +250,7 @@ export const es: Content = {
             id: 'react',
             label: 'React',
             tech: ['React 19', 'TypeScript', 'Vite', 'TanStack Query', 'Zustand', 'Tailwind CSS'],
-            desc: 'E-commerce desarrollado en React con storefront y panel de administración, enfocada en data fetching, gestión de estado, autenticación y arquitectura de componentes escalable.',
+            desc: 'E-commerce desarrollado en React con storefront y panel de administración, enfocado en data fetching, gestión de estado, autenticación y arquitectura de componentes escalable.',
             challenge:
               'Desarrollar una experiencia de e-commerce completa — catálogo, detalle de producto, autenticación, administración protegida por roles, CRUD y carga de archivos — manteniendo seguridad de tipos y una arquitectura limpia.',
             solution:
@@ -263,7 +264,15 @@ export const es: Content = {
           {
             id: 'angular',
             label: 'Angular',
-            tech: ['Angular 19', 'TypeScript', 'RxJS Signals', 'Tailwind CSS', 'daisyUI', 'Swiper'],
+            tech: [
+              'Angular 19',
+              'TypeScript',
+              'Angular Signals',
+              'RxJS',
+              'Tailwind CSS',
+              'daisyUI',
+              'Swiper',
+            ],
             desc: 'E-commerce desarrollado en Angular, aplicando Signals, recursos reactivos, interceptores HTTP, route guards y arquitectura standalone.',
             challenge:
               'Desarrollar una experiencia de e-commerce completa — catálogo, detalle de producto, autenticación, administración protegida por roles, CRUD y carga de archivos — manteniendo seguridad de tipos y una arquitectura limpia.',
@@ -311,7 +320,7 @@ export const es: Content = {
               'Axios',
               'Vitest + Testing Library',
             ],
-            desc: 'Buscador de GIFs desarrollado en React, con una experiencia rápida y accesible, búsquedas confirmadas, caché y con flujo de resultados.',
+            desc: 'Buscador de GIFs desarrollado en React, con una experiencia rápida y accesible, búsquedas confirmadas, caché y un flujo de resultados cuidado.',
             challenge:
               'Desarrollar una búsqueda de GIFs rápida y confiable sobre la API de Giphy, manejando estados de resultados, paginación y accesibilidad sin realizar una petición en cada pulsación de tecla.',
             solution:
@@ -364,7 +373,7 @@ export const es: Content = {
         challenge:
           'Desarrollar un catálogo completo con estadísticas en dashboard, favoritos, búsqueda con debounce y filtros combinados, ordenamiento y vista de detalle, manteniendo consistencia y seguridad de tipos en el manejo de datos, routing y estado persistente.',
         solution:
-          'Desarrollé la aplicación con React 19, TypeScript y Vite, utilizando TanStack Query y Axios para manejar datos de servidor con caché, React Router con navegación basada en hash, un Context de favoritos persistido en localStorage, búsqueda con debounce, filtros avanzados, vistas grid/list y una capa de UI desarrollada con Tailwind CSS v4 y shadcn/ui',
+          'Desarrollé la aplicación con React 19, TypeScript y Vite, utilizando TanStack Query y Axios para manejar datos de servidor con caché, React Router con navegación basada en hash, un Context de favoritos persistido en localStorage, búsqueda con debounce, filtros avanzados, vistas grid/list y una capa de UI desarrollada con Tailwind CSS v4 y shadcn/ui.',
         result:
           'Una SPA responsive y probada, con dashboard, favoritos, búsqueda, filtros y detalle de personajes; estados de carga y vacío; y una capa de datos con seguridad de tipos, desplegada en Netlify y conectada a una API alojada en Render.',
         image: projectImages.heroes,

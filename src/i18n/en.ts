@@ -194,7 +194,7 @@ export const en: Content = {
         solution:
           'Built a modular architecture with reusable components, GSAP-powered scroll animations, interactive galleries and sliders, responsive layouts, and structured data for local SEO while keeping the frontend lightweight.',
         result:
-          'A production-ready responsive landing page with reusable components, rich interactions, and a lightweight architecture',
+          'A production-ready responsive landing page with reusable components, rich interactions, and a lightweight architecture.',
         image: projectImages.harborshine,
         link: 'https://harborshine-cleaning.com/',
         github: 'https://github.com/DianyelaMaldonado/harborshine-landing',
@@ -232,7 +232,8 @@ export const en: Content = {
           'Vite',
           'TanStack Query',
           'Zustand',
-          'RxJS Signals',
+          'Angular Signals',
+          'RxJS',
           'Tailwind CSS',
         ],
         desc: 'Technical build — the same e-commerce domain implemented in React and Angular to compare approaches to state, data fetching, routing, authentication, and component architecture.',
@@ -264,7 +265,15 @@ export const en: Content = {
           {
             id: 'angular',
             label: 'Angular',
-            tech: ['Angular 19', 'TypeScript', 'RxJS Signals', 'Tailwind CSS', 'daisyUI', 'Swiper'],
+            tech: [
+              'Angular 19',
+              'TypeScript',
+              'Angular Signals',
+              'RxJS',
+              'Tailwind CSS',
+              'daisyUI',
+              'Swiper',
+            ],
             desc: 'E-commerce storefront and admin panel implemented in Angular — applying Signals, reactive resources, HTTP interceptors, route guards, and standalone architecture.',
             challenge:
               'Build a complete e-commerce experience — catalog, product detail, authentication, role-protected admin, CRUD, and file uploads — while maintaining type safety and clean architecture.',
