@@ -519,7 +519,7 @@ export const es: Content = {
     ],
   },
   contact: {
-    title: 'Conectemos',
+    title: 'Hablemos',
   },
 
   contacts: [
@@ -556,10 +556,10 @@ export const es: Content = {
   meta: {
     title: 'Esther Manrique González — Frontend Software Engineer',
     description:
-      'Frontend Software Engineer especializada en Angular, React, TypeScript, accesibilidad y desarrollo web moderno.',
+      'Frontend Software Engineer especializada en Angular, React, TypeScript, accesibilidad, Design Systems y desarrollo web moderno.',
     ogTitle: 'Esther Manrique González — Frontend Software Engineer',
     ogDescription:
-      'Frontend Software Engineer especializada en Angular, React, TypeScript, accesibilidad y desarrollo web moderno.',
+      'Frontend Software Engineer especializada en Angular, React, TypeScript, accesibilidad, Design Systems y desarrollo web moderno.',
     ogLocale: 'es_MX',
   },
 
@@ -587,7 +587,7 @@ export const es: Content = {
       imageFallback: 'Imagen no disponible',
       variantGroup: 'Versión por framework',
       imgAlt: (title) => `Captura de pantalla de ${title}`,
-      sourceAria: (label) => `Ver el código fuente de ${label} en GitHub`,
+      sourceAria: (label) => `Ver código fuente de ${label} en GitHub`,
       liveAria: (label) => `Ver demo en vivo de ${label}`,
       sourceAriaDefault: 'Ver código fuente en GitHub',
       liveAriaDefault: 'Ver demo en vivo',
