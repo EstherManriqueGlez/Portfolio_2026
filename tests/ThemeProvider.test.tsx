@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { ThemeProvider } from '@/context/ThemeProvider';
 import { useTheme } from '@/context/useTheme';
@@ -24,6 +24,10 @@ const renderThemeProbe = () =>
       <ThemeProbe />
     </ThemeProvider>,
   );
+
+afterEach(() => {
+  vi.restoreAllMocks();
+});
 
 describe('ThemeProvider', () => {
   it('defaults to the dark theme and applies it to <html> and localStorage', () => {
@@ -49,6 +53,39 @@ describe('ThemeProvider', () => {
     localStorage.setItem('theme', 'light');
 
     renderThemeProbe();
+
+    expect(screen.getByTestId('theme')).toHaveTextContent('light');
+    expect(document.documentElement).toHaveAttribute('data-theme', 'light');
+  });
+
+  it('falls back to dark when the saved theme is invalid', () => {
+    localStorage.setItem('theme', 'sepia');
+
+    renderThemeProbe();
+
+    expect(screen.getByTestId('theme')).toHaveTextContent('dark');
+    expect(document.documentElement).toHaveAttribute('data-theme', 'dark');
+  });
+
+  it('falls back to dark when localStorage cannot be read', () => {
+    vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new DOMException('Storage blocked', 'SecurityError');
+    });
+
+    renderThemeProbe();
+
+    expect(screen.getByTestId('theme')).toHaveTextContent('dark');
+    expect(document.documentElement).toHaveAttribute('data-theme', 'dark');
+  });
+
+  it('continues updating the theme when localStorage cannot be written', async () => {
+    const user = userEvent.setup();
+    vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+      throw new DOMException('Storage blocked', 'SecurityError');
+    });
+
+    renderThemeProbe();
+    await user.click(screen.getByRole('button', { name: 'toggle' }));
 
     expect(screen.getByTestId('theme')).toHaveTextContent('light');
     expect(document.documentElement).toHaveAttribute('data-theme', 'light');

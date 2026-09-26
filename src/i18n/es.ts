@@ -23,7 +23,7 @@ export const es: Content = {
     title: 'Sobre mí',
     subtitle: 'Desarrollo productos digitales con intención y propósito.',
     paragraph:
-      'Me gusta desarrollar productos digitales donde la ingeniería, el diseño y la experiencia de usuario trabajan juntos para resolver problemas reales de forma clara e intuitiva. Como Frontend Software Engineer, disfruto transformar necesidades complejas en interfaces bien estructuradas, fáciles de usar y pensadas hasta el detalle. Con la experiencia he aprendido que un buen producto no solo debe funcionar: también debe ser accesible, escalable, mantenible y ofrecer una excelente experiencia de usuario. Para mí, cada decisión cuenta, desde cómo se estructura un componente hasta un pequeño ajuste visual. Son esos detalles los que hacen que una interfaz se sienta sólida, confiable y bien desarrollada. Eso es lo que más me gusta del frontend: transformar tecnología en experiencias que realmente conecten con las personas.',
+      'Me gusta desarrollar productos digitales donde la ingeniería, el diseño y la experiencia de usuario se unen para resolver problemas reales de forma clara e intuitiva. Como Frontend Software Engineer, disfruto transformar necesidades complejas en interfaces bien estructuradas, fáciles de usar y pensadas hasta el mínimo detalle. Con la experiencia he aprendido que un buen producto no solo debe funcionar bien: debe ser accesible, escalable, mantenible y ofrecer una excelente experiencia de usuario. Para mí, cada decisión importa, desde cómo se estructura un componente y el espacio entre dos elementos, hasta un pequeño ajuste visual. Son esos detalles los que hacen que una interfaz se sienta sólida, confiable y bien desarrollada. Lo que más me gusta del frontend es cómo, a través de la tecnología, podemos crear experiencias que realmente conectan con las personas.',
     manifesto: 'Piensa con intención. Diseña con claridad. Desarrolla con propósito.',
   },
 
@@ -237,11 +237,11 @@ export const es: Content = {
         ],
         desc: 'Proyecto técnico — el mismo dominio de e-commerce implementado en React y Angular para comparar distintos enfoques de estado, data fetching, routing, autenticación y arquitectura de componentes.',
         challenge:
-          'Construir una experiencia de e-commerce completa con catálogo de productos, autenticación, administración protegida por roles, operaciones CRUD y carga de archivos, manteniendo seguridad de tipos y una arquitectura frontend escalable.',
+          'Desarrollar dos implementaciones frontend comparables para un mismo e-commerce, con catálogo de productos, autenticación, administración protegida por roles, operaciones CRUD y carga de archivos, manteniendo seguridad de tipos y una arquitectura modular.',
         solution:
           'Implementé la aplicación tanto en React como en Angular, utilizando TanStack Query y Zustand para el estado de servidor y cliente en React, y Signals con recursos reactivos y caché en Angular, junto con rutas protegidas, formularios validados y una arquitectura modular.',
         result:
-          'Dos implementaciones funcionales del mismo dominio de e-commerce que demuestran arquitectura frontend cross-framework y la capacidad de aplicar principios de ingeniería comparables en React y Angular.',
+          'Dos implementaciones funcionales del mismo proyecto de aprendizaje, que demuestran arquitectura frontend cross-framework y principios de ingeniería comparables en React y Angular.',
         image: projectImages.reactTesloShop,
         link: 'https://react-teslo-shop-app.netlify.app',
         github: 'https://github.com/EstherManriqueGlez/react-teslo-shop-app',
@@ -252,7 +252,7 @@ export const es: Content = {
             tech: ['React 19', 'TypeScript', 'Vite', 'TanStack Query', 'Zustand', 'Tailwind CSS'],
             desc: 'E-commerce desarrollado en React con storefront y panel de administración, enfocado en data fetching, gestión de estado, autenticación y arquitectura de componentes escalable.',
             challenge:
-              'Desarrollar una experiencia de e-commerce completa — catálogo, detalle de producto, autenticación, administración protegida por roles, CRUD y carga de archivos — manteniendo seguridad de tipos y una arquitectura limpia.',
+              'Desarrollar un frontend de e-commerce con catálogo, búsqueda y filtros, autenticación, administración de productos protegida por roles, creación y edición de productos, y carga de imágenes, manteniendo seguridad de tipos y una arquitectura limpia.',
             solution:
               'Desarrollada con React 19, TypeScript y Vite, utilizando TanStack Query para estado de servidor y caché, Zustand para estado de UI, formularios validados, rutas protegidas y una estructura modular tipada.',
             result:
@@ -275,7 +275,7 @@ export const es: Content = {
             ],
             desc: 'E-commerce desarrollado en Angular, aplicando Signals, recursos reactivos, interceptores HTTP, route guards y arquitectura standalone.',
             challenge:
-              'Desarrollar una experiencia de e-commerce completa — catálogo, detalle de producto, autenticación, administración protegida por roles, CRUD y carga de archivos — manteniendo seguridad de tipos y una arquitectura limpia.',
+              'Desarrollar un frontend de e-commerce con catálogo, detalle de producto, autenticación, administración de productos protegida por roles, operaciones CRUD y carga de archivos, manteniendo seguridad de tipos y una arquitectura limpia.',
             solution:
               'Desarrollada con Angular 19 y TypeScript, utilizando Signals y rxResource para estado reactivo y caché, autenticación JWT mediante interceptores y guards, formularios reactivos validados y una estructura modular con lazy loading, Tailwind, daisyUI y Swiper.',
             result:
@@ -392,8 +392,8 @@ export const es: Content = {
     tech: 'Tecnología',
     categoryLabels: {
       'Core Frontend': 'Tecnologías frontend',
-      Architecture: 'Capacidades frontend',
-      'UI/UX Tools': 'Herramientas y prácticas de ingeniería',
+      Architecture: 'Habilidades frontend',
+      'UI/UX Tools': 'Herramientas & Prácticas',
       'How I Work': 'Cómo trabajo',
     },
     cards: [
