@@ -149,7 +149,7 @@
   }
 }
 
-@media (max-width: #{map.get($breakpoints, 'md') - 1px}) {
+@media (max-width: #{map.get($breakpoints, 'lg') - 1px}) {
   .menu {
     display: none;
     &.open {
@@ -158,6 +158,9 @@
       flex-direction: column;
       gap: 1.5rem;
       left: 0;
+      max-height: calc(100dvh - 80px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
       padding: 2rem;
       position: absolute;
       text-align: center;
@@ -189,7 +192,7 @@
   }
 }
 
-@media (min-width: map.get($breakpoints, 'md')) {
+@media (min-width: map.get($breakpoints, 'lg')) {
   .hamburger {
     display: none;
   }
