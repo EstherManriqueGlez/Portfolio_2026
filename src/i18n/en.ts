@@ -21,9 +21,9 @@ export const en: Content = {
 
   about: {
     title: 'About Me',
-    subtitle: 'Developing products with intention and purpose.',
+    subtitle: 'Developing digital products with intention and purpose.',
     paragraph:
-      'I develop digital products where engineering, design, and user experience come together to create useful, intuitive, and purposeful solutions. As a Frontend Software Engineer, I enjoy turning complex problems into clear, intuitive interfaces through thoughtful architecture, clean code, and attention to detail. Throughout my professional experience, I have learned that good software should not only work well, but also be accessible, scalable, maintainable, and enjoyable to use. I believe every decision matters, from the structure of a component to the spacing between two elements. Those details build trust, improve usability, and contribute to better products. For me, frontend development is where technology meets people, and that is what makes this work meaningful.',
+      'I develop digital products where engineering, design, and user experience come together to create useful, intuitive, and purposeful solutions. As a Frontend Software Engineer, I enjoy turning complex problems into clear, intuitive interfaces through thoughtful architecture, clean code, and attention to detail. Throughout my professional experience, I have learned that good software should not only work well, but also be accessible, scalable, maintainable, and easy to use. I believe every decision matters, from the structure of a component to the spacing between two elements. Those details build trust, improve usability, and contribute to better products. For me, frontend development is where technology meets people, and that is what makes this work meaningful.',
     manifesto: 'Think with intention. Design with clarity. Build with purpose.',
   },
 
@@ -58,9 +58,9 @@ export const en: Content = {
             role: 'Software Engineer',
             projectName: 'Client Project — Design System & UI Framework Adoption',
             projectDesc:
-              "Enterprise Design System adoption initiative across products built on a proprietary Angular-based UI framework. The work focused on modernizing existing UI components and creating new ones aligned with the Design System's visual language, design tokens, accessibility requirements, and interaction patterns.",
+              "Enterprise Design System adoption initiative across products built on a proprietary Angular-based UI framework. The work focused on modernizing existing UI components, aligned with the Design System's visual language, design tokens, accessibility requirements, and interaction patterns.",
             description: [
-              "Developed and updated Angular UI components to align with the new Design System's visual and functional guidelines.",
+              "Updated Angular UI components to align with the new Design System's visual and functional guidelines.",
               'Translated Figma designs into reusable, production-ready components while collaborating closely with product design to maintain visual and functional consistency.',
               'Worked with design tokens to maintain consistency across visual properties, component states, and interaction patterns.',
               'Applied accessibility throughout development, aligning components and interfaces with applicable WCAG 2.1 requirements.',
@@ -162,15 +162,16 @@ export const en: Content = {
       'Applications and technical builds that demonstrate frontend architecture, product thinking, accessibility, and engineering depth.',
     items: [
       {
-        title: 'AVBINME — Corporate Valuation & Appraisal Platform',
+        title: 'AVBINME — Corporate Valuation & Appraisal Website',
         tech: ['React 19', 'TypeScript', 'Vite', 'Sass/SCSS', 'React Router'],
-        desc: 'Legacy React modernization and frontend rebuild for a B2B corporate valuation and appraisal platform.',
+        desc: 'Legacy React modernization and frontend redesign for a B2B corporate valuation and appraisal website.',
+
         challenge:
-          'Modernize a legacy React application while presenting technical rigor, legal validity, and institutional credibility to corporate and professional audiences.',
+          'Modernize a legacy React website while maintaining the professional and institutional credibility expected by corporate clients and valuation professionals.',
         solution:
-          'Rebuilt the frontend with React, TypeScript, and Vite, introducing a modern component architecture, responsive design system, multi-page routing, lazy loading, and clearer conversion-focused calls to action.',
+          'Rebuilt the frontend with React, TypeScript, and Vite, introducing a modern component architecture, responsive design system, multi-page routing, lazy loading, and clearer calls to action.',
         result:
-          'A responsive, accessible, and maintainable platform with a stronger institutional identity, deployed to GitHub Pages and structured to guide visitors toward client contact.',
+          'A responsive, accessible, and maintainable corporate website with a stronger institutional identity and a clearer path for potential clients to explore services and get in touch.',
         image: projectImages.avbinme,
         link: 'https://esthermanriqueglez.github.io/avbinme/',
         github: 'https://github.com/EstherManriqueGlez/avbinme',
@@ -193,9 +194,9 @@ export const en: Content = {
         solution:
           'Built a modular architecture with reusable components, GSAP-powered scroll animations, interactive galleries and sliders, responsive layouts, and structured data for local SEO while keeping the frontend lightweight.',
         result:
-          'A production-ready responsive landing page with reusable components, rich interactions, and a lightweight architecture, deployed to Netlify.',
+          'A production-ready responsive landing page with reusable components, rich interactions, and a lightweight architecture',
         image: projectImages.harborshine,
-        link: 'https://harborshine.netlify.app/',
+        link: 'https://harborshine-cleaning.com/',
         github: 'https://github.com/DianyelaMaldonado/harborshine-landing',
       },
       {
@@ -219,7 +220,7 @@ export const en: Content = {
           'A production-ready bilingual digital experience combining immersive motion, accessible interactions, SEO foundations, and a complete client contact flow within a cohesive brand experience.',
         image: projectImages.mistica,
         link: 'https://mistica-web-studio.netlify.app/',
-        github: 'https://github.com/DianyelaMaldonado/Mistica-Web-Studio',
+        github: 'https://github.com/EstherManriqueGlez/mistica-web-studio',
       },
       {
         title: 'Teslo Shop — Cross-Framework E-commerce with Admin Panel',
@@ -264,7 +265,7 @@ export const en: Content = {
             id: 'angular',
             label: 'Angular',
             tech: ['Angular 19', 'TypeScript', 'RxJS Signals', 'Tailwind CSS', 'daisyUI', 'Swiper'],
-            desc: 'The same e-commerce domain implemented in Angular — applying Signals, reactive resources, HTTP interceptors, route guards, and standalone architecture.',
+            desc: 'E-commerce storefront and admin panel implemented in Angular — applying Signals, reactive resources, HTTP interceptors, route guards, and standalone architecture.',
             challenge:
               'Build a complete e-commerce experience — catalog, product detail, authentication, role-protected admin, CRUD, and file uploads — while maintaining type safety and clean architecture.',
             solution:
@@ -364,11 +365,11 @@ export const en: Content = {
         challenge:
           'Build a complete hero catalog with dashboard statistics, favorites, debounced search with combined filters, sorting, and a detail page while keeping data fetching, routing, and persisted state consistent and type-safe against an external API.',
         solution:
-          'Built with React 19, TypeScript, and Vite, using TanStack Query and Axios for cached server data, React Router with hash-based navigation, a favorites Context persisted in localStorage, debounced search with advanced filters and grid/list views, and a UI layer built with Tailwind CSS v4 and shadcn/ui using Radix primitives.',
+          'Built with React 19, TypeScript, and Vite, using TanStack Query and Axios for cached server data, React Router with hash-based navigation, a favorites Context persisted in localStorage, debounced search with advanced filters and grid/list views, and a UI layer built with Tailwind CSS v4 and shadcn/ui.',
         result:
           'A responsive, tested SPA with dashboard, favorites, search, and detail flows; loading and empty states; and a type-safe data layer, deployed to Netlify against a Render-hosted API.',
         image: projectImages.heroes,
-        link: 'https://superhero-universe.netlify.app/',
+        link: 'https://rct-heroes-app.netlify.app/',
         github: 'https://github.com/EstherManriqueGlez/react-heroes-app',
       },
     ],
@@ -376,14 +377,14 @@ export const en: Content = {
 
   skills: {
     title: 'Skills & Expertise',
-    subtitle: 'The tools I work with and the engineering principles behind my approach.',
+    subtitle: 'The technologies, capabilities, and engineering practices behind my work.',
     filterAria: 'Filter skills by area',
     all: 'All',
     tech: 'Tech',
     categoryLabels: {
-      'Core Frontend': 'Core Frontend',
-      Architecture: 'Architecture',
-      'UI/UX Tools': 'UI/UX Tools',
+      'Core Frontend': 'Frontend Technologies',
+      Architecture: 'Frontend Capabilities',
+      'UI/UX Tools': 'Engineering Tools & Practices',
       'How I Work': 'How I Work',
     },
     cards: [
@@ -395,32 +396,18 @@ export const en: Content = {
         desc: 'Technical decisions are guided by the people using the product, balancing usability, accessibility, and product needs.',
       },
       {
-        id: 'engineering-craftsmanship',
-        kind: 'capability',
-        title: 'Engineering Craftsmanship',
-        category: 'How I Work',
-        desc: 'Small technical decisions, from component architecture to visual polish, shape products that are reliable, maintainable, and scalable.',
-      },
-      {
-        id: 'continuous-growth',
-        kind: 'capability',
-        title: 'Continuous Growth',
-        category: 'How I Work',
-        desc: 'I continuously explore new technologies while strengthening the engineering fundamentals that remain valuable over time.',
-      },
-      {
         id: 'thoughtful-problem-solving',
         kind: 'capability',
         title: 'Thoughtful Problem Solving',
         category: 'How I Work',
-        desc: 'I prefer understanding the problem before choosing a solution, prioritizing long-term quality over quick fixes.',
+        desc: 'I focus on understanding the problem before choosing a solution, prioritizing long-term quality over quick fixes.',
       },
       {
         id: 'collaborative-engineering',
         kind: 'capability',
         title: 'Collaborative Engineering',
         category: 'How I Work',
-        desc: 'I believe strong solutions emerge through shared ownership, open communication, and close collaboration across engineering, design, and product.',
+        desc: 'Strong solutions emerge through shared ownership, open communication, and close collaboration across engineering, design, and product.',
       },
       {
         id: 'quality-by-design',
@@ -428,6 +415,13 @@ export const en: Content = {
         title: 'Quality by Design',
         category: 'How I Work',
         desc: 'Accessibility, testing, and performance are considered throughout the process rather than treated as afterthoughts.',
+      },
+      {
+        id: 'continuous-growth',
+        kind: 'capability',
+        title: 'Continuous Learning',
+        category: 'How I Work',
+        desc: 'I explore new technologies while continuing to strengthen the engineering fundamentals that remain valuable over time.',
       },
       {
         id: 'ai-assisted',
@@ -451,11 +445,18 @@ export const en: Content = {
         desc: 'Modular, type-safe foundations for production-oriented React and Angular applications.',
       },
       {
+        id: 'design-systems',
+        kind: 'capability',
+        title: 'Design Systems',
+        category: 'Architecture',
+        desc: 'Reusable component systems aligned through design tokens, accessibility requirements, and shared visual and interaction guidelines.',
+      },
+      {
         id: 'reusable-components',
         kind: 'capability',
         title: 'Reusable Components',
         category: 'Architecture',
-        desc: 'From Figma to reusable, production-ready components aligned with design-system principles.',
+        desc: 'Translating Figma designs into reusable, production-ready components with consistent behavior and visual detail.',
       },
       {
         id: 'state-management',
@@ -479,28 +480,34 @@ export const en: Content = {
         desc: 'Caching, lazy loading, and stale-response cancellation for fast, consistent interfaces.',
       },
       {
-        id: 'accessibility',
-        kind: 'capability',
-        title: 'Accessibility',
-        category: 'Architecture',
-        desc: 'WCAG 2.1 practices applied to components, focus management, and flows validated with screen readers.',
-      },
-      {
         id: 'responsive-ui',
         kind: 'capability',
         title: 'Responsive UI Development',
-        category: 'UI/UX Tools',
+        category: 'Architecture',
         desc: 'Mobile-first layouts and responsive navigation patterns across feature-rich application interfaces.',
       },
-      { id: 'vite', kind: 'tech', title: 'Vite & SWC', category: 'UI/UX Tools' },
-      { id: 'framer-motion', kind: 'tech', title: 'Framer Motion', category: 'UI/UX Tools' },
+      {
+        id: 'accessibility',
+        kind: 'capability',
+        title: 'Accessibility',
+        category: 'UI/UX Tools',
+        desc: 'WCAG 2.1 practices integrated into component development, focus management, and validation with automated audits and screen readers.',
+      },
       {
         id: 'testing',
+        kind: 'capability',
+        title: 'Frontend Testing',
+        category: 'UI/UX Tools',
+        desc: 'Component and interaction testing with Vitest and Testing Library to support reliable UI behavior.',
+      },
+      { id: 'vite', kind: 'tech', title: 'Vite & SWC', category: 'UI/UX Tools' },
+      {
+        id: 'framer-motion',
         kind: 'tech',
-        title: 'Testing — Vitest & Testing Library',
+        title: 'Framer Motion',
         category: 'UI/UX Tools',
       },
-      { id: 'git', kind: 'tech', title: 'Git & CI/CD', category: 'UI/UX Tools' },
+      { id: 'git', kind: 'tech', title: 'Git, GitHub & CI/CD', category: 'UI/UX Tools' },
     ],
   },
 
