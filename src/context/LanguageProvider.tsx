@@ -11,8 +11,12 @@ const CONTENT_BY_LANG = { en, es } as const;
 
 export const LanguageProvider = ({ children }: PropsWithChildren) => {
   const [lang, setLang] = useState<Lang>(() => {
-    const savedLang = localStorage.getItem('lang') as Lang | null;
-    return savedLang === 'es' ? 'es' : 'en';
+    try {
+      const savedLang = localStorage.getItem('lang');
+      return savedLang === 'es' ? 'es' : 'en';
+    } catch {
+      return 'en';
+    }
   });
 
   const content = CONTENT_BY_LANG[lang];
@@ -38,7 +42,11 @@ export const LanguageProvider = ({ children }: PropsWithChildren) => {
     document
       .querySelector('meta[name="twitter:description"]')
       ?.setAttribute('content', content.meta.ogDescription);
-    localStorage.setItem('lang', lang);
+    try {
+      localStorage.setItem('lang', lang);
+    } catch {
+      // Storage can be unavailable in restricted browser contexts.
+    }
   }, [content, lang]);
 
   return (

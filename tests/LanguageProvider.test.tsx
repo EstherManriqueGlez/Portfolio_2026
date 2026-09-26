@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { LanguageProvider } from '@/context/LanguageProvider';
 import { useLanguage } from '@/context/useLanguage';
@@ -30,6 +30,10 @@ const renderLanguageProbe = () =>
       <LanguageProbe />
     </LanguageProvider>,
   );
+
+afterEach(() => {
+  vi.restoreAllMocks();
+});
 
 describe('LanguageProvider', () => {
   it('defaults to English and applies lang, title and localStorage', () => {
@@ -75,5 +79,30 @@ describe('LanguageProvider', () => {
     expect(screen.getByTestId('lang')).toHaveTextContent('es');
     expect(screen.getByTestId('meta-title')).toHaveTextContent(es.meta.title);
     expect(document.documentElement).toHaveAttribute('lang', 'es');
+  });
+
+  it('falls back to English when localStorage cannot be read', () => {
+    vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
+      throw new DOMException('Storage blocked', 'SecurityError');
+    });
+
+    renderLanguageProbe();
+
+    expect(screen.getByTestId('lang')).toHaveTextContent('en');
+    expect(document.documentElement).toHaveAttribute('lang', 'en');
+  });
+
+  it('continues switching languages when localStorage cannot be written', async () => {
+    const user = userEvent.setup();
+    vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+      throw new DOMException('Storage blocked', 'SecurityError');
+    });
+
+    renderLanguageProbe();
+    await user.click(screen.getByRole('button', { name: 'switch-es' }));
+
+    expect(screen.getByTestId('lang')).toHaveTextContent('es');
+    expect(document.documentElement).toHaveAttribute('lang', 'es');
+    expect(document.title).toBe(es.meta.title);
   });
 });
