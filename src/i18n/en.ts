@@ -225,13 +225,25 @@ export const en: Content = {
       {
         title: 'Teslo Shop — Cross-Framework E-commerce with Admin Panel',
         badge: 'Learning project',
-        tech: [],
-        desc: '',
-        challenge: '',
-        solution: '',
-        result: '',
-        image: '',
-        link: '',
+        tech: [
+          'React 19',
+          'Angular 19',
+          'TypeScript',
+          'Vite',
+          'TanStack Query',
+          'Zustand',
+          'RxJS Signals',
+          'Tailwind CSS',
+        ],
+        desc: 'Technical build — the same e-commerce domain implemented in React and Angular to compare approaches to state, data fetching, routing, authentication, and component architecture.',
+        challenge:
+          'Build a complete e-commerce experience with product catalog, authentication, role-protected administration, CRUD operations, and file uploads while maintaining type safety and a scalable frontend architecture.',
+        solution:
+          'Implemented the application in both React and Angular, using TanStack Query and Zustand for server and client state in React, and Signals with reactive resources and caching in Angular, alongside protected routes, validated forms, and modular architecture.',
+        result:
+          'Two functional implementations of the same e-commerce domain, demonstrating cross-framework frontend architecture and the ability to apply comparable engineering principles across React and Angular.',
+        image: projectImages.reactTesloShop,
+        link: 'https://react-teslo-shop-app.netlify.app',
         github: 'https://github.com/EstherManriqueGlez/react-teslo-shop-app',
         variants: [
           {
@@ -269,13 +281,25 @@ export const en: Content = {
       {
         title: 'GifsApp — Cross-Framework GIF Search App',
         badge: 'Learning project',
-        tech: [],
-        desc: '',
-        challenge: '',
-        solution: '',
-        result: '',
-        image: '',
-        link: '',
+        tech: [
+          'React 19',
+          'Angular 19',
+          'TypeScript',
+          'Vite',
+          'Angular Signals',
+          'RxJS',
+          'Tailwind CSS 4',
+          'Axios',
+        ],
+        desc: 'Technical build — the same GIF search domain implemented in React and Angular to compare approaches to async state, caching, persistence, and accessible UI.',
+        challenge:
+          'Build a fast, accessible GIF search experience on the Giphy API while exploring how two frameworks approach reactive state, request handling, persistence, and accessibility.',
+        solution:
+          'Implemented two independent apps on the Giphy API: a React app with confirmed search, in-memory caching, stale-response cancellation, and a tested accessible flow; and an Angular app with trending content, infinite scroll, persistent search history, theming, and Signals-based reactive state.',
+        result:
+          'Two production-minded implementations of the same domain, each reflecting its framework’s conventions for state, data fetching, persistence, and accessibility.',
+        image: projectImages.reactGifsApp,
+        link: 'https://rct-gifs-app.netlify.app/',
         github: 'https://github.com/EstherManriqueGlez/react-gifs-app',
         variants: [
           {
@@ -353,14 +377,14 @@ export const en: Content = {
 
   skills: {
     title: 'Skills & Expertise',
-    subtitle: 'The tools I work with and the engineering principles behind my approach.',
+    subtitle: 'The technologies, capabilities, and engineering practices behind my work.',
     filterAria: 'Filter skills by area',
     all: 'All',
     tech: 'Tech',
     categoryLabels: {
-      'Core Frontend': 'Core Frontend',
-      Architecture: 'Architecture',
-      'UI/UX Tools': 'UI/UX Tools',
+      'Core Frontend': 'Frontend Technologies',
+      Architecture: 'Frontend Capabilities',
+      'UI/UX Tools': 'Engineering Tools & Practices',
       'How I Work': 'How I Work',
     },
     cards: [
@@ -372,32 +396,18 @@ export const en: Content = {
         desc: 'Technical decisions are guided by the people using the product, balancing usability, accessibility, and product needs.',
       },
       {
-        id: 'engineering-craftsmanship',
-        kind: 'capability',
-        title: 'Engineering Craftsmanship',
-        category: 'How I Work',
-        desc: 'Small technical decisions, from component architecture to visual polish, shape products that are reliable, maintainable, and scalable.',
-      },
-      {
-        id: 'continuous-growth',
-        kind: 'capability',
-        title: 'Continuous Growth',
-        category: 'How I Work',
-        desc: 'I continuously explore new technologies while strengthening the engineering fundamentals that remain valuable over time.',
-      },
-      {
         id: 'thoughtful-problem-solving',
         kind: 'capability',
         title: 'Thoughtful Problem Solving',
         category: 'How I Work',
-        desc: 'I prefer understanding the problem before choosing a solution, prioritizing long-term quality over quick fixes.',
+        desc: 'I focus on understanding the problem before choosing a solution, prioritizing long-term quality over quick fixes.',
       },
       {
         id: 'collaborative-engineering',
         kind: 'capability',
         title: 'Collaborative Engineering',
         category: 'How I Work',
-        desc: 'I believe strong solutions emerge through shared ownership, open communication, and close collaboration across engineering, design, and product.',
+        desc: 'Strong solutions emerge through shared ownership, open communication, and close collaboration across engineering, design, and product.',
       },
       {
         id: 'quality-by-design',
@@ -405,6 +415,13 @@ export const en: Content = {
         title: 'Quality by Design',
         category: 'How I Work',
         desc: 'Accessibility, testing, and performance are considered throughout the process rather than treated as afterthoughts.',
+      },
+      {
+        id: 'continuous-growth',
+        kind: 'capability',
+        title: 'Continuous Learning',
+        category: 'How I Work',
+        desc: 'I explore new technologies while continuing to strengthen the engineering fundamentals that remain valuable over time.',
       },
       {
         id: 'ai-assisted',
@@ -428,11 +445,18 @@ export const en: Content = {
         desc: 'Modular, type-safe foundations for production-oriented React and Angular applications.',
       },
       {
+        id: 'design-systems',
+        kind: 'capability',
+        title: 'Design Systems',
+        category: 'Architecture',
+        desc: 'Reusable component systems aligned through design tokens, accessibility requirements, and shared visual and interaction guidelines.',
+      },
+      {
         id: 'reusable-components',
         kind: 'capability',
         title: 'Reusable Components',
         category: 'Architecture',
-        desc: 'From Figma to reusable, production-ready components aligned with design-system principles.',
+        desc: 'Translating Figma designs into reusable, production-ready components with consistent behavior and visual detail.',
       },
       {
         id: 'state-management',
@@ -456,28 +480,34 @@ export const en: Content = {
         desc: 'Caching, lazy loading, and stale-response cancellation for fast, consistent interfaces.',
       },
       {
-        id: 'accessibility',
-        kind: 'capability',
-        title: 'Accessibility',
-        category: 'Architecture',
-        desc: 'WCAG 2.1 practices applied to components, focus management, and flows validated with screen readers.',
-      },
-      {
         id: 'responsive-ui',
         kind: 'capability',
         title: 'Responsive UI Development',
-        category: 'UI/UX Tools',
+        category: 'Architecture',
         desc: 'Mobile-first layouts and responsive navigation patterns across feature-rich application interfaces.',
       },
-      { id: 'vite', kind: 'tech', title: 'Vite & SWC', category: 'UI/UX Tools' },
-      { id: 'framer-motion', kind: 'tech', title: 'Framer Motion', category: 'UI/UX Tools' },
+      {
+        id: 'accessibility',
+        kind: 'capability',
+        title: 'Accessibility',
+        category: 'UI/UX Tools',
+        desc: 'WCAG 2.1 practices integrated into component development, focus management, and validation with automated audits and screen readers.',
+      },
       {
         id: 'testing',
+        kind: 'capability',
+        title: 'Frontend Testing',
+        category: 'UI/UX Tools',
+        desc: 'Component and interaction testing with Vitest and Testing Library to support reliable UI behavior.',
+      },
+      { id: 'vite', kind: 'tech', title: 'Vite & SWC', category: 'UI/UX Tools' },
+      {
+        id: 'framer-motion',
         kind: 'tech',
-        title: 'Testing — Vitest & Testing Library',
+        title: 'Framer Motion',
         category: 'UI/UX Tools',
       },
-      { id: 'git', kind: 'tech', title: 'Git & CI/CD', category: 'UI/UX Tools' },
+      { id: 'git', kind: 'tech', title: 'Git, GitHub & CI/CD', category: 'UI/UX Tools' },
     ],
   },
 

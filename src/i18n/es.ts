@@ -224,13 +224,25 @@ export const es: Content = {
       {
         title: 'Teslo Shop — E-commerce en React y Angular con Panel de Administración',
         badge: 'Proyecto de aprendizaje',
-        tech: [],
-        desc: '',
-        challenge: '',
-        solution: '',
-        result: '',
-        image: '',
-        link: '',
+        tech: [
+          'React 19',
+          'Angular 19',
+          'TypeScript',
+          'Vite',
+          'TanStack Query',
+          'Zustand',
+          'RxJS Signals',
+          'Tailwind CSS',
+        ],
+        desc: 'Proyecto técnico — el mismo dominio de e-commerce implementado en React y Angular para comparar distintos enfoques de estado, data fetching, routing, autenticación y arquitectura de componentes.',
+        challenge:
+          'Construir una experiencia de e-commerce completa con catálogo de productos, autenticación, administración protegida por roles, operaciones CRUD y carga de archivos, manteniendo seguridad de tipos y una arquitectura frontend escalable.',
+        solution:
+          'Implementé la aplicación tanto en React como en Angular, utilizando TanStack Query y Zustand para el estado de servidor y cliente en React, y Signals con recursos reactivos y caché en Angular, junto con rutas protegidas, formularios validados y una arquitectura modular.',
+        result:
+          'Dos implementaciones funcionales del mismo dominio de e-commerce que demuestran arquitectura frontend cross-framework y la capacidad de aplicar principios de ingeniería comparables en React y Angular.',
+        image: projectImages.reactTesloShop,
+        link: 'https://react-teslo-shop-app.netlify.app',
         github: 'https://github.com/EstherManriqueGlez/react-teslo-shop-app',
         variants: [
           {
@@ -268,13 +280,25 @@ export const es: Content = {
       {
         title: 'GifsApp — Buscador de GIFs en React y Angular',
         badge: 'Proyecto de aprendizaje',
-        tech: [],
-        desc: '',
-        challenge: '',
-        solution: '',
-        result: '',
-        image: '',
-        link: '',
+        tech: [
+          'React 19',
+          'Angular 19',
+          'TypeScript',
+          'Vite',
+          'Angular Signals',
+          'RxJS',
+          'Tailwind CSS 4',
+          'Axios',
+        ],
+        desc: 'Proyecto técnico — el mismo dominio de búsqueda de GIFs implementado en React y Angular para comparar enfoques de estado asíncrono, caché, persistencia y UI accesible.',
+        challenge:
+          'Construir una experiencia de búsqueda de GIFs rápida y accesible sobre la API de Giphy, explorando cómo dos frameworks resuelven el estado reactivo, la gestión de requests, la persistencia y la accesibilidad.',
+        solution:
+          'Implementé dos aplicaciones independientes sobre la API de Giphy: una en React con búsqueda confirmada, caché en memoria, cancelación de respuestas obsoletas y un flujo accesible cubierto por pruebas; y otra en Angular con contenido trending, infinite scroll, historial de búsqueda persistente, theming y estado reactivo basado en Signals.',
+        result:
+          'Dos implementaciones con enfoque de producción del mismo dominio, cada una siguiendo las convenciones de su framework para estado, data fetching, persistencia y accesibilidad.',
+        image: projectImages.reactGifsApp,
+        link: 'https://rct-gifs-app.netlify.app/',
         github: 'https://github.com/EstherManriqueGlez/react-gifs-app',
         variants: [
           {
@@ -353,14 +377,14 @@ export const es: Content = {
   skills: {
     title: 'Habilidades y experiencia',
     subtitle:
-      'Las herramientas con las que trabajo y los principios de ingeniería que guían mi forma de desarrollar.',
+      'Las tecnologías, capacidades y principios de ingeniería que guían mi forma de desarrollar.',
     filterAria: 'Filtrar habilidades por área',
     all: 'Todas',
     tech: 'Tecnología',
     categoryLabels: {
-      'Core Frontend': 'Core Frontend',
-      Architecture: 'Arquitectura',
-      'UI/UX Tools': 'Herramientas UI/UX',
+      'Core Frontend': 'Tecnologías frontend',
+      Architecture: 'Capacidades frontend',
+      'UI/UX Tools': 'Herramientas y prácticas de ingeniería',
       'How I Work': 'Cómo trabajo',
     },
     cards: [
@@ -372,25 +396,11 @@ export const es: Content = {
         desc: 'Tomo decisiones técnicas pensando en las personas que usan el producto, buscando un equilibrio entre usabilidad, accesibilidad y necesidades de negocio.',
       },
       {
-        id: 'engineering-craftsmanship',
-        kind: 'capability',
-        title: 'Cuidado en la ingeniería',
-        category: 'How I Work',
-        desc: 'Cuido las decisiones técnicas, desde la arquitectura de componentes hasta los detalles visuales, para desarrollar productos confiables, mantenibles y escalables.',
-      },
-      {
-        id: 'continuous-growth',
-        kind: 'capability',
-        title: 'Aprendizaje continuo',
-        category: 'How I Work',
-        desc: 'Me mantengo aprendiendo y explorando nuevas tecnologías, sin perder de vista los fundamentos de ingeniería que siguen siendo importantes con el tiempo.',
-      },
-      {
         id: 'thoughtful-problem-solving',
         kind: 'capability',
         title: 'Resolución de problemas con criterio',
         category: 'How I Work',
-        desc: 'Prefiero entender bien un problema antes de elegir una solución y priorizo la calidad a largo plazo sobre los arreglos rápidos.',
+        desc: 'Me enfoco en entender el problema antes de elegir una solución y priorizo la calidad a largo plazo sobre los arreglos rápidos.',
       },
       {
         id: 'collaborative-engineering',
@@ -407,46 +417,62 @@ export const es: Content = {
         desc: 'Considero la accesibilidad, el testing y el rendimiento durante todo el proceso de desarrollo, no como tareas que se agregan al final.',
       },
       {
+        id: 'continuous-growth',
+        kind: 'capability',
+        title: 'Aprendizaje continuo',
+        category: 'How I Work',
+        desc: 'Exploro y aprendo nuevas tecnologías mientras continúo fortaleciendo mis conocimientos en los fundamentos de ingeniería que siguen siendo importantes con el tiempo.',
+      },
+      {
         id: 'ai-assisted',
         kind: 'capability',
         title: 'Desarrollo asistido por IA',
         category: 'How I Work',
         desc: 'Integro herramientas y flujos de trabajo asistidos por IA manteniendo revisión, testing y responsabilidad sobre las decisiones de ingeniería.',
       },
+
       { id: 'react', kind: 'tech', title: 'React 19', category: 'Core Frontend' },
       { id: 'angular', kind: 'tech', title: 'Angular 19', category: 'Core Frontend' },
       { id: 'typescript', kind: 'tech', title: 'TypeScript', category: 'Core Frontend' },
       { id: 'javascript', kind: 'tech', title: 'JavaScript', category: 'Core Frontend' },
       { id: 'html5', kind: 'tech', title: 'HTML5', category: 'Core Frontend' },
       { id: 'scss', kind: 'tech', title: 'SCSS / CSS Modules', category: 'Core Frontend' },
-      { id: 'tailwind', kind: 'tech', title: 'Tailwind CSS', category: 'Core Frontend' },
+      { id: 'tailwind', kind: 'tech', title: 'Tailwind CSS v4', category: 'Core Frontend' },
+
       {
         id: 'frontend-architecture',
         kind: 'capability',
         title: 'Arquitectura frontend',
         category: 'Architecture',
-        desc: 'Arquitecturas modulares, tipadas y pensadas para aplicaciones React y Angular con enfoque de producción.',
+        desc: 'Arquitecturas modulares, tipadas y pensadas para aplicaciones en React y Angular con enfoque de producción.',
+      },
+      {
+        id: 'design-systems',
+        kind: 'capability',
+        title: 'Design Systems',
+        category: 'Architecture',
+        desc: 'Sistemas de componentes reutilizables alineados mediante design tokens, requisitos de accesibilidad y lineamientos visuales y de interacción compartidos.',
       },
       {
         id: 'reusable-components',
         kind: 'capability',
         title: 'Componentes reutilizables',
         category: 'Architecture',
-        desc: 'Desde diseños en Figma hasta componentes reutilizables y listos para producción, alineados con principios de Design System.',
+        desc: 'Conversión de diseños de Figma en componentes reutilizables y listos para producción, con comportamiento y detalle visual consistente.',
       },
       {
         id: 'state-management',
         kind: 'capability',
         title: 'Gestión de estado',
         category: 'Architecture',
-        desc: 'Separación clara entre estado de servidor y cliente utilizando herramientas como TanStack Query, Zustand y Signals.',
+        desc: 'Separación clara entre estado de servidor y cliente con herramientas como TanStack Query, Zustand y Signals.',
       },
       {
         id: 'api-integration',
         kind: 'capability',
         title: 'Integración de APIs',
         category: 'Architecture',
-        desc: 'Integración de capas de datos tipadas con caché, interceptores y manejo claro de errores HTTP.',
+        desc: 'Capas de datos tipadas con caché, interceptores y manejo claro de errores HTTP.',
       },
       {
         id: 'performance',
@@ -456,31 +482,42 @@ export const es: Content = {
         desc: 'Uso de caché, lazy loading y cancelación de respuestas obsoletas para mantener interfaces rápidas y consistentes.',
       },
       {
+        id: 'responsive-ui',
+        kind: 'capability',
+        title: 'Desarrollo de interfaces responsive',
+        category: 'Architecture',
+        desc: 'Layouts mobile-first y patrones de navegación responsive para interfaces con múltiples funcionalidades.',
+      },
+
+      {
         id: 'accessibility',
         kind: 'capability',
         title: 'Accesibilidad',
-        category: 'Architecture',
-        desc: 'Aplicación de prácticas WCAG 2.1 en componentes, gestión de foco y flujos validados con lectores de pantalla.',
-      },
-      {
-        id: 'responsive-ui',
-        kind: 'capability',
-        title: 'Desarrollo de UI responsive',
         category: 'UI/UX Tools',
-        desc: 'Layouts mobile-first y patrones de navegación responsive para interfaces con múltiples funcionalidades.',
+        desc: 'Prácticas WCAG 2.1 aplicadas al desarrollo de componentes, focus management y validación con auditorías automatizadas y lectores de pantalla.',
       },
-      { id: 'vite', kind: 'tech', title: 'Vite & SWC', category: 'UI/UX Tools' },
-      { id: 'framer-motion', kind: 'tech', title: 'Framer Motion', category: 'UI/UX Tools' },
       {
         id: 'testing',
+        kind: 'capability',
+        title: 'Testing frontend',
+        category: 'UI/UX Tools',
+        desc: 'Pruebas de componentes e interacciones con Vitest y Testing Library para mantener un comportamiento confiable en la interfaz.',
+      },
+      { id: 'vite', kind: 'tech', title: 'Vite & SWC', category: 'UI/UX Tools' },
+      {
+        id: 'framer-motion',
         kind: 'tech',
-        title: 'Testing — Vitest & Testing Library',
+        title: 'Framer Motion',
         category: 'UI/UX Tools',
       },
-      { id: 'git', kind: 'tech', title: 'Git & CI/CD', category: 'UI/UX Tools' },
+      {
+        id: 'git',
+        kind: 'tech',
+        title: 'Git, GitHub & CI/CD',
+        category: 'UI/UX Tools',
+      },
     ],
   },
-
   contact: {
     title: 'Conectemos',
   },
@@ -513,7 +550,7 @@ export const es: Content = {
   ],
 
   footer: {
-    manifesto: 'Piensa con intención. Diseña con claridad. Construye con propósito.',
+    manifesto: 'Piensa con intención. Diseña con claridad. Desarrolla con propósito.',
   },
 
   meta: {
